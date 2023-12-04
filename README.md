@@ -6,3 +6,4 @@ Este projeto tem o intuito de contribuir com um dos Objetivos de Desenvolvimento
 
 #Equipe
 | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/35576266?v=4" width=115><br><sub>Manuely Guedes</sub>](https://github.com/manuely32) | | [<img loading="lazy" src="https://avatars.githubusercontent.com/u/63886753?v=4" width=115><br><sub>Willian Brandão</sub>](willian-brandao) | 
+| :---: | :---: | :---: |

@@ -2,7 +2,7 @@
 Projeto desenvolvido durante o curso de Introdução a programação da PROZ Talent Cloud.
 
 # Sobre o Projeto
-Este projeto tem o intuito de contribuir com um dos Objetivos de Desenvolvimento Sustentável da ONU no Brasil, no caso o Objetivo 3.1 “Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos”. 
+Este projeto tem o intuito de contribuir com um dos Objetivos de Desenvolvimento Sustentável da ONU no Brasil, no caso o Objetivo 3.1 “Até 2030, reduzir a taxa de mortalidade materna global para menos de 70 mortes por 100.000 nascidos vivos ”. 
 
 Deste modo o projeto tem por objetivo disponibilizar um site que proporcione o acompanhamento do período gestacional, focando especialmente no bem-estar da gestante e no desenvolvimento saudável do feto, através do fornecimento de informações educativas sobre a gestação, o parto, os cuidados pré e pós-natais, bem como orientações nutricionais e de estilo de vida saudável. 
 

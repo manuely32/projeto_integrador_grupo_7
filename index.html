@@ -13,50 +13,80 @@
             <img src="img/logosite.png" alt="logo nova vida" width="100">
         </div>
 
-        <h2><strong>Nova Vida</strong></h2>
+        <h1><strong>Nova Vida</strong></h1>
 
         <div id="login_cadastro">
             <ul>
-                <a href="login.html">
-                    <li>Login</li>
-                </a>
-                <a href="cadastro.html">
-                    <li>Cadastre-se </li>
-                </a>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </div>
 
         <nav>
             <ul>
-                <li>Minha Trilha</li>
-                <li>Álbum do Bebê</li>
-                <li>Dicas</li>
-                <li>curiosidades</li>
-                <li>Sobre</li>
-
+                <li><a href="minha_trilha.html">Minha Trilha</a></li>
+                <li><a href="album.html">Álbum do Bebê</a></li>
+                <li><a href="#dicas">Dicas</a></li>
+                <li><a href="#curiosidade">Curiosidades</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
 
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Corpo da Pagina</h1>
-
-
-        <section id="dicas">
-            <h2>Dicas</h2>
+        <section id="texto_pagina_principal" class="corpo_principal">
+            <!--<h1>Corpo da Pagina</h1>-->
+            <h2> Acompanhe o desenvolvimento do seu bebê</h2>
+            <img src="/img/imagem_bebe_da_sessao_corpo_principal.jpg" alt="foto de um bebê no utero">
+            <p>Cadastre-se e tenhauma trilha <strong>EXCLUSIVA</strong> feita especialmente para você e seu bebê.
+            <p>
+                <button id="butao_cadastro_corpo_principal">CADASTRAR</button>
         </section>
-        <section id="curiosidade">
-            <h2>Curiosidade</h2>
+
+        <section id="dicas" class="corpo_principal">
+            <h3>Dicas</h3>
+            <div id="link_dicas_1" class="link_dicas">
+                <img src="/img/imagem_dicas_link_1.jpg" alt="foto contendo carne e vegetais">
+                <p>Quais alimentos devemos evitar no período da gravidez?</p>
+
+            </div>
+            <div id="link_dicas_2" class="link-dicas">
+                <img src="/img/imagem_dicas_link_2.jpg" alt="foto contendo pães e bolos">
+                <p> Quais alimentos são ideiais na gravidez?</p>
+            </div>
+
+        </section>
+        <section id="curiosidade" class="corpo_principal">
+            <h3>Curiosidade</h3>
+            <div id="link_curiosidade_1" class="link_curiosidades">
+                <img src="/img/imagem_link_curiosidade_1.png" alt="simbolo do livro dos record, o guiness book">
+                <p>O maior bebê do mundo nasceu nos Estaddos Unidos, em 1979. Ele pesava 10,8 kg e media 76 centímetros
+                </p>
+            </div>
+            <div id="link_curiosidade_2" class="link_curiosidade">
+                <img src="/img/imagem_link_curiosidade_2.jpg" alt="um corpo de bebê em desenvolvimento no utero">
+                <p>Bebês "fazem xixi" quando estão dentro do útero</p>
+            </div>
         </section>
     </main>
     <footer>
-        <img src="img/logosite.png" alt="logo nova vida" width="100">
-        <section>
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
-            </ul>
+
+        <section class="rodape_pagina_principal" id="rodape">
+            <div id="logo_rodape" class="rodape_elemento_pagina_principal">
+                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
+
+            </div>
+            <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
+                <ul>
+                    <p>SIGA NEWLIFE</p>
+                    <li><a href="http:www.instagram.com"><img src="/img/instagram.png" alt="logotipo do instagram"></a>
+                    </li>
+                    <li><a href="http:www.youtube.com"><img src="/img/youtube.png" alt="logotipo do youtube"></a></li>
+                    <li><a href="http:www.facebook.com"><img src="/img/facebook.png" alt="logotipo do facebook"></a>
+                    </li>
+                </ul>
+            </div>
+
         </section>
     </footer>
 

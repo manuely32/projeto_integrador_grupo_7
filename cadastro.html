@@ -10,19 +10,15 @@
 <body>
     <header>
         <div id="logo_cabecalho">
-            <img src="img/logosite.png" alt="logo nova vida" width="100">
+            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
         </div>
 
-        <h2><strong>Nova Vida</strong></h2>
+        <h1><strong>Nova Vida</strong></h1>
 
         <div id="login_cadastro">
             <ul>
-                <a href="login.html">
-                    <li>Login</li>
-                </a>
-                <a href="cadastro.html">
-                    <li>Cadastre-se </li>
-                </a>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </div>
 
@@ -36,10 +32,12 @@
             </ul>
         </nav>
     </header>
+
     <main>
+        <!-- Formulário de cadastro -->
         <div>
             <img src="img/logosite.png" alt="Logo do site" width="80">
-            <form action="login.html" display="center">
+            <form action="login.html">
                 <div>
                     <div>
                         <label for="">Nome</label>
@@ -86,14 +84,24 @@
             </form>
         </div>
     </main>
+
     <footer>
-        <img src="img/logosite.png" alt="logo nova vida" width="100">
-        <section>
-            <ul>
-                <li>Facebook</li>
-                <li>Instagram</li>
-                <li>Youtube</li>
-            </ul>
+        <section class="rodape_pagina_principal" id="rodape">
+            <div id="logo_rodape" class="rodape_elemento_pagina_principal">
+                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
+
+            </div>
+            <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
+                <ul>
+                    <p>SIGA NOVAVIDA</p>
+                    <li><a href="http:www.instagram.com"><img src="/img/instagram.png" alt="logotipo do instagram"></a>
+                    </li>
+                    <li><a href="http:www.youtube.com"><img src="/img/youtube.png" alt="logotipo do youtube"></a></li>
+                    <li><a href="http:www.facebook.com"><img src="/img/facebook.png" alt="logotipo do facebook"></a>
+                    </li>
+                </ul>
+            </div>
+
         </section>
     </footer>
 </body>

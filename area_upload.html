@@ -6,7 +6,27 @@
     <title>NovaVida</title>
 </head>
 <body>
-    <header id="header-container"></header>
+    <header id="header">
+        <div id="logo_cabecalho">
+            <img src="../img/logosite.png" alt="logo nova vida" width="100">
+       </div>
+       <h2><strong>Nova Vida</strong></h2>
+       <div id="login_cadastro">
+           <ul>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="cadastro.html">Cadastre-se</a></li>
+           </ul>
+       </div>
+       <nav>
+          <ul>
+              <li><a href="minhatrilha.html">Minha Trilha</a></li>
+              <li><a href="album.html">Álbum do Bebê</a></li>
+              <li><a href="#dicas">Dicas</a></li>
+              <li><a href="#curiosidade">Curiosidades</a></li>
+              <li><a href="sobre.html">Sobre</a></li>       
+          </ul>
+       </nav>
+    </header>
     <main>
         <h1>Crie seu post</h1>
         <form action="/upload" method="post" enctype="multipart/form-data" style="width: 25%;display: flex; flex-direction: column;">
@@ -24,19 +44,29 @@
           </form> 
         </section>
     </main>
-    <footer id="footer-container"></footer>
+    <footer id="footer">
+        <img src="../img/logosite.png" alt="logo nova vida" width="100">
+        <section>
+            <ul>
+                <p>SIGA NEWLIFE</p>
+                <li>
+                    <a href="http://www.instagram.com" target="_blank">
+                        <img src="/img/instagram.png" alt="logotipo do instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.youtube.com" target="_blank">
+                        <img src="/img/youtube.png" alt="logotipo do youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="/img/facebook.png" alt="logotipo do facebook">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
 </body>
-<script>
-     fetch('./componentes/header.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('header-container').innerHTML = html;
-        });
-    // Fetch do conteúdo do header.html e inserção na div
-    fetch('./componentes/footer.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('footer-container').innerHTML = html;
-        });
-</script>
+
 </html>

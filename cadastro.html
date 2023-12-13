@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
     <title>NovaVida</title>
 </head>
 
 <body>
     <header>
-        <div id="logo_cabecalho">
-            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-        </div>
+        <div id="cabecalho">
+            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="70"></a>
 
-        <h1><strong>Nova Vida</strong></h1>
 
-        <div id="login_cadastro">
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
+            <h1><strong>Nova Vida</strong></h1>
+
+            <div id="login_cadastro">
+                <ul>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
+
         </div>
 
         <nav>
@@ -35,52 +38,43 @@
 
     <main>
         <!-- Formulário de cadastro -->
-        <div>
+        <div class="form-content">
             <img src="img/logosite.png" alt="Logo do site" width="80">
             <form action="login.html">
-                <div>
-                    <div>
-                        <label for="">Nome</label>
-                    </div>
+                <div class="input-content">
+                    <label for="">Nome</label>
                     <input type="text">
                 </div>
 
-                <div>
-                    <div>
-                        <label for="">Sobrenome</label>
-                    </div>
+                <div class="input-content">
+                    <label for="">Sobrenome</label>
+                    <input type="text" class="nome">
+                </div>
+
+                <div class="input-content">
+                    <label for="">E-mail</label>
                     <input type="text">
                 </div>
 
-                <div>
-                    <div>
-                        <label for="">Endereço de e-mail</label>
-                    </div>
+                <div class="input-content">
+                    <label for="">Telefone</label>
                     <input type="text">
                 </div>
 
-                <div>
-                    <div>
-                        <label for="">Telefone</label>
-                    </div>
-                    <input type="text">
-                </div>
-
-                <div>
-                    <div>
-                        <label for="">Digite a senha</label>
-                    </div>
+                <div class="input-content">
+                    <label for="">Digite a senha</label>
                     <input type="password" name="" id="">
                 </div>
 
-                <div>
-                    <div>
-                        <label for="">Confirme a senha</label>
-                    </div>
+                <div class="input-content">
+                    <label for="">Confirme a senha</label>
                     <input type="password">
                 </div>
 
-                <button type="submit">Cadastrar</button>
+                <div class="btn">
+                    <button type="submit">Cadastrar</button>
+                </div>
+
             </form>
         </div>
     </main>

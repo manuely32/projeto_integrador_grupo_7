@@ -1,0 +1,115 @@
+main {
+    display: flex; 
+    justify-content: center;
+}
+
+body{
+ margin:0px;
+}
+
+header {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+   list-style: none;
+}
+
+#login_cadastro ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#login_cadastro li, nav ul li{
+    width: 90%;
+    border: 0px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px #8c8c8c;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #839deb;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    background-color: #8c8c8c;
+    height: 50px;
+}
+
+#cabecalho {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffe4ec;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.form-content {
+    background-color: aqua; 
+    width: 40%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #8c8c8c;
+}
+
+.form-content form {
+    margin-top: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr; 
+    gap: 8px 15px;
+}
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.input-content input{
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    box-shadow: 0px 0px 5px 0px #8c8c8c;
+}
+
+label {
+    color:#8c8c8c
+}
+
+input:focus {
+    border:1px solid #8c8c8c;
+    outline:none; 
+}
+
+button {
+    width: 50%;
+    border: 0px;
+    box-shadow: 0px 0px 5px 0px #8c8c8c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #839deb;
+}

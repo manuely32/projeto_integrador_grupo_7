@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaVida</title>
+</head>
+<body>
+    <header id="header">
+        <div id="logo_cabecalho">
+            <img src="../img/logosite.png" alt="logo nova vida" width="100">
+       </div>
+       <h2><strong>Nova Vida</strong></h2>
+       <div id="login_cadastro">
+           <ul>
+               <li><a href="login.html">Login</a></li>
+               <li><a href="cadastro.html">Cadastre-se</a></li>
+           </ul>
+       </div>
+       <nav>
+          <ul>
+              <li><a href="minhatrilha.html">Minha Trilha</a></li>
+              <li><a href="album.html">Álbum do Bebê</a></li>
+              <li><a href="#dicas">Dicas</a></li>
+              <li><a href="#curiosidade">Curiosidades</a></li>
+              <li><a href="sobre.html">Sobre</a></li>       
+          </ul>
+       </nav>
+    </header>
+    <main>
+        <h1>Crie seu post</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data" style="width: 25%;display: flex; flex-direction: column;">
+            <label for="titulo">Título</label>
+            <input type="text" name="titulo" id="titulo" placeholder="Escolha um título" autofocus required>
+            <label for="subtitulo">Subtítulo</label>
+            <input type="text" name="subtitulo" id="subtitulo" placeholder="Escolha um subtítulo" required>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" title="informe a data" required>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            <label for="arquivo">Escolha uma foto ou vídeo:</label>
+            <input type="file" id="arquivo" name="arquivo" accept="image/*, video/*" required>
+            <input type="submit" value="Enviar">
+          </form> 
+        </section>
+    </main>
+    <footer id="footer">
+        <img src="../img/logosite.png" alt="logo nova vida" width="100">
+        <section>
+            <ul>
+                <p>SIGA NEWLIFE</p>
+                <li>
+                    <a href="http://www.instagram.com" target="_blank">
+                        <img src="/img/instagram.png" alt="logotipo do instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="http://www.youtube.com" target="_blank">
+                        <img src="/img/youtube.png" alt="logotipo do youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="/img/facebook.png" alt="logotipo do facebook">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+</body>
+
+</html>

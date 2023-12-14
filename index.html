@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaVida</title>
-    <link rel="stylesheet" type="text/css" href="./style/style_pagina_principal.css"/> 
-
-   
+    <link rel="stylesheet" type="text/css" href="./style/style_pagina_principal.css" />
 </head>
-<body>
-  
-    
 
+<body>
     <header>
-       <div id="logo_cabecalho">
-            <img src="img/logosite.png" alt="logo nova vida" width="100">
-       </div>
-        
+        <div id="logo_cabecalho">
+            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
+        </div>
+
         <h1><strong>Nova Vida</strong></h1>
-     
+
         <div id="login_cadastro">
             <ul>
                 <li><a href="login.html">Login</a></li>
@@ -26,58 +23,61 @@
             </ul>
         </div>
 
-        
         <nav>
             <ul>
-                <li><a href="minha_trilha.html">Minha Trilha</a></li>
+                <li><a href="minhatrilha.html">Minha Trilha</a></li>
                 <li><a href="album.html">Álbum do Bebê</a></li>
                 <li><a href="#dicas">Dicas</a></li>
                 <li><a href="#curiosidade">Curiosidades</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                
+
             </ul>
         </nav>
     </header>
-    <main>
 
+    <main>
         <section class="carrossel_pagina_principal">
             <input type="radio" name="carrossel" id="slide1" checked>
             <input type="radio" name="carrossel" id="slide2">
             <input type="radio" name="carrossel" id="slide3">
             <input type="radio" name="carrossel" id="slide4">
-           
+
             <div class="slides_do_carrossel_index">
-                <div class="slide_carrossel_index"  >
+                <div class="slide_carrossel_index">
                     <img src="/img/" alt="imagem do carrrossel">
                 </div>
-                <div class="slide_carrossel_index"  >
+                <div class="slide_carrossel_index">
                     <img src="/img/" alt="imagem do carrrossel">
                 </div>
-                <div class="slide_carrossel_index" >
+                <div class="slide_carrossel_index">
                     <img src="." alt="imagem do carrrossel">
                 </div>
-                <div class="slide_carrossel_index"  >
+                <div class="slide_carrossel_index">
                     <img src="/img/" alt="imagem do carrrossel">
-                </div>     
+                </div>
             </div>
+
             <div class="navigation_slide_carrossel">
                 <label for="slide1"></label>
                 <label for="slide2"></label>
                 <label for="slide3"></label>
                 <label for="slide4"></label>
             </div>
+
         </section>
+
         <section id="texto_pagina_principal" class="corpo_principal">
             <!--<h1>Corpo da Pagina</h1>-->
             <h2> Acompanhe o desenvolvimento do seu bebê</h2>
-            <img src="/img/imagem_bebe_da_sessao_corpo_principal.jpg"alt="foto de um bebê no utero">
-            <p>Cadastre-se e tenhauma trilha  <strong>EXCLUSIVA</strong> feita especialmente para você e seu bebê.<p>
-            <button id="butao_cadastro_corpo_principal">CADASTRAR</button>
+            <img src="/img/imagem_bebe_da_sessao_corpo_principal.jpg" alt="foto de um bebê no utero">
+            <p>Cadastre-se e tenha uma trilha <strong>EXCLUSIVA</strong> feita especialmente para você e seu bebê.
+            <p>
+                <button id="butao_cadastro_corpo_principal"> <a href="/cadastro.html">CADASTRAR</a></button>
         </section>
-        
+
         <section id="dicas" class="corpo_principal">
-            
             <h3>Dicas</h3>
+
             <div id="link_dicas_1" class="link_dicas">
                 <img src="/img/imagem_dicas_link_1.jpg" alt="foto contendo carne e vegetais">
                 <p>Quais alimentos devemos evitar no período da gravidez?</p>
@@ -89,41 +89,39 @@
             </div>
 
         </section>
+
         <section id="curiosidade" class="corpo_principal">
             <h3>Curiosidade</h3>
-           
+
             <div id="link_curiosidade_1" class="link_curiosidades">
                 <img src="/img/imagem_link_curiosidade_1.png" alt="simbolo do livro dos record, o guiness book">
-                <p>O maior bebê do mundo nasceu nos Estaddos Unidos, em 1979. Ele pesava 10,8 kg e media 76 centímetros</p>
+                <p>O maior bebê do mundo nasceu nos Estaddos Unidos, em 1979. Ele pesava 10,8 kg e media 76 centímetros
+                </p>
             </div>
-            <div id="link_curiosidade_2" class="link_curiosidade">
-                <img src="/img/imagem_link_curiosidade_2.jpg" alt="um corpo de bebê em desenvolvimento no utero">
+            <div id="link_curiosidade_2" class="link_curiosidades">
+                <a href="/curiosidades.html"> <img src="/img/imagem_link_curiosidade_2.jpg"
+                        alt="um corpo de bebê em desenvolvimento no utero"></a>
                 <p>Bebês "fazem xixi" quando estão dentro do útero</p>
             </div>
-            
         </section>
     </main>
+
     <footer>
-      
         <section class="rodape_pagina_principal" id="rodape">
             <div id="logo_rodape" class="rodape_elemento_pagina_principal">
                 <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-            
             </div>
+
             <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
                 <ul>
                     <p>SIGA NEWLIFE</p>
-                    <li><a href="https://www.instagram.com" ><img src="/img/instagram.png" alt="logotipo do instagram"></a></li>
-                    <li><a href="https://www.youtube.com"><img src="/img/youtube.png" alt="logotipo do youtube"></a></li>
-                    <li><a href="https://www.facebook.com"><img src="/img/facebook.png" alt="logotipo do facebook"></a></li>
+                    <li><a href="https:www.instagram.com"><img src="/img/instagram.png" alt="logotipo do instagram"></a></li>
+                    <li><a href="https:www.youtube.com"><img src="/img/youtube.png" alt="logotipo do youtube"></a></li>
+                    <li><a href="https:www.facebook.com"><img src="/img/facebook.png" alt="logotipo do facebook"></a></li>
                 </ul>
             </div>
-            
         </section>
-
-        
     </footer>
-
-    
 </body>
+
 </html>

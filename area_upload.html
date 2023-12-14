@@ -12,13 +12,16 @@
         <div id="logo_cabecalho">
             <img src="../img/logosite.png" alt="logo nova vida" width="100">
         </div>
-        <h2><strong>Nova Vida</strong></h2>
+
+        <h1><strong>Nova Vida</strong></h1>
+
         <div id="login_cadastro">
             <ul>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="cadastro.html">Cadastre-se</a></li>
             </ul>
         </div>
+
         <nav>
             <ul>
                 <li><a href="minhatrilha.html">Minha Trilha</a></li>
@@ -29,8 +32,10 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <h1>Crie seu post</h1>
+
         <form action="/upload" method="post" enctype="multipart/form-data"
             style="width: 25%;display: flex; flex-direction: column;">
             <label for="titulo">Título</label>
@@ -45,31 +50,31 @@
             <input type="file" id="arquivo" name="arquivo" accept="image/*, video/*" required>
             <input type="submit" value="Enviar">
         </form>
-        </section>
     </main>
-    <footer id="footer">
-        <div id="logo_rodape" class="rodape_elemento_pagina_principal">
-            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-        </div>
-        <section>
-            <ul>
-                <p>SIGA NEWLIFE</p>
-                <li>
-                    <a href="http://www.instagram.com" target="_blank">
-                        <img src="/img/instagram.png" alt="logotipo do instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.youtube.com" target="_blank">
-                        <img src="/img/youtube.png" alt="logotipo do youtube">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com" target="_blank">
-                        <img src="/img/facebook.png" alt="logotipo do facebook">
-                    </a>
-                </li>
-            </ul>
+
+    <footer>
+        <section class="rodape_pagina_principal" id="rodape">
+            <div id="logo_rodape" class="rodape_elemento_pagina_principal">
+                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
+            </div>
+
+            <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
+                <ul>
+                    <p>SIGA NOVAVIDA</p>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><img src="/img/instagram.png"
+                                alt="logotipo do instagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank"><img src="/img/youtube.png"
+                                alt="logotipo do youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><img src="/img/facebook.png"
+                                alt="logotipo do facebook"></a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </footer>
 </body>

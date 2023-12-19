@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@200;400;600&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --nav-bg-color: #ffeebb;
+    --navt-text-color: black;
+    --button-bg-color: #f2517C;
+    --button-text-color: black;
+    /*--button-bg-color:#f2517C;*/
+}
+
+
+#f2517C
+/*para referenciar usa-se o var(--navt-text-color)*/
+a {
+    text-decoration: none;
+}
+/*Estilização do cabeçalho*/
+
+#cabecalho_navegacao {
+    display: flex;
+    width: 100%;
+    height: 180px;
+    background-color: var(--nav-bg-color);
+}
+
+
+#principal_cabecalho{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+#principal_cabecalho_logo_titulo {
+    display: flex;
+    align-items: baseline;
+    height: 110px;
+   
+    
+}
+#principal_cabecalho_logo_titulo img {
+   width: 120px;
+}
+#principal_cabecalho_logo_titulo h1{
+  font-size: 70px;
+}
+#principal_cabecalho_menu {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 60%;
+    height: 40px;
+}
+#principal_cabecalho_menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 50px;
+}
+
+#principal_cabecalho_menu ul li a{
+  color: black;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+}
+
+#auxiliar_cabecalho{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: center;
+}
+#auxiliar_cabecalho button {
+    width: 95px;
+    height: 35px;
+    background-color: var(--button-bg-color);
+}
+#auxiliar_cabecalho button  a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+/*Estilização Carrossel*/
+.carousel {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .navigation {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation label {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #slide1:checked ~ .slides .slide:nth-child(1),
+  #slide2:checked ~ .slides .slide:nth-child(2),
+  #slide3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+  }

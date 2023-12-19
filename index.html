@@ -1,70 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaVida</title>
-    <link rel="stylesheet" type="text/css" href="./style/style_pagina_principal.css" />
+    <link rel="stylesheet" type="text/css" href="./style/style_index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div id="logo_cabecalho">
-            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-        </div>
+            
+        <nav id="cabecalho_navegacao">    
+            <div id="principal_cabecalho">
+               <div id="principal_cabecalho_logo_titulo">
+                    <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
+            
+                    <h1><strong>Nova Vida</strong></h1>   
+               </div>
+               
+               <div id="principal_cabecalho_menu">
+                    <ul>
+                        <li><a href="minhatrilha.html">Minha Trilha</a></li>
+                        <li><a href="album.html">Álbum do Bebê</a></li>
+                        <li><a href="index.html#dicas">Dicas</a></li>
+                        <li><a href="index.html#curiosidade">Curiosidades</a></li>
+                        <li><a href="Sobre.html">Sobre</a></li>
+                        <li><a href="adastro.html">Cadastre-se</a></li>
+                    </ul>
+               </div>
 
-        <h1><strong>Nova Vida</strong></h1>
-
-        <div id="login_cadastro">
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="minhatrilha.html">Minha Trilha</a></li>
-                <li><a href="album.html">Álbum do Bebê</a></li>
-                <li><a href="#dicas">Dicas</a></li>
-                <li><a href="#curiosidade">Curiosidades</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-
-            </ul>
+            </div>
+            <div id="auxiliar_cabecalho">
+                <button><a href="login.html">Login</a></button>
+            </div>
+           
         </nav>
+        
     </header>
 
     <main>
-        <section class="carrossel_pagina_principal">
-            <input type="radio" name="carrossel" id="slide1" checked>
-            <input type="radio" name="carrossel" id="slide2">
-            <input type="radio" name="carrossel" id="slide3">
-            <input type="radio" name="carrossel" id="slide4">
-
-            <div class="slides_do_carrossel_index">
-                <div class="slide_carrossel_index">
-                    <img src="/img/" alt="imagem do carrrossel">
-                </div>
-                <div class="slide_carrossel_index">
-                    <img src="/img/" alt="imagem do carrrossel">
-                </div>
-                <div class="slide_carrossel_index">
-                    <img src="." alt="imagem do carrrossel">
-                </div>
-                <div class="slide_carrossel_index">
-                    <img src="/img/" alt="imagem do carrrossel">
-                </div>
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+           
+            <div class="slides">
+              <div class="slide">
+                <img src="./img/imagem_bebe_da_sessao_corpo_principal.jpg" alt="Slide 1">
+              </div>
+              <div class="slide">
+                <img src="./img/imagem_bebe_da_sessao_corpo_principal.jpg" alt="Slide 2">
+              </div>
+              <div class="slide">
+                <img src="./imagem3.jpg" alt="Slide 3">
+              </div>
             </div>
-
-            <div class="navigation_slide_carrossel">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
+            <div class="navigation">
+              <label for="slide1"></label>
+              <label for="slide2"></label>
+              <label for="slide3"></label>
             </div>
-
-        </section>
+          </div>
 
         <section id="texto_pagina_principal" class="corpo_principal">
             <!--<h1>Corpo da Pagina</h1>-->
@@ -114,10 +114,19 @@
 
             <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
                 <ul>
-                    <p>SIGA NEWLIFE</p>
-                    <li><a href="https:www.instagram.com"><img src="/img/instagram.png" alt="logotipo do instagram"></a></li>
-                    <li><a href="https:www.youtube.com"><img src="/img/youtube.png" alt="logotipo do youtube"></a></li>
-                    <li><a href="https:www.facebook.com"><img src="/img/facebook.png" alt="logotipo do facebook"></a></li>
+                    <p>SIGA NOVAVIDA</p>
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank"><img src="/img/instagram.png"
+                                alt="logotipo do instagram"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com" target="_blank"><img src="/img/youtube.png"
+                                alt="logotipo do youtube"></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank"><img src="/img/facebook.png"
+                                alt="logotipo do facebook"></a>
+                    </li>
                 </ul>
             </div>
         </section>

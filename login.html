@@ -4,75 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--script para importar o header e footer -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+
+    <!-- Importação de arquivos css -->
+    <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>NovaVida</title>
 </head>
 
 <body>
-    <header>
-        <div id="logo_cabecalho">
-            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-        </div>
-
-        <h1><strong>Nova Vida</strong></h1>
-
-        <div id="login_cadastro">
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="minhatrilha.html">Minha Trilha</a></li>
-                <li><a href="album.html">Álbum do Bebê</a></li>
-                <li><a href="#dicas">Dicas</a></li>
-                <li><a href="#curiosidade">Curiosidades</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header-component></header-component>
     <main>
-        <div>
-            <img src="img/logosite.png" alt="Logo do site" width="80">
-            <form action="index.html">
-                <div>
-                    <div>
-                        <label for="">Login</label>
-                    </div>
-                    <input type="text">
-                </div>
+        <div class="content">
+            <div class="first-column">
+                <img src="img/logosite.png" alt="Logo do site" width="90">
+                <p class="title">NovaVida</p>
+            </div>
+            <div class="second-column">
+                <p class="title">Faça seu login!</p>
+                <form class="form-content">
 
-                <div>
-                    <div>
-                        <label for="">Senha</label>
-                    </div>
-                    <input type="password">
-                </div>
+                    <input id="input-login" type="text" placeholder="Login" value="manuely@email.com" required>
+                    <input id="input-senha" type="password" placeholder="Digite a senha" value="12345" required>
 
-                <button type="submit">Entrar</button>
-            </form>
+                    <button type="button" onclick="login()" class="btn">Entrar</button>
+
+                    <a href="cadastro.html">Cadastre-se</a>
+                </form>
+            </div>
         </div>
     </main>
-    <footer>
-        <section class="rodape_pagina_principal" id="rodape">
-            <div id="logo_rodape" class="rodape_elemento_pagina_principal">
-                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-
-            </div>
-            <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
-                <ul>
-                    <p>SIGA NOVAVIDA</p>
-                    <li><a href="http:www.instagram.com"><img src="/img/instagram.png" alt="logotipo do instagram"></a>
-                    </li>
-                    <li><a href="http:www.youtube.com"><img src="/img/youtube.png" alt="logotipo do youtube"></a></li>
-                    <li><a href="http:www.facebook.com"><img src="/img/facebook.png" alt="logotipo do facebook"></a>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-    </footer>
+    <footer-component></footer-component>
 </body>
 
 </html>

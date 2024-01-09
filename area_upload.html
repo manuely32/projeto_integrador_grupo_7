@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--script para importar o header e footer -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+
+    <!-- Importação de arquivos css -->
+    <link rel="stylesheet" href="css/global_style.css">
+
+    <title>NovaVida</title>
+</head>
+
+<body>
+    <header-component></header-component>
+    <main>
+        <h1>Crie seu post</h1>
+
+        <form action="/upload" method="post" enctype="multipart/form-data"
+            style="width: 25%;display: flex; flex-direction: column;">
+            <label for="titulo">Título</label>
+            <input type="text" name="titulo" id="titulo" placeholder="Escolha um título" autofocus required>
+            <label for="subtitulo">Subtítulo</label>
+            <input type="text" name="subtitulo" id="subtitulo" placeholder="Escolha um subtítulo" required>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data" title="informe a data" required>
+            <label for="descricao">Descrição</label>
+            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            <label for="arquivo">Escolha uma foto ou vídeo:</label>
+            <input type="file" id="arquivo" name="arquivo" accept="image/*, video/*" required>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer-component></footer-component>
+</body>
+
+</html>

@@ -24,14 +24,9 @@ class Header extends HTMLElement {
             </nav>
             <div class="div-user">
                 <p id="nome"><p>
-                <div class="btn">
-                    <ul>
-                        <li id="btn-login"><a id="login" href="login.html">Login</a></li>
-                        <li id="btn-sair" style="display:none"><a id="login" href="index.html" onclick="sair()">Sair</a></li>
-                    </ul>
-                </div>
-            </div>
-            
+                <a class="btn" id="btn-login" href="login.html">Login</a>
+                <a class="btn" style="display:none" id="btn-sair" href="index.html" onclick="sair()">Sair</a>
+            </div>    
         </header>
         `;
     }

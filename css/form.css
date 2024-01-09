@@ -8,6 +8,7 @@ main {
     align-items: center;
     height: 100vh;
     background-color: var(--main-bg-color);
+    color:#212121;
 }
 
 .content {
@@ -15,7 +16,7 @@ main {
     justify-content: space-between;
     align-items: center;
     width: 50%;
-    height: 50%;
+    background-color:  var(--color-secondary);
     border-radius: 10px;  
     box-shadow: 0px 0px 5px 0px #fce5ec;  
 }
@@ -26,10 +27,9 @@ main {
     justify-content: center;
     align-items: center;
     flex: 1 0 auto;
-    height: 100%;
     gap: 10px;
+    padding: 50px;
     border-radius: 10px 0px 0px 10px;
-    background-color:  var(--color-secondary);
 }
 
 .second-column {
@@ -38,10 +38,10 @@ main {
     justify-content: center;
     align-items: center; 
     gap: 30px;
+    padding: 50px;
     flex: 2 0 auto;
     border-radius: 0px 10px 10px 0px;
     background-color:  white;
-    height: 100%;
 }
 
 .form-content {

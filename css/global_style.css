@@ -27,7 +27,7 @@ header {
     gap: 1rem;
 }
  
-#login{
+#btn-login{
     color:white;
 }
 
@@ -76,12 +76,11 @@ a {
 footer {
     background-color:var(--color-secondary);
     color: var(--color-primary);
-    margin:0;
 }
 
 .rodape_pagina_principal {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2rem;
     align-items: center;
 }

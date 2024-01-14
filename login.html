@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--script para importar o header e footer -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+
+    <!-- Importação de arquivos css -->
+    <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>NovaVida</title>
 </head>
 
@@ -26,8 +34,8 @@
             <ul>
                 <li><a href="minhatrilha.html">Minha Trilha</a></li>
                 <li><a href="album.html">Álbum do Bebê</a></li>
-                <li><a href="index.html#dicas">Dicas</a></li>
-                <li><a href="index.html#curiosidade">Curiosidades</a></li>
+                <li><a href="">Dicas</a></li>
+                <li><a href="curiosidades.html">Curiosidades</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
@@ -51,36 +59,14 @@
                     <input type="password" name="senha" id="senha" required>
                 </div>
 
-                <button type="submit">Entrar</button>
-            </form>
+                    <button type="button" onclick="login()" class="btn">Entrar</button>
+
+                    <a href="cadastro.html">Cadastre-se</a>
+                </form>
+            </div>
         </div>
     </main>
-
-    <footer>
-        <section class="rodape_pagina_principal" id="rodape">
-            <div id="logo_rodape" class="rodape_elemento_pagina_principal">
-                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-            </div>
-
-            <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
-                <ul>
-                    <p>SIGA NOVAVIDA</p>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank"><img src="/img/instagram.png"
-                                alt="logotipo do instagram"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" target="_blank"><img src="/img/youtube.png"
-                                alt="logotipo do youtube"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank"><img src="/img/facebook.png"
-                                alt="logotipo do facebook"></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+<footer-component></footer-component>
 </body>
 
 </html>

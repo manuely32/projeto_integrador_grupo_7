@@ -10,21 +10,20 @@
 
 <body>
     <header>
-        <div id="logo_cabecalho">
-            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
+        <div class="container_cabecalho">
+            <a href="index.html"><img src="/img/logo300100.png" alt="logo nova vida" width="300" height="100"></a>
+            
+            <div id="login_cadastro">
+                <ul id="botoes_login">
+                    <li><a href="/login.html">Login</a></li>
+                    <li><a href="/cadastro.html">Cadastre-se</a></li>
+                </ul>
+            </div>
         </div>
 
-        <h2><strong>Nova Vida</strong></h2>
 
-        <div id="login_cadastro">
-            <ul>
-                <li><a href="/login.html">Login</a></li>
-                <li><a href="/cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </div>
-
-        <nav>
-            <ul>
+        <nav id="sticky">
+            <ul id="menu_header">
                 <li><a href="minhatrilha.html">Minha Trilha</a></li>
                 <li><a href="album.html">Álbum do Bebê</a></li>
                 <li><a href="index.html#dicas">Dicas</a></li>
@@ -35,17 +34,18 @@
     </header>
 
     <main>
-        <h1><strong>Minha Trilha</strong></h1>
+        <div id="container_text">
+            <h1> <img src="/img/trilhaicone.svg" alt="icone minhatrilha" width="100px"><strong>Minha Trilha</strong></h1>
 
-        <p>Esta trilha foi criada especialmente para você e o bebê, onde iremos te guiar atráves de tarefas simples e
-            essenciais para uma gestação <strong>Saudável</strong>,
-            pode contar com a gente nessa jornada!
-        </p>
+            <p>Esta trilha foi criada especialmente para você e o bebê, onde iremos te guiar atráves de tarefas simples e
+                essenciais para uma gestação <strong>Saudável</strong>,
+                pode contar com a gente nessa jornada!
+            </p>
 
-        <h2>Complete as Tarefas e Ganhe Corações</h2>
-
-        <section>
-            <h1>SEMANA 1</h1>
+            <h2>Complete as Tarefas e Ganhe Corações</h2>
+        </div>
+        <section class="tarefas_semanais">
+            <h1 class="titulo_semana" >SEMANA 1</h1>
             <img src="/img/barratrilha.png" alt="barra da trilha de tarefas"> <br>
 
             <label>
@@ -70,8 +70,8 @@
             </label> <br>
         </section>
 
-        <section>
-            <h1>SEMANA 2</h1>
+        <section class="tarefas_semanais">
+            <h1 class="titulo_semana">SEMANA 2</h1>
             <img src="/img/barratrilhavazia.png" alt="barra da trilha de tarefas vazia"> <br>
             <label>
                 <input type="checkbox" name="tarefa_6" id="tarefa6">
@@ -87,7 +87,7 @@
             </label> <br>
             <label>
                 <input type="checkbox" name="tarefa_9" id="tarefa9">
-                <strong>TAREFA 9 - ADICIONE UMA FOTO DA BARRIGA NO ÁLBUM DO BEBÊ</strong> <button> <a
+                <strong>TAREFA 9 - ADICIONE UMA FOTO DA BARRIGA NO ÁLBUM DO BEBÊ</strong> <button id="button_album"> <a
                         href="./album.html" target="_blank">IR PARA ÁLBUM</a></button>
             </label> <br>
             <label>
@@ -96,8 +96,8 @@
             </label> <br>
         </section>
 
-        <section>
-            <h1>SEMANA 3</h1>
+        <section class="tarefas_semanais">
+            <h1 class="titulo_semana">SEMANA 3</h1>
             <img src="/img/barratrilhavazia.png" alt="barra da trilha de tarefas vazia"> <br>
             <label>
                 <input type="checkbox" name="tarefa_11" id="tarefa11">
@@ -123,29 +123,26 @@
     </main>
 
     <footer>
-        <section class="rodape_pagina_principal" id="rodape">
             <div id="logo_rodape" class="rodape_elemento_pagina_principal">
-                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
+                <a href="index.html"><img src="./img/logo300100.png" alt="logo nova vida" width="300"></a>
             </div>
 
-            <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
+            <div id="link_redes_socias_rodape">
                 <ul>
-                    <p>SIGA NOVAVIDA</p>
                     <li>
                         <a href="https://www.instagram.com" target="_blank"><img src="/img/instagram.png"
-                                alt="logotipo do instagram"></a>
+                                alt="logotipo do instagram">Instagram</a>
                     </li>
                     <li>
                         <a href="https://www.youtube.com" target="_blank"><img src="/img/youtube.png"
-                                alt="logotipo do youtube"></a>
+                                alt="logotipo do youtube">YouTube</a>
                     </li>
                     <li>
                         <a href="https://www.facebook.com" target="_blank"><img src="/img/facebook.png"
-                                alt="logotipo do facebook"></a>
+                                alt="logotipo do facebook">Facebook</a>
                     </li>
                 </ul>
             </div>
-        </section>
     </footer>
 </body>
 

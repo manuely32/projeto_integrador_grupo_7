@@ -2,4 +2,213 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+body{
+    background-image: url(/img/backopacity.png);
+    background-size: contain;
+    position: relative;  
+    
+}
+
+
+.container_cabecalho{
+    border: 1px solid lightblue;
+    position: relative;
+    background-color: #d3def3;
+    margin: 0px 5px 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#login_cadastro{
+    
+    background-color: #d3def3;
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+    justify-content: flex-start;
+    text-align: center;
+    border-radius: 20px;
+    padding-right: 20px;
+    
+}
+#login_cadastro ul li a{ 
+    text-decoration: none;
+    color: rgb(28, 22, 22);
+
+}
+#login_cadastro ul li{
+    list-style: none;
+    margin: 5px;
+    background-color: #FFB4EE;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 11px 12px 5px -14px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 12px 5px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 12px 5px -14px rgba(0,0,0,0.75);
+
+}
+#botoes_login{
+    display: flex;
+    flex-direction: column;
+}
+#sticky{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#menu_header{
+    margin-top: 0px;
+    background-color: #9dbcfa;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 20px;
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+
+}
+
+#menu_header li{
+    list-style: none;  
+    margin: 10px;
+}
+#menu_header li a{
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    text-shadow: 4px 2px 24px rgba(0,0,0,0.6);
+}
+
+#container_text{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1px;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+    width: 70%;
+    margin: 56px auto;
+    background-color: #E7F0F3;
+    border-radius: 30px;
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    border: 1px solid lightblue;
+}
+
+#container_text p{
+    font-size: 30px;
+
+}
+
+#container_text h1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 5rem;
+    width: 50%;
+    margin: 0 auto;
+    background-color: #9dbcfa;
+    border-radius: 10px;
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+}
+#container_text p{
+    background-color: #d3def3af;
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    margin: 90px 30px 30px;
+}
+
+#container_text h2{
+    font-size: 2rem;
+    background-color:#9dbcfa;
+    border-radius: 10px;
+    margin: 50px;
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    
+}
+
+section{
+    border: 2px solid lightblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    background-color: #E7F0F3;
+    border-radius: 30px;
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+}
+.titulo_semana{
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    font-size: 3rem;
+    margin: 15px;
+    background-color:#d3def3;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid lightblue;
+}
+
+.tarefas_semanais label{
+    
+    padding: 15px;
+    background-color:#FFB4EE;
+    border: 3px solid #9dbcfa;
+    border-radius: 100px;
+    box-shadow: inset -1px 2px 5px rgba(0, 0, 0, .7)
+}
+#button_album a{
+    text-decoration: none;
+    background-color:violet;
+    padding: 5px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.526);
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .7)
+}
+
+footer{
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    border: 1px solid red;
+    display: flex;
+    
+    justify-content: space-around;
+    background-color: #d3def3;
+}
+
+#link_redes_socias_rodape a{
+    text-decoration: none;
+}
+#link_redes_socias_rodape ul li{
+    list-style: none;
+}
+
+
+
+
+
+
+
+

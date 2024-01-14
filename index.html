@@ -5,14 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaVida</title>
-    <link rel="stylesheet" type="text/css" href="./style/style_index.css" />
+ 
+    <!--script para importação dos components-->
+    <script src="components/carrossel.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/header-index.js" type="text/javascript" defer></script>
+    <script src="components/carrossel.js" type="text/javascript" defer></script>
+    <!--importação do arquivo javascript-->
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+
+    
+    <!-- Importação de arquivos css 
+    <link rel="stylesheet" href="css/global_style.css">
+    -->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!--Importação da api de fontes do arquivo-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto+Condensed:wght@200;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+  <!--
+      <header>
             
         <nav id="cabecalho_navegacao">    
             <div id="principal_cabecalho">
@@ -33,38 +49,30 @@
                     </ul>
                </div>
 
-        <h1><strong>Nova Vida</strong></h1>
-
-        <div id="login_cadastro">
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="minhatrilha.html">Minha Trilha</a></li>
-                <li><a href="album.html">Álbum do Bebê</a></li>
-                <li><a href="index.html#dicas">Dicas</a></li>
-                <li><a href="index.html#curiosidade">Curiosidades</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
+            </div>
+            <div id="auxiliar_cabecalho">
+                <button><a href="login.html">Login</a></button>
+            </div>
+           
         </nav>
         
     </header>
-
+  -->
+    <header-index-component></header-index-component>
     <main>
+        <carrossel-component></carrossel-component>
       
-        <section id="texto_pagina_principal" class="corpo_principal">
+        <section id="banner_pagina_principal" class="corpo_principal">
             <!--<h1>Corpo da Pagina</h1>-->
             <h2> Acompanhe o desenvolvimento do seu bebê</h2>
             <img src="/img/imagem_bebe_da_sessao_corpo_principal.jpg" alt="foto de um bebê no utero">
-            <p>Cadastre-se e tenha uma trilha <strong>EXCLUSIVA</strong> feita especialmente para você e seu bebê.
-            <p>
-                <button id="butao_cadastro_corpo_principal"> <a href="/cadastro.html">CADASTRAR</a></button>
+           
         </section>
-
+        <section id="banner_pagina_principal_cadastro">
+            <p>Cadastre-se e tenha uma trilha <strong>EXCLUSIVA</strong> feita especialmente para você e seu bebê.
+                <p>
+            <button id="butao_cadastro_corpo_principal"> <a href="/cadastro.html">CADASTRAR</a></button>
+        </section>
         <section id="dicas" class="corpo_principal">
             <h3>Dicas</h3>
 
@@ -95,8 +103,9 @@
             </div>
         </section>
     </main>
-
-    <footer>
+    <footer-component></footer-component>
+    <!--
+        <footer>
         <section class="rodape_pagina_principal" id="rodape">
             <div id="logo_rodape" class="rodape_elemento_pagina_principal">
                 <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
@@ -121,6 +130,7 @@
             </div>
         </section>
     </footer>
+    -->
 </body>
 
 </html>

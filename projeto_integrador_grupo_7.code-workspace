@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../projetos_talent_cloud/projeto_integrador_grupo_7/scripts"
+		},
+		{
+			"path": "../../projetos_talent_cloud/projeto_integrador_grupo_7/css"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502
+	}
+}

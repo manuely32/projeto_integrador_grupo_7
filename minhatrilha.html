@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <!--script para importar o header e footer -->
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
@@ -11,6 +16,7 @@
 
     <!-- Importação de arquivos css -->
     <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/minha_trilha.css">
 
     <title>NovaVida</title>
 </head>
@@ -18,18 +24,22 @@
 <body>
     <header></header>
     <main>
-        <h1><strong>Minha Trilha</strong></h1>
+        <div style="height: 65px;"></div>
+        <div id="container_text">
+            <h1> <img src="/img/trilhaicone.svg" alt="icone minhatrilha" width="100px"><strong>Minha Trilha</strong>
+            </h1>
+            <p>Esta trilha foi criada especialmente para você e o bebê, onde iremos te guiar atráves de tarefas simples
+                e
+                essenciais para uma gestação <strong>Saudável</strong>,
+                pode contar com a gente nessa jornada!
+            </p>
 
-        <p>Esta trilha foi criada especialmente para você e o bebê, onde iremos te guiar atráves de tarefas simples e
-            essenciais para uma gestação <strong>Saudável</strong>,
-            pode contar com a gente nessa jornada!
-        </p>
+            <h2>Complete as Tarefas e Ganhe Corações</h2>
+        </div>
 
-        <h2>Complete as Tarefas e Ganhe Corações</h2>
-
-        <section>
-            <h1>SEMANA 1</h1>
-            <img src="/img/barratrilha.png" alt="barra da trilha de tarefas"> <br>
+        <section class="tarefas_semanais">
+            <h1 class="titulo_semana">SEMANA 1</h1>
+            <img src="/img/barratrilha.png" alt="barra da trilha de tarefas" width="500"> <br>
 
             <label>
                 <input type="checkbox" name="tarefa_1" id="tarefa1">
@@ -53,9 +63,9 @@
             </label> <br>
         </section>
 
-        <section>
-            <h1>SEMANA 2</h1>
-            <img src="/img/barratrilhavazia.png" alt="barra da trilha de tarefas vazia"> <br>
+        <section class="tarefas_semanais">
+            <h1 class="titulo_semana">SEMANA 2</h1>
+            <img src="/img/barratrilhavazia.png" alt="barra da trilha de tarefas vazia" width="500"> <br>
             <label>
                 <input type="checkbox" name="tarefa_6" id="tarefa6">
                 <strong>TAREFA 6 - TESTE PARA HEPATITE B</strong>
@@ -70,18 +80,18 @@
             </label> <br>
             <label>
                 <input type="checkbox" name="tarefa_9" id="tarefa9">
-                <strong>TAREFA 9 - ADICIONE UMA FOTO DA BARRIGA NO ÁLBUM DO BEBÊ</strong> <button> <a
-                        href="./album.html" target="_blank">IR PARA ÁLBUM</a></button>
-            </label> <br>
+                <strong>TAREFA 9 - ADICIONE UMA FOTO DA BARRIGA NO ÁLBUM DO BEBÊ</strong>
+                <a id="button_album" href="./album.html" target="_blank">IR PARA ÁLBUM</a>
+            </label><br>
             <label>
                 <input type="checkbox" name="tarefa_10" id="tarefa10">
                 <strong>TAREFA 10 - VACINA INFLUENZA(GRIPE)</strong>
             </label> <br>
         </section>
 
-        <section>
-            <h1>SEMANA 3</h1>
-            <img src="/img/barratrilhavazia.png" alt="barra da trilha de tarefas vazia"> <br>
+        <section class="tarefas_semanais">
+            <h1 class="titulo_semana">SEMANA 3</h1>
+            <img src="/img/barratrilhavazia.png" alt="barra da trilha de tarefas vazia" width="500"> <br>
             <label>
                 <input type="checkbox" name="tarefa_11" id="tarefa11">
                 <strong>TAREFA 11 - COMER OVOS(Super Alimento)</strong>

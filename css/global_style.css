@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -12,13 +13,21 @@
 
 /* Estilizações do header */
 header {
-    display: flex;
-    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 5;
     background-color: var(--color-secondary);
     color: var(--color-primary);
-    align-items: center;
     padding: 0.5rem 1rem; 
+    width:100%;
     box-shadow: 0px 0px 5px 0px #fce5ec; 
+}
+
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 #logo {
@@ -74,6 +83,10 @@ a {
     opacity: 0.5;  
 }
 
+#banner_pagina_principal_cadastro a {
+    width: 150px;
+}
+
 /* Estilização do footer */
 footer {
     background-color:var(--color-secondary);
@@ -103,4 +116,38 @@ footer {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+/*Estilização banner pagina principal */
+#banner_pagina_principal{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 35px;
+    margin: auto;
+    color:#212121;
+    font-size: 25px;
+  }
+
+#banner_pagina_principal img{
+    border-radius: 5%;
+}
+
+#banner_pagina_principal_cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    margin: auto;
+    width: 65%;
+    height: 250px;
+    font-size: 20px;
+}
+
+#banner_pagina_principal_cadastro p {
+    color:#212121;
+    margin: 35px;
+    display: block; 
 }

@@ -2,7 +2,6 @@ main {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    height: 100vh;
     background-color: var(--main-bg-color);
     color:#212121;
 }
@@ -16,7 +15,9 @@ main {
     gap: 10px;
     border-radius: 5px;
     margin: 30px 70px 40px 70px;
-    box-shadow: 0px 0px 3px 0px #fcc1ec;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);
+    font-size: 14px;
+    //box-shadow: 0px 0px 3px 0px #fcc1ec;
 }
 
 #section-desenvolvedores {
@@ -31,7 +32,7 @@ main {
 .container-desenvolvedores {
     display: flex;
     justify-content: space-between;
-    gap: 25px ;
+    gap: 40px ;
 }
 
 .card-desenvolvedores {
@@ -44,10 +45,12 @@ main {
     gap: 10px;
     border-radius: 5px;
     padding:10px;
-    box-shadow: 0px 0px 3px 0px #fcc1ec;
+    box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);
+    font-size: 14px;
+    //box-shadow: 0px 0px 3px 0px #fcc1ec;
 }
 
 main img {
-    border-radius: 50px;
+    border-radius: 8px;
     box-shadow: 0px 0px 3px 0px #fcc1ec;
 }

@@ -17,8 +17,8 @@ main {
     align-items: center;
     width: 50%;
     background-color:  var(--color-secondary);
-    border-radius: 10px;  
-    box-shadow: 0px 0px 5px 0px #fce5ec;  
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #fce5ec;  
 }
 
 .first-column {

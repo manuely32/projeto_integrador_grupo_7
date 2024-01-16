@@ -4,85 +4,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!--script para importar o header e footer -->
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="scripts/script.js" type="text/javascript" defer></script>
+    <script src="scripts/script_index.js" type="text/javascript" defer></script>
 
     <!-- Importação de arquivos css -->
     <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/index.css">
     <title>NovaVida</title>
 </head>
 
 <body>
     <header></header>
     <main>
-        <section class="carrossel_pagina_principal">
-            <input type="radio" name="carrossel" id="slide1" checked>
-            <input type="radio" name="carrossel" id="slide2">
-            <input type="radio" name="carrossel" id="slide3">
-            <input type="radio" name="carrossel" id="slide4">
-
-            <div class="slides_do_carrossel_index">
-                <div class="slide_carrossel_index">
-                    <img src="/img/" alt="imagem do carrrossel">
-                </div>
-                <div class="slide_carrossel_index">
-                    <img src="/img/" alt="imagem do carrrossel">
-                </div>
-                <div class="slide_carrossel_index">
-                    <img src="." alt="imagem do carrrossel">
-                </div>
-                <div class="slide_carrossel_index">
-                    <img src="/img/" alt="imagem do carrrossel">
-                </div>
+        <div style="height: 65px;"></div>
+        <section style="background-color: blueviolet; position: relative;">
+            <div id="carroussel" style="position: relative; z-index: 0; width: 100%; height: 80vh; overflow: hidden;">
+                <img class="active" onmouseover="pararContador()" onmouseout="ativarContador()"
+                    style="width:100%; position:absolute; z-index: -1;" src="./img/imagem_maternidade.jpg" alt="">
+                <img class="" onmouseover="pararContador()" onmouseout="ativarContador()"
+                    style="width: 100%; position: absolute; z-index: -2;" src="./img/imagem-carrossel2.jpg" alt="">
+                <img class="" onmouseover="pararContador()" onmouseout="ativarContador()"
+                    style="width: 100%; position: absolute; z-index: -3;" src="./img/imagem-carrossel3.jpg" alt="">
             </div>
-
-            <div class="navigation_slide_carrossel">
-                <label for="slide1"></label>
-                <label for="slide2"></label>
-                <label for="slide3"></label>
-                <label for="slide4"></label>
-            </div>
-
+            <button
+                style="position: absolute; z-index: 1;  top: 0px; left: 0px; height: 100%; border: none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
+                id="anteriorImagem" onclick="alterarImagem(-1)">&#10094</button>
+            <button
+                style="position: absolute; z-index: 1;  top: 0px; right: 0px; height: 100%; border: none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
+                id="proximaImagem" onclick="alterarImagem(1)">&#10095</button>
         </section>
 
-        <section id="texto_pagina_principal" class="corpo_principal">
+        <section id="banner_pagina_principal" class="corpo_principal">
             <!--<h1>Corpo da Pagina</h1>-->
             <h2> Acompanhe o desenvolvimento do seu bebê</h2>
             <img src="/img/imagem_bebe_da_sessao_corpo_principal.jpg" alt="foto de um bebê no utero">
-            <p>Cadastre-se e tenha uma trilha <strong>EXCLUSIVA</strong> feita especialmente para você e seu bebê.
-            <p>
-                <button id="butao_cadastro_corpo_principal"> <a href="/cadastro.html">CADASTRAR</a></button>
-        </section>
-
-        <section id="dicas" class="corpo_principal">
-            <h3>Dicas</h3>
-
-            <div id="link_dicas_1" class="link_dicas">
-                <img src="/img/imagem_dicas_link_1.jpg" alt="foto contendo carne e vegetais">
-                <p>Quais alimentos devemos evitar no período da gravidez?</p>
-            </div>
-
-            <div id="link_dicas_2" class="link-dicas">
-                <img src="/img/imagem_dicas_link_2.jpg" alt="foto contendo pães e bolos">
-                <p> Quais alimentos são ideiais na gravidez?</p>
-            </div>
 
         </section>
 
-        <section id="curiosidade" class="corpo_principal">
-            <h3>Curiosidade</h3>
+        <section id="banner_pagina_principal_cadastro">
+            <p>Cadastre-se e tenha uma trilha <strong>EXCLUSIVA</strong> feita especialmente para você e seu bebê.</p>
+            <a class="btn" href="/cadastro.html">Cadastrar</a>
+        </section>
 
-            <div id="link_curiosidade_1" class="link_curiosidades">
-                <img src="/img/imagem_link_curiosidade_1.png" alt="simbolo do livro dos record, o guiness book">
-                <p>O maior bebê do mundo nasceu nos Estaddos Unidos, em 1979. Ele pesava 10,8 kg e media 76 centímetros
-                </p>
-            </div>
-            <div id="link_curiosidade_2" class="link_curiosidades">
-                <a href="/curiosidades.html"> <img src="/img/imagem_link_curiosidade_2.jpg"
-                        alt="um corpo de bebê em desenvolvimento no utero"></a>
-                <p>Bebês "fazem xixi" quando estão dentro do útero</p>
+        <section id="sectionCards" style="padding: 40px 0px 40px 0px;">
+            <div style="">
+                <div style="">
+                    <h2 style="padding: 0px 20px 10px 20px;">Artigos</h2>
+                    <div id="containerCardsArticles" style="">
+
+                        <!--  <div class="cardArtigo" style="">
+                            <a href="" style="text-decoration: none; color: #f76363;">
+                                <p class="paragrafoCardArtigo" style="">
+                                    <img style="margin: 0px 10px 0px 0px ;aspect-ratio: 3/2; width: 140px; box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);float:left;" src="./img/images_1.jpg" alt="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero quas animi id adipisci dignissimos quo voluptate illum illo, ipsa porro, libero, nobis harum sint dicta debitis? Numquam et in quasi! Eum nisi repudiandae voluptate rerum inventore impedit sapiente possimus ipsum modi adipisci. Voluptas, veritatis. Quidem doloribus quam molestias amet.
+                                </p>
+                            </a>
+                        </div>  -->
+
+                    </div>
+                </div>
+                <div style="">
+                    <h2 style="padding: 30px 20px 10px 20px;">Curiosidades</h2>
+                    <div id="containerCardsCuriosities" style="">
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>

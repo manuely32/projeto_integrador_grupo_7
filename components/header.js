@@ -1,18 +1,10 @@
-class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
+const header = document.querySelector("header")
 
-    connectedCallback() {
-        this.innerHTML = `
-          
-          <header>
+header.innerHTML = `
             <div id="logo">
-                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="50"></a>
-
-                <h1><strong>Nova Vida</strong></h1>
-            </div>
-            <nav>
+                <a href="index.html"><img src="img/logo2.png" alt="logo nova vida" width="130"></a>
+             </div>
+             <nav>
                 <ul>
                     <li><a href="minhatrilha.html">Minha Trilha</a></li>
                     <li><a href="album.html">Álbum do Bebê</a></li>
@@ -20,16 +12,11 @@ class Header extends HTMLElement {
                     <li><a href="curiosidades.html">Curiosidades</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li id="btn-cadastro"><a href="cadastro.html">Cadastre-se</a></li>
-                </ul>
-            </nav>
-            <div class="div-user">
-                <p id="nome"><p>
+                 </ul>
+             </nav>
+             <div class="div-user">
+                 <p id="nome"><p>
                 <a class="btn" id="btn-login" href="login.html">Login</a>
-                <a class="btn" style="display:none" id="btn-sair" href="index.html" onclick="sair()">Sair</a>
-            </div>    
-        </header>
-        `;
-    }
-}
-
-customElements.define('header-component', Header)
+                 <a class="btn" style="display:none" id="btn-sair" href="index.html" onclick="sair()">Sair</a>
+            </div>  
+        `

@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
 
     <!--script para importar o header e footer -->
     <script src="components/header.js" type="text/javascript" defer></script>
@@ -20,29 +24,28 @@
 </head>
 
 <body>
-    <header-component></header-component>
+    <header></header>
     <main>
         <!-- Formulário de cadastro -->
         <div class="content">
             <div class="first-column">
-                <img src="img/logosite.png" alt="Logo do site" width="90">
-                <p class="title">NovaVida</p>
+                <img src="img/logo2.png" alt="Logo do site" width="200">
             </div>
             <div class="second-column">
                 <p class="title">Cadastre-se</p>
-                <form action="login.html" class="form-content">
+                <form class="form-content">
 
-                    <input type="text" placeholder="Nome completo" required>
-                    <input type="email" placeholder="E-mail" required>
-                    <input type="password" placeholder="Digite a senha" required>
-                    <input type="password" placeholder="Confirme a senha" required>
+                    <input id="nome" type="text" placeholder="Nome completo" required>
+                    <input id="email" type="email" placeholder="E-mail" required>
+                    <input id="senha" type="password" placeholder="Digite a senha" required>
+                    <input id="confirma_senha" type="password" placeholder="Confirme a senha" required>
 
-                    <button type="submit" class="btn">Cadastrar</button>
+                    <button type="button" onclick="cadastro()" class="btn">Cadastrar</button>
                 </form>
             </div>
         </div>
     </main>
-    <footer-component></footer-component>
+    <footer></footer>
 </body>
 
 </html>

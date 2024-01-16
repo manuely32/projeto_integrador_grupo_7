@@ -3,32 +3,55 @@ function login() {
     const login = document.getElementById('input-login').value
     const senha = document.getElementById('input-senha').value
 
-    // lista de usuários
-    const usuarios = [
-        {
-            login: "manuely@email.com",
-            senha: "12345",
-            nome: "Manuely Guedes"
-        }
-    ]
-
-    // busca o usuário na lista através do login
-    const usuario = usuarios.find(usuario => usuario.login === login)
-
-    // Verifica se o usuario existe e se a senha é a mesma
-    if (usuario && usuario.senha === senha) {
-        //salva o nome do usuário no localStorage e direciona o usuario para página index.html
-        localStorage.setItem("usuario", usuario.nome)
-        window.location.href = 'index.html';
-    } else {
-        // Informa o usuário que as credencias não batem
-        alert("Usuário ou senha incorretos!")
+    //Verifica se os dados de login foram informados
+    if (!login || !senha) {
+        alert("Informe as credenciais de acesso!")
+        return
     }
+
+    //Busca arquivo json com dados dos usuários
+    fetch("/scripts/dados.json").then((response) => {
+        response.json().then((dados) => {
+            // busca o usuário na lista através do login
+            const usuario = dados.usuarios.find(usuario => usuario.login === login)
+
+            // Verifica se o usuario existe e se a senha é a mesma
+            if (usuario && usuario.senha === senha) {
+                //Salva o nome do usuário no localStorage e direciona o usuario para página index.html
+                localStorage.setItem("usuario", usuario.nome)
+                window.location.href = 'index.html';
+            } else {
+                // Informa o usuário que as credencias não batem
+                alert("Usuário ou senha incorretos!")
+            }
+        })
+    })
 }
 
 function sair() {
     // Remove o usuário do localStorage
     localStorage.removeItem("usuario")
+}
+
+function cadastro() {
+    //obtem os dados de cadastro
+    const nome = document.getElementById('nome').value
+    const email = document.getElementById('email').value
+    const senha = document.getElementById('senha').value
+    const confirma_senha = document.getElementById('confirma_senha').value
+
+    if (!nome || !email || !senha || !confirma_senha) {
+        alert('Dados incompletos!')
+        return
+    }
+
+    if (senha === confirma_senha) {
+        //Direciona o usuario para página login.html
+        window.location.href = 'login.html'
+    } else {
+        // Informa o usuário que as senhas não são iguais
+        alert("Senhas informadas são diferentes!")
+    }
 }
 
 // função que verifica se tem usuário logado e esconde algumas opções da barra de navegação

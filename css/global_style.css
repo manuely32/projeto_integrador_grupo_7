@@ -1,12 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root {
     --color-primary: #ED0E64;
-    --color-secondary: #fce4ec;
+    --color-secondary:#fce4ec;
     --main-bg-color:#FFFAF0;
 }
 
@@ -64,7 +64,9 @@ a {
     background-color: var(--color-primary);
     color:white;
     cursor: pointer;
-    align-content: flex-end;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 500ms linear; 
 } 
 

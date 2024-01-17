@@ -1,9 +1,3 @@
-:root {
-    --color-primary: #ED0E64;
-    --color-secondary:#fce4ec;
-    --main-bg-color:#FFFAF0;
-}
-
 #carroussel img {
     opacity: 0;
     transition: opacity 1s;

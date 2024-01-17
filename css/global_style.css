@@ -83,10 +83,6 @@ a {
     opacity: 0.5;  
 }
 
-#banner_pagina_principal_cadastro a {
-    width: 150px;
-}
-
 /* Estilização do footer */
 footer {
     background-color:var(--color-secondary);
@@ -120,14 +116,16 @@ footer {
 
 /*Estilização banner pagina principal */
 #banner_pagina_principal{
-    width: 85%;
+    width: 100%;
+    padding: 50px 200px 0 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-top: 35px;
-    margin: auto;
+    /* margin: auto; */
     color:#212121;
-    font-size: 25px;
+    background-color: #E7F0F3;
+    font-size: 20px;
+    font-weight: 500;
   }
 
 #banner_pagina_principal img{
@@ -139,11 +137,19 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 25px;
+    background-color: #E7F0F3;
+    /* padding-top: 25px;
     margin: auto;
-    width: 65%;
-    height: 250px;
+    width: 65%; */
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    //height: 250px;
     font-size: 20px;
+}
+
+#banner_pagina_principal_cadastro a {
+    width: 150px;
 }
 
 #banner_pagina_principal_cadastro p {

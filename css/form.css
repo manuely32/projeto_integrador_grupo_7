@@ -7,7 +7,9 @@ main {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: var(--main-bg-color);
+    background-image: url(/img/imagem_maternidade.jpg);
+    background-size: cover;
+    /* background-color: var(--main-bg-color); */
     color:#212121;
 }
 
@@ -15,8 +17,8 @@ main {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    width: 50%;
-    background-color:  var(--color-secondary);
+    //background-color:  var(--color-secondary);
+    background-color: rgba(252,228,236,.7);
     border-radius: 10px;
     box-shadow: 0px 0px 5px #fce5ec;  
 }
@@ -41,7 +43,8 @@ main {
     padding: 50px;
     flex: 2 0 auto;
     border-radius: 0px 10px 10px 0px;
-    background-color:  white;
+    background-color:  rgba(255,255,255,.7);
+    //background-color:  white;
 }
 
 .form-content {
@@ -61,19 +64,34 @@ main {
 }
 
 input{
-    display: flex;
-    flex-direction: column;
-    border: 0px;
-    border-radius: 5px;
-    height: 30px;
+    border: none;
+    border-radius: 4px;
+    height: 32px;
     width: 200px;
-    padding: 0 0.2rem;
+    padding: 0.5rem;
     box-shadow: 0px 0px 5px 0px #8c8c8c;
 }
 
 input:focus {
     border:1px solid #8c8c8c;
     outline:none; 
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding-top: 50px;
+        width: 100vw;
+        height: auto;
+        padding-bottom:50px;
+    }
+
+    .first-column {
+        display:none;
+    }
+
+    .second-column {
+        border-radius: 10px;
+    }
 }
 
 

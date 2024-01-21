@@ -63,25 +63,28 @@ function verificarUsuario() {
     // Busca no storage o usuario
     const usuario = localStorage.getItem("usuario")
 
-    // Se pagina atual esta na lista de paginas autenticas e não há usuário logado, o usuário é redirecionado para página de login 
+    // Se pagina atual esta na lista de paginas autenticadas e não há usuário logado, o usuário é redirecionado para página de login 
     if (paginasAutenticadas.includes(url_atual) && !usuario) {
         window.location.href = 'login.html';
         return
     }
 
     // Se o usuário existe, esconde opções da barra de navegação e adiciona o nome do usuário
+    const login = document.getElementById('btn-login')
+    const sair = document.getElementById('btn-sair')
+
     if (usuario !== null) {
-        const login = document.getElementById('btn-login')
-        const sair = document.getElementById('btn-sair')
         const cadastro = document.getElementById('btn-cadastro')
         const nomeUsuario = document.querySelector('#nome')
+
         // adicionando nome do usuário
         nomeUsuario.textContent = `Olá! ${usuario}`
         // escondendo opção cadastro e login
         cadastro.style.display = "none"
         login.style.display = "none"
-        // exibindo opção sair
+        // mostrando opção de sair
         sair.style.display = "block"
+
     } else {
         const nomeUsuario = document.querySelector('#nome')
         // removendo nome do usuário
@@ -90,3 +93,12 @@ function verificarUsuario() {
 }
 
 verificarUsuario()
+
+function mostrarMenu() {
+    const elementoNav = document.querySelector('nav')
+    elementoNav.classList.toggle('menuShow')
+}
+
+document.querySelector('.menu').addEventListener('click', mostrarMenu)
+
+

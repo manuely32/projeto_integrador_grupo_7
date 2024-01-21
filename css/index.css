@@ -10,7 +10,48 @@
 main {
     background-color:var(--main-bg-color);
     color:#212121;
+    /* width: 100vw; */
 }
+
+/*Estilização banner pagina principal */
+#banner_pagina_principal{
+    background-color: #E7F0F3;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-top: 70px;
+    gap: 20px;
+    font-size: 20px;
+    color:#212121;
+  }
+
+#banner_pagina_principal img{
+    width: 400px;
+    border-radius: 5%;
+}
+
+#banner_pagina_principal_cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E7F0F3;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+#banner_pagina_principal_cadastro a {
+    width: 150px;
+}
+
+#banner_pagina_principal_cadastro p {
+    color:#212121;
+    margin: 35px;
+    display: block; 
+}
+
 
 #containerCardsArticles, #containerCardsCuriosities{
     width: 100%;
@@ -36,6 +77,7 @@ main {
     font-size: 14px;
     text-align: left;
 }
+
 .cardArtigo img {
     border-radius: 8px;
 }
@@ -47,24 +89,52 @@ main {
       -webkit-line-clamp: 9; /* Número desejado de linhas */
 }
 
-@media screen and (max-width: 600px) {
-    main{
+@media screen and (max-width: 800px) {
+    #banner_pagina_principal {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    #banner_pagina_principal h2 {
+        font-size: 20px;
+    }
+
+    #banner_pagina_principal img{
+        width: 200px;
+    }
+
+    .containerCards{
+        width: 100%;
+    }
+    .cardArtigo{
+       /*  min-width: 316.5px; */
+        width: 100%;
+    }
+
+    #carroussel{
+        height: 50vh;
+    }
+
+    /* main{
         min-width: 600px;
         margin: 0 auto;
-    }
+    } 
     header {
         height: fit-content;
-    }
+    } 
     #moldura-exterior{
         display: flex;
         flex-direction: column;
-        /* border: 2px solid;  */
+         //border: 2px solid;  
         height: 100%; 
         width: 100%;
     }
     #moldura-exterior div:nth-child(1){
         width: 100%;
-       /*  border: 1px solid; */
+       // border: 1px solid; 
         padding: 5px;
     }
     #moldura-exterior div:nth-child(2){
@@ -76,20 +146,21 @@ main {
         align-items: start; 
         justify-content: space-between; 
         flex-direction: column;
-     /*    border: 2px solid; */
+        border: 2px solid; 
         height: 100%;
         width: 100%;
     }
     #moldura-exterior div:nth-child(2) ul li{
         padding: 5px;
-       /*  border: 1px solid; */
+       //  border: 1px solid; 
         width: 100%;
-    }
-    .containerCards{
-        width: 100%;
-    }
-    .cardArtigo{
-       /*  min-width: 316.5px; */
-        width: 100%;
+    }*/
+}
+
+@media screen and (max-width: 400px) {
+    #banner_pagina_principal {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
+

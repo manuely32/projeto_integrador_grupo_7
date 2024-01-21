@@ -13,14 +13,16 @@
 
 /* Estilizações do header */
 header {
-    position: fixed;
+    position: sticky;
     top:0;
-    left:0;
-    z-index: 5;
+    z-index: 5; 
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    /* width:100vw; */
     background-color: var(--color-secondary);
     color: var(--color-primary);
     padding: 0.5rem 1rem; 
-    width:100%;
     box-shadow: 0px 0px 5px 0px #fce5ec; 
 }
 
@@ -28,16 +30,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-#logo {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+    gap: 30px;
 }
  
-#btn-login{
-    color:white;
+#btn-sair {
+    display:none;
 }
 
 nav ul {
@@ -46,7 +43,7 @@ nav ul {
 }
 
 nav ul li{
-    margin: 10px;
+    padding: 10px;
 }
 
 ul {
@@ -58,11 +55,20 @@ a {
     color: var(--color-primary);
 }
 
+nav ul li a:hover {
+    opacity: 0.5;  
+}
+
 .div-user {
     display: flex;
     align-items: center;
     gap: 10px;
 }
+
+.menu {
+    display:none;
+}
+
 
 /* Estilização de botões */
 .btn {
@@ -87,6 +93,7 @@ a {
 footer {
     background-color:var(--color-secondary);
     color: var(--color-primary);
+    height: auto;
 }
 
 .rodape_pagina_principal {
@@ -94,6 +101,7 @@ footer {
     justify-content: space-around;
     padding: 2rem;
     align-items: center;
+    width: 100%;
 }
 
 #link_rede_socias_rodape {
@@ -114,46 +122,73 @@ footer {
     gap: 0.5rem;
 }
 
-/*Estilização banner pagina principal */
-#banner_pagina_principal{
-    width: 100%;
-    padding: 50px 200px 0 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* margin: auto; */
-    color:#212121;
-    background-color: #E7F0F3;
-    font-size: 20px;
-    font-weight: 500;
-  }
 
-#banner_pagina_principal img{
-    border-radius: 5%;
-}
+@media screen and (max-width: 700px) { 
+    header {
+        align-items: start;
+        padding: 0.5rem;
+    }
 
-#banner_pagina_principal_cadastro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #E7F0F3;
-    /* padding-top: 25px;
-    margin: auto;
-    width: 65%; */
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    //height: 250px;
-    font-size: 20px;
-}
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
 
-#banner_pagina_principal_cadastro a {
-    width: 150px;
-}
+    nav {
+        display:none;
+    }
 
-#banner_pagina_principal_cadastro p {
-    color:#212121;
-    margin: 35px;
-    display: block; 
-}
+    .div-user {
+        font-size: 13px;
+        padding-top: 6px;
+    }
+
+    .container_header{
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .div-user a {
+        padding: 6px 20px;
+     }
+
+    .menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* .menu:hover{
+        opacity: 0.5;  
+    } */
+
+    .menuShow {
+        display: flex;
+    }
+
+    .rodape_pagina_principal {
+        padding: 2rem;
+        gap: 10px;
+    }
+
+    #link_rede_socias_rodape {
+        font-size: 13px; 
+    }
+
+    #logo_rodape a img {
+        width: 150px;
+    }
+} 
+
+@media screen and (max-width: 800px) { 
+    nav {
+        font-size: 13px;
+    }
+
+    .div-user {
+        font-size: 13px;
+        padding-top: 6px;
+    }
+} 

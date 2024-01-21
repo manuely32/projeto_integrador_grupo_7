@@ -1,8 +1,7 @@
 const footer = document.querySelector("footer")
 
 footer.innerHTML = `
-                    <footer>
-                    <section class="rodape_pagina_principal" id="rodape">
+                    <div class="rodape_pagina_principal" id="rodape">
                         <div id="logo_rodape" class="rodape_elemento_pagina_principal">
                             <a href="index.html"><img src="img/logo2.png"  alt="logo nova vida" ></a>
                         </div>
@@ -19,6 +18,5 @@ footer.innerHTML = `
                                 </li>
                             </ul>
                         </div>
-                    </section>
-                    </footer>  
+                    </div>
                 `

@@ -1,0 +1,132 @@
+/* 46AFCF */
+/* #fce4ec */
+/* #ffedbb */
+
+main {
+    display: flex; 
+    justify-content: center;
+    padding-right: 50px;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/img/imagem_maternidade.jpg);
+    background-size: cover;
+    /* background-color: var(--main-bg-color); */
+    color:#212121;
+}
+
+.content {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    //background-color:  var(--color-secondary);
+    background-color: rgba(252,228,236,.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #fce5ec;  
+}
+
+.first-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    gap: 10px;
+    padding: 50px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.second-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 30px;
+    padding: 50px;
+    flex: 2 0 auto;
+    border-radius: 0px 10px 10px 0px;
+    background-color:  rgba(255,255,255,.7);
+    //background-color:  white;
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;  
+}
+
+.form-content button {
+    width: 100%;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    border-radius: 4px;
+    height: 32px;
+    width: 250px;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 5px 0px #8c8c8c;
+}
+
+input:focus {
+    border:1px solid #8c8c8c;
+    outline:none; 
+}
+
+.form-content a:hover {
+    opacity: 0.5;
+}
+
+.error-text {
+    display: none;
+    font-size: .7rem;
+    font-weight: 600;
+    color: var(--text-msg-erro);
+}
+
+input.error {
+    border: solid 2px var(--text-msg-erro);
+    background-color: #CCBBBB;
+    color: var(--text-msg-erro);
+  }
+  
+input.correct {
+    background-color: #BBCCBB;
+    color: #206620;
+}
+
+.credencial-text{
+    display: none;
+    font-size: .7rem;
+    font-weight: 600;
+    color: var(--text-msg-erro);
+}
+
+
+.visible {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        padding-top: 50px;
+        width: 100vw;
+        height: auto;
+        padding-bottom:50px;
+    }
+
+    .first-column {
+        display:none;
+    }
+
+    .second-column {
+        border-radius: 10px;
+    }
+}
+
+

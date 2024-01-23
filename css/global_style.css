@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --color-primary: #ED0E64;
+    --color-secondary:#fce4ec;
+    --main-bg-color:#FFFAF0;
+    --text-msg-erro: #e65100;
+}
+
+/* Estilizações do header */
+header {
+    position: sticky;
+    top:0;
+    z-index: 5; 
+    display: flex;
+    justify-content: space-between;
+    //align-items: center;
+    /* width:100vw; */
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 0.5rem 1rem; 
+    box-shadow: 0px 0px 5px 0px #fce5ec; 
+}
+
+.container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+ 
+#btn-sair {
+    display:none;
+}
+
+nav ul {
+    display:flex;
+    justify-content: center;
+}
+
+nav ul li{
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+nav ul li a:hover {
+    opacity: 0.5;  
+}
+
+.div-user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    display:none;
+}
+
+
+/* Estilização de botões */
+.btn {
+    border: 0px;
+    box-shadow: 0px 0px 1px 0px #8c8c8c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--color-primary);
+    color:white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms linear; 
+} 
+
+.btn:hover{
+    opacity: 0.5;  
+}
+
+/* Estilização do footer */
+footer {
+    background-color:var(--color-secondary);
+    color: var(--color-primary);
+    height: auto;
+}
+
+.rodape_pagina_principal {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    align-items: center;
+    width: 100%;
+}
+
+#link_rede_socias_rodape {
+    display: flex;
+    flex-direction:column;
+    gap: 1rem;
+}
+
+#link_rede_socias_rodape ul {
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+}
+
+#link_rede_socias_rodape ul li a{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+@media screen and (max-width: 700px) { 
+    header {
+        align-items: start;
+        padding: 0.5rem;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav {
+        display:none;
+    }
+
+    .div-user {
+        font-size: 13px;
+        padding-top: 6px;
+    }
+
+    .container_header{
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .div-user a {
+        padding: 6px 20px;
+     }
+
+    .menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* .menu:hover{
+        opacity: 0.5;  
+    } */
+
+    .menuShow {
+        display: flex;
+    }
+
+    .rodape_pagina_principal {
+        padding: 2rem;
+        gap: 10px;
+    }
+
+    #link_rede_socias_rodape {
+        font-size: 13px; 
+    }
+
+    #logo_rodape a img {
+        width: 150px;
+    }
+} 
+
+@media screen and (max-width: 800px) { 
+    nav {
+        font-size: 13px;
+    }
+
+    .div-user {
+        font-size: 13px;
+        padding-top: 6px;
+    }
+} 

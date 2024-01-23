@@ -4,10 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--script para importar o header e footer -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+    <script src="scripts/script_cadastro.js" type="text/javascript" defer></script>
+
+    <!-- Importação de arquivos css -->
+    <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/form.css">
     <title>NovaVida</title>
 </head>
 
 <body>
+<<<<<<< HEAD
     <header>
         <div id="logo_cabecalho">
             <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
@@ -33,36 +48,56 @@
         </nav>
     </header>
 
+=======
+    <header></header>
+>>>>>>> 2dc2079b945f796a96eae23c6c57e03fe007ccfd
     <main>
         <!-- Formulário de cadastro -->
-        <div>
-            <img src="img/logosite.png" alt="Logo do site" width="80">
-            <form action="login.html">
-                <div>
+        <div class="content">
+            <div class="first-column">
+                <img src="img/logo2.png" alt="Logo do site" width="200">
+            </div>
+            <div class="second-column">
+                <p class="title">Cadastre-se</p>
+                <form class="form-content">
                     <div>
-                        <label for="">Nome</label>
+                        <input id="nome" type="text" placeholder="Nome completo" required>
+                        <p class="error-text">*Campo obrigatório</p>
                     </div>
+<<<<<<< HEAD
                     <input type="text" name="nome" id="nome" required>
                 </div>
 
                 <div>
+=======
+>>>>>>> 2dc2079b945f796a96eae23c6c57e03fe007ccfd
                     <div>
-                        <label for="">Sobrenome</label>
+                        <input id="email" type="email" placeholder="E-mail" required>
+                        <p class="error-text">*Campo obrigatório</p>
                     </div>
+<<<<<<< HEAD
                     <input type="text" name="sobrenome" id="sobrenome" required>
                 </div>
 
                 <div>
+=======
+>>>>>>> 2dc2079b945f796a96eae23c6c57e03fe007ccfd
                     <div>
-                        <label for="">Endereço de e-mail</label>
+                        <input id="senha" type="password" placeholder="Digite a senha" required>
+                        <p class="error-text">*Campo obrigatório</p>
                     </div>
+<<<<<<< HEAD
                     <input type="email" name="email" id="email" required>
                 </div>
 
                 <div>
+=======
+>>>>>>> 2dc2079b945f796a96eae23c6c57e03fe007ccfd
                     <div>
-                        <label for="">Telefone</label>
+                        <input id="confirma_senha" type="password" placeholder="Confirme a senha" required>
+                        <p class="error-text">*Campo obrigatório</p>
                     </div>
+<<<<<<< HEAD
                     <input type="text" name="fone" id="fone" required>
                 </div>
 
@@ -110,6 +145,14 @@
             </div>
         </section>
     </footer>
+=======
+                    <button type="button" onclick="cadastro()" class="btn">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+>>>>>>> 2dc2079b945f796a96eae23c6c57e03fe007ccfd
 </body>
 
 </html>

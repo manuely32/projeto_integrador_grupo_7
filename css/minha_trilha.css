@@ -133,3 +133,67 @@ main {
 #button_album:hover{
     opacity: 0.5;  
 }
+
+.content_coracoes {
+    display: flex;
+    background-color:white;
+    padding: 10px;
+    border: 18px solid #FFB4EE;
+    gap: 30px;
+    margin-bottom: 10px;
+    margim-top: 10px;
+    border-radius: 50px;
+}
+
+.content_coracoes img {
+    width: 25px;
+}
+
+@media screen and (max-width: 1100px) { 
+    #container_text h1 strong{
+        font-size: 20px;
+    }
+
+    #container_text p{
+        font-size: 15px;
+    }
+
+    #container_text h2 {
+        font-size: 16px;
+    }
+
+    .tarefas_semanais {
+        width: 80%;
+    }
+
+    .titulo_semana {
+        font-size: 15px;
+    }
+
+    .tarefas_semanais label {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #container_text h1{
+        width: 70%;
+        padding: 10px;
+    }
+    #container_text h1 strong{
+        font-size: 15px;
+    }
+
+    #container_text p{
+        font-size: 13px;
+    }
+
+    #container_text h2 {
+        font-size: 14px;
+    }
+
+    .tarefas_semanais label {
+        font-size: 10px;
+    }
+}
+

@@ -13,6 +13,7 @@
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
     <script src="scripts/script.js" type="text/javascript" defer></script>
+    <script src="scripts/script_cadastro.js" type="text/javascript" defer></script>
 
     <!-- Importação de arquivos css -->
     <link rel="stylesheet" href="css/global_style.css">
@@ -31,12 +32,22 @@
             <div class="second-column">
                 <p class="title">Cadastre-se</p>
                 <form class="form-content">
-
-                    <input id="nome" type="text" placeholder="Nome completo" required>
-                    <input id="email" type="email" placeholder="E-mail" required>
-                    <input id="senha" type="password" placeholder="Digite a senha" required>
-                    <input id="confirma_senha" type="password" placeholder="Confirme a senha" required>
-
+                    <div>
+                        <input id="nome" type="text" placeholder="Nome completo" required>
+                        <p class="error-text">*Campo obrigatório</p>
+                    </div>
+                    <div>
+                        <input id="email" type="email" placeholder="E-mail" required>
+                        <p class="error-text">*Campo obrigatório</p>
+                    </div>
+                    <div>
+                        <input id="senha" type="password" placeholder="Digite a senha" required>
+                        <p class="error-text">*Campo obrigatório</p>
+                    </div>
+                    <div>
+                        <input id="confirma_senha" type="password" placeholder="Confirme a senha" required>
+                        <p class="error-text">*Campo obrigatório</p>
+                    </div>
                     <button type="button" onclick="cadastro()" class="btn">Cadastrar</button>
                 </form>
             </div>

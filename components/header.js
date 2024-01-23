@@ -17,7 +17,7 @@ header.innerHTML = `
                 </nav>
             </div>           
             <div class="div-user">
-                <p id="nome"></p>
+                <p id="nome_usuario"></p>
                 <a class="btn" id="btn-login" href="login.html">Login</a>
                 <a class="btn" id="btn-sair" href="index.html" onclick="sair()">Sair</a>   
                 <div class="menu">

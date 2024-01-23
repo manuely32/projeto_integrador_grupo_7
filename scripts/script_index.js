@@ -26,21 +26,21 @@ function alterarImagem(fator) {
     // Adicionar a classe "active" ao próximo elemento
     elementos[indiceElementoAtivo].classList.add("active");
     console.log(indiceElementoAtivo);
-    // pararContador()
-    // ativarContador()
+    pararContador()
+    ativarContador()
 }
 
-// Usar setInterval para chamar a função a cada 6000 milissegundos (6 segundos)
-// myInterval = setInterval(proximaImagem, 6000);
+//Usar setInterval para chamar a função a cada 6000 milissegundos (6 segundos)
+myInterval = setInterval(proximaImagem, 6000);
 
-// function pararContador() {
-//     clearInterval(myInterval);
-// }
+function pararContador() {
+    clearInterval(myInterval);
+}
 
-// function ativarContador() {
-//     // Usar setInterval novamente para reiniciar o intervalo
-//     myInterval = setInterval(proximaImagem, 6000);
-// }
+function ativarContador() {
+    // Usar setInterval novamente para reiniciar o intervalo
+    myInterval = setInterval(proximaImagem, 6000);
+}
 
 
 const postsArticles = [
@@ -73,7 +73,7 @@ for (let i = 0; i < postsArticles.length; i++) {
     const cards = document.createElement('div');
     cards.classList.add('cardArtigo');
     cards.innerHTML = `
-        <a href="${postsArticles[i].link_post}" style="text-decoration: none;">
+        <a href="${postsArticles[i].link_post}" target='blank' style="text-decoration: none;">
             <p class="paragrafoCardArtigo" style="">
             <img style="margin: 0px 10px 0px 0px ;aspect-ratio: 3/2; width: 140px; box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);float:left;" src="${postsArticles[i].imagemPost}" alt="">
             ${postsArticles[i].textoPost}
@@ -107,7 +107,7 @@ for (let i = 0; i < postsCuriosities.length; i++) {
     const cards = document.createElement('div');
     cards.classList.add('cardArtigo');
     cards.innerHTML = `
-        <a href="" style="text-decoration: none;">
+        <a href="" target='blank' style="text-decoration: none;">
             <p class="paragrafoCardArtigo" style="">
             <img style="margin: 0px 10px 0px 0px ;aspect-ratio: 3/2; width: 140px; box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);float:left;" src="${postsCuriosities[i].imagemPost}" alt="">
             ${postsCuriosities[i].textoPost}

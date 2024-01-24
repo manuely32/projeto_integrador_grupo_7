@@ -118,6 +118,10 @@ main {
         height: 50vh;
     }
 
+    .section-carrousel{
+        height: 50vh;
+    }
+
     /* main{
         min-width: 600px;
         margin: 0 auto;

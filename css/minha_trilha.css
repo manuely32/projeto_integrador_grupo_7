@@ -44,7 +44,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     width: 50%;
     margin: 0 auto;
     background-color: #9dbcfa;
@@ -66,7 +66,7 @@ main {
 }
 
 #container_text h2{
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     background-color:#9dbcfa;
     border-radius: 10px;
     padding: 10px;
@@ -82,7 +82,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 50vw;
     gap: 5px;
     /* margin: 0 auto;*/
     padding: 30px 0px 30px 0px; 
@@ -101,6 +101,7 @@ main {
     /* margin-bottom: 15px; */
     background-color:#d3def3;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     //border: 2px solid lightblue;
 }
@@ -168,10 +169,18 @@ main {
 
     .titulo_semana {
         font-size: 15px;
+        padding: 15px;
     }
 
     .tarefas_semanais label {
         font-size: 12px;
+    }
+
+    #button_album{
+        width: 80px;
+        padding: 7px;
+        font-size: 8px;
+        border-radius: 5px;
     }
 }
 
@@ -193,7 +202,12 @@ main {
     }
 
     .tarefas_semanais label {
+        padding: 10px;
         font-size: 10px;
+    }
+
+    .titulo_semana {
+        padding: 10px;
     }
 }
 

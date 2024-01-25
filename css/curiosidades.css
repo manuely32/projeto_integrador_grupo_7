@@ -1,0 +1,41 @@
+#container_principal{
+    width: 100%;
+    margin:5% auto;
+    text-align: justify;
+    max-width: 1000px;
+    padding: 100px;
+
+}
+#titulo_pagina{
+
+color: white;
+    background-color:var(--color-primary);
+    border-radius: 15px;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.post_curiosidades{
+    text-align: justify;
+    padding: 20px;
+    
+}
+h3{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.titulo_curiosidades{
+    
+    font-size: 2rem;
+}
+.texto_curiosidades{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    margin-top: 50px;
+}
+
+.imgPost{
+    margin-top: 50px;
+}

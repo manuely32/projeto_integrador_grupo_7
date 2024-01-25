@@ -21,15 +21,28 @@ main {
     margin-bottom: 30px;
 }
 
+#titulo_pagina_trilha{
+    font-size: 5rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 100px;
+    color: white;
+    background-color: var(--color-primary);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+
 #container_text{
+    border: 2px solid lightblue;
     padding: 30px;
     display: flex;
     flex-direction: column;
-    /*letter-spacing: 1px;*/
+    letter-spacing: 1px;
     text-align: center;
     justify-content: center;
     gap: 26px;
-    width: 70%;
+    width: 50%;
     /* margin: 56px auto; */
     background-color: #E7F0F3;
     border-radius: 30px;
@@ -40,6 +53,7 @@ main {
 }
 
 #container_text h1{
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -47,7 +61,7 @@ main {
     font-size: 2.5rem;
     width: 50%;
     margin: 0 auto;
-    background-color: #9dbcfa;
+    background-color: var(--bg_terefas_semanais2);
     border-radius: 10px;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
@@ -55,29 +69,32 @@ main {
 }
 
 #container_text p{
-    background-color: #d3def3af;
+    
+    background-color: #d3def3;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px;
     /*margin: 90px 30px 30px;*/
     font-size: 18px;
 }
 
 #container_text h2{
+    color: white;
     font-size: 1.9rem;
-    background-color:#9dbcfa;
+    background-color:var(--color-primary);
     border-radius: 10px;
     padding: 10px;
-    /*margin: 50px;*/
+    margin: 50px;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);  
 }
 
 .tarefas_semanais {
-    /*border: 2px solid lightblue;*/
+    border: 2px solid lightblue;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,7 +103,7 @@ main {
     gap: 5px;
     /* margin: 0 auto;*/
     padding: 30px 0px 30px 0px; 
-    background-color: #E7F0F3;
+    background-color: rgba(255,250,240,.7);
     border-radius: 30px;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
@@ -140,7 +157,7 @@ main {
     padding: 10px;
     border: 18px solid #FFB4EE;
     gap: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     margin-top: 10px;
     border-radius: 50px;
 }

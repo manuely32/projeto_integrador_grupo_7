@@ -8,7 +8,7 @@ main {
     padding-right: 50px;
     align-items: center;
     height: 100vh;
-    background-image: url(/img/imagem_maternidade.jpg);
+    background-image: url(/img/fotobackgroundcadastro.png);
     background-size: cover;
     /* background-color: var(--main-bg-color); */
     color:#212121;
@@ -18,7 +18,7 @@ main {
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    //background-color:  var(--color-secondary);
+    background-color:  var(--color-secondary);
     background-color: rgba(252,228,236,.7);
     border-radius: 10px;
     box-shadow: 0px 0px 5px #fce5ec;  
@@ -45,7 +45,7 @@ main {
     flex: 2 0 auto;
     border-radius: 0px 10px 10px 0px;
     background-color:  rgba(255,255,255,.7);
-    //background-color:  white;
+    background-color:  white;
 }
 
 .form-content {

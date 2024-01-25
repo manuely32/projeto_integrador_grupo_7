@@ -52,12 +52,12 @@ const postsArticles = [
     {
         imagemPost: './img/artigo2.jpg',
         link_post: 'https://drauziovarella.uol.com.br/doencas-e-sintomas/eclampsia-e-pre-eclampsia/',
-        textoPost: '<strong>Eclâmpsia e Pré-Eclâmpsia</strong>. A gravidez pressupõe o crescimento de um ser geneticamente diferente dentro do útero da mulher, uma vez que herdou metade dos genes do pai. Ela não rejeita esse corpo estranho porque desenvolve mecanismos imunológicos para proteger o feto.'
+        textoPost: '<strong>Eclâmpsia e Pré-Eclâmpsia</strong> . <br> A gravidez pressupõe o crescimento de um ser geneticamente diferente dentro do útero da mulher, uma vez que herdou metade dos genes do pai. Ela não rejeita esse corpo estranho porque desenvolve mecanismos imunológicos para proteger o feto.'
     },
     {
         imagemPost: './img/artigo3.jpg',
         link_post: 'https://drapatriciavarella.com.br/blog/qual-a-importancia-da-atividade-fisica-na-gestacao/',
-        textoPost: '<strong>Qual a importância da atividade física na gestação?</strong> Você já ouviu falar que grávidas não podem praticar exercícios físicos? Pois é! Esse mito foi disseminado e é muito comum ouvi-lo.Mas, a verdade é que realizar exercícios durante a gestação é fundamental para a saúde!'
+        textoPost: '<strong>Qual a importância da atividade física na gestação?</strong> <br> Você já ouviu falar que grávidas não podem praticar exercícios físicos? Pois é! Esse mito foi disseminado e é muito comum ouvi-lo.Mas, a verdade é que realizar exercícios durante a gestação é fundamental para a saúde!'
     },
     {
         imagemPost: './img/artigo4.jpg',
@@ -85,20 +85,20 @@ for (let i = 0; i < postsArticles.length; i++) {
 
 const postsCuriosities = [
     {
-        imagemPost: './img/imagem_link_curiosidade_1.png',
-        textoPost: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero quas animi id adipisci dignissimos quo voluptate illum illo, ipsa porro, libero, nobis harum sint dicta debitis? Numquam et in quasi! Eum nisi repudiandae voluptate rerum inventore impedit sapiente possimus ipsum modi adipisci. Voluptas, veritatis. Quidem doloribus quam molestias amet.'
+        imagemPost: './img/fotoCuriosidades1.png',
+        textoPost: '<strong> Março e maio são os meses com mais nascimentos no Brasil</strong>. Segundo um levantamento feito pela BBC News Brasil, com dados das últimas duas décadas, os meses de março e maio realmente têm mais nascimentos. <br> De acordo com a pesquisa, os números são 17% mais altos que o de nascimentos nos últimos três meses do ano.'
     },
     {
-        imagemPost: './img/imagem_link_curiosidade_1.png',
-        textoPost: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero quas animi id adipisci dignissimos quo voluptate illum illo, ipsa porro, libero, nobis harum sint dicta debitis? Numquam et in quasi! Eum nisi repudiandae voluptate rerum inventore impedit sapiente possimus ipsum modi adipisci. Voluptas, veritatis. Quidem doloribus quam molestias amet.'
+        imagemPost: './img/fotoCuriosidades2.png',
+        textoPost: '<strong>Dormir do lado esquerdo é melhor para a grávida</strong> <br> Deitar do lado direito pode provocar a compressão da veia cava, o que pode aumentar a pressão arterial da mulher. Portanto, se deitar do lado esquerdo é sempre mais confortável e seguro.'
     },
     {
-        imagemPost: './img/imagem_link_curiosidade_1.png',
-        textoPost: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero quas animi id adipisci dignissimos quo voluptate illum illo, ipsa porro, libero, nobis harum sint dicta debitis? Numquam et in quasi! Eum nisi repudiandae voluptate rerum inventore impedit sapiente possimus ipsum modi adipisci. Voluptas, veritatis. Quidem doloribus quam molestias amet.'
+        imagemPost: './img/fotoCuriosidades3.png',
+        textoPost: '<strong>Os bebês abrem os olhos dentro do útero e podem ver a luz do lado de fora</strong>. <br> Embora os olhos de um bebê possam “ver” a luz a partir mais ou menos da semana 16, seus olhos não estão totalmente formados até cerca da semana 20. Os olhos abrem primeiro entre as semanas 26 e 28.'
     },
     {
-        imagemPost: './img/imagem_link_curiosidade_1.png',
-        textoPost: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero quas animi id adipisci dignissimos quo voluptate illum illo, ipsa porro, libero, nobis harum sint dicta debitis? Numquam et in quasi! Eum nisi repudiandae voluptate rerum inventore impedit sapiente possimus ipsum modi adipisci. Voluptas, veritatis. Quidem doloribus quam molestias amet.'
+        imagemPost: './img/fotoCuriosidades4.png',
+        textoPost: '<strong>A dieta da mãe afeta as preferências alimentares futuras de um bebê</strong>. <br> Uma vez que as moléculas de sabor viajam tão facilmente, muitos estudos mostraram que preferências alimentares e aversões a determinados alimentos começam no útero desta maneira. Se a mãe evita certos alimentos, o bebê provavelmente rejeitará esses sabores fora do útero.'
     }
 ];
 for (let i = 0; i < postsCuriosities.length; i++) {
@@ -107,7 +107,7 @@ for (let i = 0; i < postsCuriosities.length; i++) {
     const cards = document.createElement('div');
     cards.classList.add('cardArtigo');
     cards.innerHTML = `
-        <a href="" target='blank' style="text-decoration: none;">
+        <a href="/curiosidades.html" target='blank' style="text-decoration: none;">
             <p class="paragrafoCardArtigo" style="">
             <img style="margin: 0px 10px 0px 0px ;aspect-ratio: 3/2; width: 140px; box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);float:left;" src="${postsCuriosities[i].imagemPost}" alt="">
             ${postsCuriosities[i].textoPost}

@@ -25,20 +25,20 @@
 <body>
     <header></header>
     <main>
-        <section class="section-carrousel" style="background-color: blueviolet; position: relative;">
-            <div id="carroussel" style="position: relative; z-index: 0; width: 100%; height: 90vh; overflow: hidden;">
+        <section class="section-carrousel">
+            <div id="carroussel">
                 <img class="active" onmouseover="pararContador()" onmouseout="ativarContador()"
-                    style="width:100%; position:absolute; z-index: -1;" src="./img/video.gif" alt="">
+                    style="width:100%; position:absolute; z-index: -1;" src="./img/bem vinda.gif" alt="">
                 <img class="" onmouseover="pararContador()" onmouseout="ativarContador()"
-                    style="width: 100%; position: absolute; z-index: -2;" src="./img/imagem-carrossel2.jpg" alt="">
+                    style="width:100%; position: absolute; z-index: -2;" src="./img/fotocarrossel2.png" alt="">
                 <img class="" onmouseover="pararContador()" onmouseout="ativarContador()"
-                    style="width: 100%; position: absolute; z-index: -3;" src="./img/imagem-carrossel3.jpg" alt="">
+                    style="width:100%; position: absolute; z-index: -3;" src="./img/fotocarrossel3.png" alt="">
             </div>
             <button
-                style="position: absolute; z-index: 1;  top: 0px; left: 0px; height: 100%; border: none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
+                style="position: absolute; z-index: 1;  top: 0px; left: 0px; height: 100%; border:none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
                 id="anteriorImagem" onclick="alterarImagem(-1)">&#10094</button>
             <button
-                style="position: absolute; z-index: 1;  top: 0px; right: 0px; height: 100%; border: none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
+                style="position: absolute; z-index: 1;  top: 0px; right: 0px; height: 100%; border:none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
                 id="proximaImagem" onclick="alterarImagem(1)">&#10095</button>
         </section>
 
@@ -53,25 +53,16 @@
         </section>
 
         <section id="sectionCards" style="padding: 40px 0px 40px 0px;">
-            <div style="">
-                <div style="">
+            <div>
+                <div>
                     <h2 style="padding: 0px 20px 10px 20px;">Artigos</h2>
-                    <div id="containerCardsArticles" style="">
-
-                        <!--  <div class="cardArtigo" style="">
-                            <a href="" style="text-decoration: none; color: #f76363;">
-                                <p class="paragrafoCardArtigo" style="">
-                                    <img style="margin: 0px 10px 0px 0px ;aspect-ratio: 3/2; width: 140px; box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);float:left;" src="./img/images_1.jpg" alt="">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam vero quas animi id adipisci dignissimos quo voluptate illum illo, ipsa porro, libero, nobis harum sint dicta debitis? Numquam et in quasi! Eum nisi repudiandae voluptate rerum inventore impedit sapiente possimus ipsum modi adipisci. Voluptas, veritatis. Quidem doloribus quam molestias amet.
-                                </p>
-                            </a>
-                        </div>  -->
+                    <div id="containerCardsArticles">
 
                     </div>
                 </div>
-                <div style="" id="sectionCardsCuriosidades">
+                <div id="sectionCardsCuriosidades">
                     <h2 style="padding: 30px 20px 10px 20px;">Curiosidades</h2>
-                    <div id="containerCardsCuriosities" style="">
+                    <div id="containerCardsCuriosities">
 
                     </div>
                 </div>

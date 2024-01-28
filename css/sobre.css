@@ -2,8 +2,7 @@ main {
     display: flex; 
     flex-direction: column;
     align-items: center;
-    //background-color: var(--main-bg-color);
-    background-image: url(/img/imagem_maternidade.jpg);
+    background-image: url(/img/fotobackgroundsobre.png);
     background-size: cover;
     color:#212121;
 }

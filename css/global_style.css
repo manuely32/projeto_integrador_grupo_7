@@ -161,10 +161,6 @@ footer {
         cursor: pointer;
     }
 
-    /* .menu:hover{
-        opacity: 0.5;  
-    } */
-
     .menuShow {
         display: flex;
     }

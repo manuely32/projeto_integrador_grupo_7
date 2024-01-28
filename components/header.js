@@ -10,7 +10,7 @@ header.innerHTML = `
                         <li><a href="minhatrilha.html">Minha Trilha</a></li>
                         <li><a href="album.html">Álbum do Bebê</a></li>
                         <li><a href="index.html#sectionCards">Artigos</a></li>
-                        <li><a href="index.html#sectionCards">Curiosidades</a></li>
+                        <li><a href="curiosidades.html">Curiosidades</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
                         <li id="btn-cadastro"><a href="cadastro.html">Cadastre-se</a></li>
                     </ul>

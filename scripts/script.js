@@ -56,7 +56,3 @@ function mostrarMenu() {
 
 document.querySelector('.menu').addEventListener('click', mostrarMenu)
 
-// document.querySelector('.tarefas_semanais label').addEventListener('mouseover', (e) => {
-//     const tooltip = document.querySelector('.tooltip')
-//     tooltip.classList.add('tooltip_show')
-// })

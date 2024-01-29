@@ -4,13 +4,1151 @@
     box-sizing: border-box;
     /* font-family: 'Bad Script', cursive; */ /* médio */
     /* font-family: 'Diphylleia', serif;*/
-  
     /* font-family: 'Gudea', sans-serif;  *//* médio */
     /* font-family: 'Handlee', cursive; */
     /* font-family: 'Patrick Hand', cursive */; /* médio */
     /* font-family: 'Poiret One', sans-serif; */
     font-family: 'Tenor Sans', sans-serif;  /* gostei */
-    font-weight: 400;
+    
+}
+
+/* ALBUM DO BEBE */
+
+    #sectionConteudoAlbum{
+        /* border: 2px solid orange;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: fit-content;
+    }
+    .moldExtImgAlbum{
+        /* border: 2px solid blue;  */
+        height: fit-content; 
+        min-height: fit-content; 
+        position: relative; 
+        z-index: 3; 
+        overflow: hidden; 
+        border-radius: 0.3px; 
+        box-sizing: border-box; 
+        box-shadow: 0px 0px 3px rgb(19, 18, 18); 
+        max-width: fit-content;
+    }
+    .moldMedImgAlbum{
+        /* border: 2px solid yellow;  */
+        position: relative; 
+        z-index: 2; 
+        padding: 0.9px; 
+        box-shadow: 0px 0px 20px rgb(19, 18, 18) inset;
+    }
+    .cantoneiraSuperior, 
+    .cantoneiraInferior{
+        rotate: -44deg; 
+        position: absolute; 
+        z-index: 1; 
+        background-color: rgb(226, 214, 43); 
+        width: 180px; 
+        height: 50px;
+    }
+    .cantoneiraSuperior{
+        top: -15px; 
+        left: -80px; 
+    }
+    .cantoneiraInferior{
+        bottom: -15px; 
+        right: -80px; 
+    }
+    .moldIntImgAlbum{
+        padding: 15px; 
+        background-color: #fff; 
+        border-radius: 1px;
+    }
+    .moldIntImgAlbum img{
+        aspect-ratio: 3/2; 
+        width: 470px; 
+        display: flex; 
+        object-fit: cover; 
+        object-position: 0px 0px;
+    }
+    .button{
+        padding: 12px 40px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: #5370f0;
+        color: #fff;
+        transition: background-color 0.5s linear;
+        border: none;
+    }
+    .moldExtConteudoAlbum{
+        padding: 30px 0px;
+        width: 500px;
+    }
+    .moldExtConteudoAlbum h3 {
+        padding: 0px 0px 20px 0px;
+        font-weight: 800; 
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    .moldExtConteudoAlbum p{
+        margin-bottom: 10px;
+        text-indent: 20px;
+        text-align: justify;
+    }
+    .moldExtButtonAlbum{
+    /*  border: 2px solid; */ 
+        padding: 30px 0px; 
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+    }
+/* ALBUM DO BEBE */
+
+/* CATALOGO ALBUM */
+   
+    main{
+        /* border: 2px solid red; */
+        padding: 40px 20px;
+        /* color: #f7a8b5; */
+    }
+    .h1TituloCatalogo{
+        text-align: center; 
+        padding: 10px 0px;
+        /* border: 2px solid red; */
+        color: #f76363;
+    }
+    .h2TituloCatalogo{
+        text-align: start; 
+        padding: 10px 0px;
+        /* border: 2px solid red; */
+        color: #f76363;
+    }
+    .pTituloCatalogo{
+        color: #f76363;
+    }
+    .div_texto {
+        color: #f76363;
+    }
+    .div_texto p{
+        text-align: start; 
+        padding: 10px 0px;
+       
+        /* border: 2px solid red; */
+    }
+    .secao_cards{
+        padding: 20px 0px;
+    }
+    .paragrafoCardAlbum{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 5; /* Número desejado de linhas */
+        height: 105px;
+    /*  border: 2px solid red; */
+    }
+    .data{
+        padding: 10px 0px 10px 0px;
+        /* border: 2px solid red; */
+    }
+/* CATALOGO ALBUM */
+
+/* EDITOR ALBUM */
+    aside li{
+        margin: 10px 0px;
+        border: 2px solid #fff;
+    }
+    aside a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .mainPerfil{
+        padding: 0px;
+    }
+    .moldExtButtonEditor{
+    display: flex;
+    justify-content: center;
+    }
+    .button{
+    padding: 12px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #5370f0;
+    color: #fff;
+    transition: background-color 0.5s linear;
+    /* position: absolute; */
+    border: none;
+    }
+    .button:hover{
+    background-color: #2249f7;
+    }
+
+    .teste{
+    display: flex; 
+    flex-direction: column;
+    }
+    #sectionConteudoAlbum{
+    /* border: 2px solid orange;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: fit-content;
+    }
+    .moldExtImgAlbum{
+    /* border: 2px solid blue;  */
+    height: fit-content; 
+    min-height: fit-content; 
+    position: relative; 
+    z-index: 3; 
+    overflow: hidden; 
+    border-radius: 0.3px; 
+    box-sizing: border-box; 
+    box-shadow: 0px 0px 3px rgb(19, 18, 18); 
+    max-width: fit-content;
+    }
+    .moldMedImgAlbum{
+    /* border: 2px solid yellow;  */
+    position: relative; 
+    z-index: 2; 
+    padding: 0.9px; 
+    box-shadow: 0px 0px 20px rgb(19, 18, 18) inset;
+    }
+    .cantoneiraSuperior, 
+    .cantoneiraInferior{
+    rotate: -44deg; 
+    position: absolute; 
+    z-index: 1; 
+    background-color: rgb(226, 214, 43); 
+    width: 180px; 
+    height: 50px;
+    }
+    .cantoneiraSuperior{
+    top: -15px; 
+    left: -80px; 
+    }
+    .cantoneiraInferior{
+    bottom: -15px; 
+    right: -80px; 
+    }
+    .moldIntImgAlbum{
+    padding: 15px; 
+    background-color: #fff; 
+    border-radius: 1px;
+    }
+    .moldIntImgAlbum img{
+    aspect-ratio: 3/2; 
+    width: 470px; 
+    display: flex; 
+    object-fit: cover; 
+    object-position: 0px 0px;
+    }
+    .button{
+    padding: 12px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #5370f0;
+    color: #fff;
+    transition: background-color 0.5s linear;
+    border: none;
+    }
+    .moldExtConteudoAlbum{
+    padding: 30px 0px;
+    width: 500px;
+    }
+    .moldExtConteudoAlbum h3 {
+    padding: 0px 0px 20px 0px;
+    font-weight: 800; 
+    text-align: center;
+    font-size: 30px;
+    
+    }
+    .moldExtConteudoAlbum p{
+    margin-bottom: 10px;
+    text-indent: 20px;
+    text-align: justify;
+    }
+    .moldExtButtonAlbum{
+    /*  border: 2px solid; */ 
+    padding: 30px 0px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+    }
+    .sectionEditorAlbum{
+    padding: 40px 20px;
+    }
+/* EDITOR ALBUM */
+
+/* FORMULARIO BEBE */
+   
+    h1{
+        text-align: center;
+    }
+    form, h1, h2{
+        color: rgb(133, 133, 133);
+        /* color: rgb(236, 182, 3); */
+        /* color: rgb(236, 182, 3); */
+        font-weight: 700;
+    }
+    form{
+    border: 2px solid yellowgreen,
+    }
+    fieldset{
+        padding: 50px 40px 50px 40px; 
+        margin: 40px 0px; 
+        border-radius: 4px;
+        /* border: 2px solid rgb(236, 182, 3); */
+        /*  background-color: rgb(253, 228, 146); */
+    }
+    legend{
+        /*  background-color: rgb(253, 228, 146); */
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    label{
+        margin-bottom: 3px;
+
+    }
+    input{
+        /* background-color: rgb(253, 228, 146); */
+        /* background-color: rgb(247, 212, 96); */
+        /* border-radius: 4px; */
+        /* border-bottom: 2px solid rgb(236, 182, 3); */
+        outline: none;
+        margin-bottom: 30px;
+        height: 25px;
+        font-family: 'Tenor Sans', sans-serif;
+        color: rgba(133, 133, 133, 0.6);
+        border: none;
+        border-bottom: 1px solid rgb(133, 133, 133);
+    }
+    ::placeholder{
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 12px;
+        color: rgba(133, 133, 133, 0.6);
+    /* color: rgb(212, 166, 14); */
+    }
+
+    button{
+        /* border: none; */
+        color: rgb(133, 133, 133);
+        width: fit-content; 
+        padding: 6px 20px; 
+        text-transform: uppercase; 
+        font-size: 12px;
+    }
+    .molduraExtForm{
+        width: 605px;
+        height: fit-content;
+        margin: auto; 
+    /*  border: 2px solid yellowgreen */
+    }
+    .molduraExtFildset{
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasExtInputs{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .moldurasIntInputs35{
+        width: 35%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs16{
+        width: 16%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs35, .moldurasIntInputs16 label{
+        text-align: center;
+    }
+    .moldurasIntInputs100{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    #areaBtnCadastrar{
+        display: flex; 
+        justify-content: center;
+    }
+    .visibilidade{
+        visibility: hidden;
+    }
+
+/* FORMULARIO BEBE */
+
+/* INDEX */
+    #sectionCarroussel{
+        position: relative; 
+        height: fit-content;
+    }
+    #carroussel{
+        position: relative; 
+        z-index: 0; 
+        width: 100%; 
+        height: 500px; 
+        overflow: hidden;
+    }
+    #carroussel img{
+        width: 100%;
+        position: absolute;
+        aspect-ratio: 3 / 2;
+    }
+    #anteriorImagem,
+    #proximaImagem{
+        position: absolute; 
+        z-index: 1;
+        height: 100%; 
+        /* border: 2px solid red;  */
+        background-color: rgba(0,0,0, 0.0); 
+        padding: 15px; 
+        color: #fff; 
+        font-size: 40px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        /* box-shadow: 0px 0px 8px rgba(0,0,0, 0.5); */
+        text-shadow: 0px 0px 7px rgba(0,0,0, 0.9);
+    }
+    #anteriorImagem{
+        left: 0px; 
+    }
+    #proximaImagem{
+        right: 0px; 
+    }
+    #sectionAlbum{
+        padding: 40px 20px; 
+        /* background-color: #fff; */
+        height: 530px;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    #sectionAlbum h2{
+        text-align: center;
+    }
+
+    #sectionAlbum #molduraImagem{
+        /* border: 2px solid; */
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        top: -180px;
+        left: 0px;
+    }
+
+    #sectionAlbum #molduraImagem > img{
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    @media screen and (max-width: 600px) {
+        #carroussel{
+            position: relative; 
+            z-index: 0; 
+            width: 100%; 
+            height: 400px; 
+            overflow: hidden;
+        }
+        #carroussel img{
+            width: 100%;
+            position: absolute;
+            aspect-ratio: 3 / 2;
+        }
+        #sectionAlbum #molduraImagem{
+            top: 0px;
+            left: 0px;
+        }
+        #sectionAlbum{
+            padding: 40px 20px; 
+            height: 450px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+    }
+/* INDEX */
+
+/* PERFIL USUARIO */
+    aside li{
+        margin: 10px 0px;
+        border: 2px solid #fff;
+    }
+    aside a{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    form, h1, h2{
+        color: rgb(133, 133, 133);
+        /* color: rgb(236, 182, 3); */
+        /* color: rgb(236, 182, 3); */
+        font-weight: 700;
+    }
+    form{
+    border: 2px solid yellowgreen,
+    }
+    fieldset{
+        padding: 50px 40px 50px 40px; 
+        margin: 40px 0px; 
+        border-radius: 4px;
+        /* border: 2px solid rgb(236, 182, 3); */
+        /*  background-color: rgb(253, 228, 146); */
+    }
+    legend{
+        /*  background-color: rgb(253, 228, 146); */
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    label{
+        margin-bottom: 3px;
+
+    }
+    input{
+        /* background-color: rgb(253, 228, 146); */
+        /* background-color: rgb(247, 212, 96); */
+        /* border-radius: 4px; */
+        /* border-bottom: 2px solid rgb(236, 182, 3); */
+        outline: none;
+        margin-bottom: 30px;
+        height: 25px;
+        font-family: 'Tenor Sans', sans-serif;
+        color: rgba(133, 133, 133, 0.6);
+        border: none;
+        border-bottom: 1px solid rgb(133, 133, 133);
+    }
+    ::placeholder{
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 12px;
+        color: rgba(133, 133, 133, 0.6);
+    /* color: rgb(212, 166, 14); */
+    }
+
+    button{
+        /* border: none; */
+        color: rgb(133, 133, 133);
+        width: fit-content; 
+        padding: 6px 20px; 
+        text-transform: uppercase; 
+        font-size: 12px;
+    }
+    .molduraExtForm{
+        width: 605px;
+        height: fit-content;
+        margin: auto; 
+    /*  border: 2px solid yellowgreen */
+    }
+    .molduraExtFildset{
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasExtInputs{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .moldurasIntInputs35{
+        width: 35%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs16{
+        width: 16%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs35, .moldurasIntInputs16 label{
+        text-align: center;
+    }
+    .moldurasIntInputs100{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #areaBtnCadastrar{
+        display: flex; 
+        justify-content: center;
+    }
+    .visibilidade{
+        visibility: hidden;
+    }
+    .mainPerfil{
+        padding: 0px;
+    }
+/* PERFIL USUARIO */
+
+
+/* PERFIL USUARIO ALBUM */
+
+    aside li{
+        margin: 10px 0px;
+        border: 2px solid #fff;
+    }
+    aside a{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    body{
+        font-family: 'Tenor Sans', sans-serif;
+    /*  background-color: rgb(250, 217, 107); */
+        /* background-color: rgb(253, 228, 146); */
+    /*  background-color: #fff; */
+    padding: 0px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    form, h1, h2{
+        color: rgb(133, 133, 133);
+        /* color: rgb(236, 182, 3); */
+        /* color: rgb(236, 182, 3); */
+        font-weight: 700;
+    }
+    form{
+    border: 2px solid yellowgreen,
+    }
+    fieldset{
+        padding: 50px 40px 50px 40px; 
+        margin: 40px 0px; 
+        border-radius: 4px;
+        /* border: 2px solid rgb(236, 182, 3); */
+        /*  background-color: rgb(253, 228, 146); */
+    }
+    legend{
+        /*  background-color: rgb(253, 228, 146); */
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    label{
+        margin-bottom: 3px;
+
+    }
+    input{
+        /* background-color: rgb(253, 228, 146); */
+        /* background-color: rgb(247, 212, 96); */
+        /* border-radius: 4px; */
+        /* border-bottom: 2px solid rgb(236, 182, 3); */
+        outline: none;
+        margin-bottom: 30px;
+        height: 25px;
+        font-family: 'Tenor Sans', sans-serif;
+        color: rgba(133, 133, 133, 0.6);
+        border: none;
+        border-bottom: 1px solid rgb(133, 133, 133);
+    }
+    ::placeholder{
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 12px;
+        color: rgba(133, 133, 133, 0.6);
+    /* color: rgb(212, 166, 14); */
+    }
+
+    button{
+        /* border: none; */
+        color: rgb(133, 133, 133);
+        width: fit-content; 
+        padding: 6px 20px; 
+        text-transform: uppercase; 
+        font-size: 12px;
+    }
+    .molduraExtForm{
+        width: 605px;
+        height: fit-content;
+        margin: auto; 
+    /*  border: 2px solid yellowgreen */
+    }
+    .molduraExtFildset{
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasExtInputs{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .moldurasIntInputs35{
+        width: 35%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs16{
+        width: 16%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs35, .moldurasIntInputs16 label{
+        text-align: center;
+    }
+    .moldurasIntInputs100{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #areaBtnCadastrar{
+        display: flex; 
+        justify-content: center;
+    }
+    .visibilidade{
+        visibility: hidden;
+    }
+
+    #sectionConteudoAlbum{
+        /* border: 2px solid orange;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: fit-content;
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .moldExtImgAlbum{
+        /* border: 2px solid blue;  */
+        height: fit-content; 
+        min-height: fit-content; 
+        position: relative; 
+        z-index: 3; 
+        overflow: hidden; 
+        border-radius: 0.3px; 
+        box-sizing: border-box; 
+        box-shadow: 0px 0px 3px rgb(19, 18, 18); 
+        max-width: fit-content;
+    }
+    .moldMedImgAlbum{
+        /* border: 2px solid yellow;  */
+        position: relative; 
+        z-index: 2; 
+        padding: 0.9px; 
+        box-shadow: 0px 0px 20px rgb(19, 18, 18) inset;
+    }
+    .cantoneiraSuperior, 
+    .cantoneiraInferior{
+        rotate: -44deg; 
+        position: absolute; 
+        z-index: 1; 
+        background-color: rgb(226, 214, 43); 
+        width: 180px; 
+        height: 50px;
+    }
+    .cantoneiraSuperior{
+        top: -15px; 
+        left: -80px; 
+    }
+    .cantoneiraInferior{
+        bottom: -15px; 
+        right: -80px; 
+    }
+    .moldIntImgAlbum{
+        padding: 15px; 
+        background-color: #fff; 
+        border-radius: 1px;
+    }
+    .moldIntImgAlbum img{
+        aspect-ratio: 3/2; 
+        width: 470px; 
+        display: flex; 
+        object-fit: cover; 
+        object-position: 0px 0px;
+    }
+    .button{
+        padding: 12px 40px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: #5370f0;
+        color: #fff;
+        transition: background-color 0.5s linear;
+        border: none;
+    }
+    .moldExtConteudoAlbum{
+        padding: 30px 0px;
+        width: 500px;
+    }
+    .moldExtConteudoAlbum h3 {
+        padding: 0px 0px 20px 0px;
+        font-weight: 800; 
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    .moldExtConteudoAlbum p{
+        margin-bottom: 10px;
+        text-indent: 20px;
+        text-align: justify;
+    }
+    .moldExtButtonAlbum{
+    /*  border: 2px solid; */ 
+        padding: 30px 0px; 
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+    }
+    .mainPerfil{
+        padding: 0px;
+    }
+/* PERFIL USUARIO ALBUM */
+
+
+/* PERFIL USUARIO ALBUM EDITAR */
+    aside li{
+        margin: 10px 0px;
+        border: 2px solid #fff;
+    }
+    aside a{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    body{
+        font-family: 'Tenor Sans', sans-serif;
+    /*  background-color: rgb(250, 217, 107); */
+        /* background-color: rgb(253, 228, 146); */
+    /*  background-color: #fff; */
+    padding: 0px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    form, h1, h2{
+        color: rgb(133, 133, 133);
+        /* color: rgb(236, 182, 3); */
+        /* color: rgb(236, 182, 3); */
+        font-weight: 700;
+    }
+    form{
+    border: 2px solid yellowgreen,
+    }
+    fieldset{
+        padding: 50px 40px 50px 40px; 
+        margin: 40px 0px; 
+        border-radius: 4px;
+        /* border: 2px solid rgb(236, 182, 3); */
+        /*  background-color: rgb(253, 228, 146); */
+    }
+    legend{
+        /*  background-color: rgb(253, 228, 146); */
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    label{
+        margin-bottom: 3px;
+
+    }
+    input{
+        /* background-color: rgb(253, 228, 146); */
+        /* background-color: rgb(247, 212, 96); */
+        /* border-radius: 4px; */
+        /* border-bottom: 2px solid rgb(236, 182, 3); */
+        outline: none;
+        margin-bottom: 30px;
+        height: 25px;
+        font-family: 'Tenor Sans', sans-serif;
+        color: rgba(133, 133, 133, 0.6);
+        border: none;
+        border-bottom: 1px solid rgb(133, 133, 133);
+    }
+    ::placeholder{
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 12px;
+        color: rgba(133, 133, 133, 0.6);
+    /* color: rgb(212, 166, 14); */
+    }
+
+    button{
+        /* border: none; */
+        color: rgb(133, 133, 133);
+        width: fit-content; 
+        padding: 6px 20px; 
+        text-transform: uppercase; 
+        font-size: 12px;
+    }
+    .molduraExtForm{
+        width: 605px;
+        height: fit-content;
+        margin: auto; 
+    /*  border: 2px solid yellowgreen */
+    }
+    .molduraExtFildset{
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasExtInputs{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .moldurasIntInputs35{
+        width: 35%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs16{
+        width: 16%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs35, .moldurasIntInputs16 label{
+        text-align: center;
+    }
+    .moldurasIntInputs100{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #areaBtnCadastrar{
+        display: flex; 
+        justify-content: center;
+    }
+    .visibilidade{
+        visibility: hidden;
+    }
+
+    #sectionConteudoAlbum{
+        /* border: 2px solid orange;  */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: fit-content;
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .moldExtImgAlbum{
+        /* border: 2px solid blue;  */
+        height: fit-content; 
+        min-height: fit-content; 
+        position: relative; 
+        z-index: 3; 
+        overflow: hidden; 
+        border-radius: 0.3px; 
+        box-sizing: border-box; 
+        box-shadow: 0px 0px 3px rgb(19, 18, 18); 
+        max-width: fit-content;
+    }
+    .moldMedImgAlbum{
+        /* border: 2px solid yellow;  */
+        position: relative; 
+        z-index: 2; 
+        padding: 0.9px; 
+        box-shadow: 0px 0px 20px rgb(19, 18, 18) inset;
+    }
+    .cantoneiraSuperior, 
+    .cantoneiraInferior{
+        rotate: -44deg; 
+        position: absolute; 
+        z-index: 1; 
+        background-color: rgb(226, 214, 43); 
+        width: 180px; 
+        height: 50px;
+    }
+    .cantoneiraSuperior{
+        top: -15px; 
+        left: -80px; 
+    }
+    .cantoneiraInferior{
+        bottom: -15px; 
+        right: -80px; 
+    }
+    .moldIntImgAlbum{
+        padding: 15px; 
+        background-color: #fff; 
+        border-radius: 1px;
+    }
+    .moldIntImgAlbum img{
+        aspect-ratio: 3/2; 
+        width: 470px; 
+        display: flex; 
+        object-fit: cover; 
+        object-position: 0px 0px;
+    }
+    .button{
+        padding: 12px 40px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        background-color: #5370f0;
+        color: #fff;
+        transition: background-color 0.5s linear;
+        border: none;
+    }
+    .moldExtConteudoAlbum{
+        padding: 30px 0px;
+        width: 500px;
+    }
+    .moldExtConteudoAlbum h3 {
+        padding: 0px 0px 20px 0px;
+        font-weight: 800; 
+        text-align: center;
+        font-size: 30px;
+        
+    }
+    .moldExtConteudoAlbum p{
+        margin-bottom: 10px;
+        text-indent: 20px;
+        text-align: justify;
+    }
+    .moldExtButtonAlbum{
+    /*  border: 2px solid; */ 
+        padding: 30px 0px; 
+        width: 100%; 
+        display: flex; 
+        justify-content: center;
+    }
+    .mainPerfil{
+        padding: 0px;
+    }
+/* PERFIL USUARIO ALBUM EDITAR */
+
+/* PERFIL USUARIO EDITAR */
+    aside li{
+        margin: 10px 0px;
+        border: 2px solid #fff;
+    }
+    aside a{
+        text-decoration: none;
+        color: #fff;
+
+    }
+
+    body{
+        font-family: 'Tenor Sans', sans-serif;
+    /*  background-color: rgb(250, 217, 107); */
+        /* background-color: rgb(253, 228, 146); */
+    /*  background-color: #fff; */
+    padding: 0px;
+    }
+    h1{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    form, h1, h2{
+        color: rgb(133, 133, 133);
+        /* color: rgb(236, 182, 3); */
+        /* color: rgb(236, 182, 3); */
+        font-weight: 700;
+    }
+    form{
+    border: 2px solid yellowgreen,
+    }
+    fieldset{
+        padding: 50px 40px 50px 40px; 
+        margin: 40px 0px; 
+        border-radius: 4px;
+        /* border: 2px solid rgb(236, 182, 3); */
+        /*  background-color: rgb(253, 228, 146); */
+    }
+    legend{
+        /*  background-color: rgb(253, 228, 146); */
+        font-size: 23px;
+        font-weight: bold;
+        border-radius: 4px;
+        padding: 8px;
+    }
+    label{
+        margin-bottom: 3px;
+
+    }
+    input{
+        /* background-color: rgb(253, 228, 146); */
+        /* background-color: rgb(247, 212, 96); */
+        /* border-radius: 4px; */
+        /* border-bottom: 2px solid rgb(236, 182, 3); */
+        outline: none;
+        margin-bottom: 30px;
+        height: 25px;
+        font-family: 'Tenor Sans', sans-serif;
+        color: rgba(133, 133, 133, 0.6);
+        border: none;
+        border-bottom: 1px solid rgb(133, 133, 133);
+    }
+    ::placeholder{
+        font-family: 'Tenor Sans', sans-serif;
+        font-size: 12px;
+        color: rgba(133, 133, 133, 0.6);
+    /* color: rgb(212, 166, 14); */
+    }
+
+    button{
+        /* border: none; */
+        color: rgb(133, 133, 133);
+        width: fit-content; 
+        padding: 6px 20px; 
+        text-transform: uppercase; 
+        font-size: 12px;
+    }
+    .molduraExtForm{
+        width: 605px;
+        height: fit-content;
+        margin: auto; 
+    /*  border: 2px solid yellowgreen */
+    }
+    .molduraExtFildset{
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasExtInputs{
+        display: flex; 
+        justify-content: space-between;
+    }
+    .moldurasIntInputs35{
+        width: 35%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs16{
+        width: 16%; 
+        display: flex; 
+        flex-direction: column;
+    }
+    .moldurasIntInputs35, .moldurasIntInputs16 label{
+        text-align: center;
+    }
+    .moldurasIntInputs100{
+        width: 100%; 
+        display: flex; 
+        flex-direction: column;
+    }
+
+    #areaBtnCadastrar{
+        display: flex; 
+        justify-content: center;
+    }
+    .visibilidade{
+        visibility: hidden;
+    }
+    .mainPerfil{
+        padding: 0px;
+    }
+/* PERFIL USUARIO EDITAR */
+
+
+#fotoPerfil{
+    aspect-ratio: 3 / 3;
+}
+button{
+    cursor: pointer;
 }
 
 body{
@@ -24,6 +1162,10 @@ body{
 main{
     max-width: 1350px;
     margin: 0 auto;
+    padding: 40px 20px;
+}
+.mainPerfil{
+    padding: 0px;
 }
 header{
    /*  border: 2px solid;  */
@@ -38,6 +1180,11 @@ header{
     /* background-color: #fff; */
     box-shadow: 0px 0px 10px;
     font-weight: 400;
+}
+h1{
+    padding: 0px 0px 40px 0px;
+    text-align: center;
+    font-size: 40px;
 }
 #moldura-exterior{
     display: flex; 
@@ -84,7 +1231,7 @@ header{
     transition: border-bottom 0.5s linear, color 0.5s linear;
     color: #5370f0;
 }
-#teste{
+#button{
     padding: 12px 40px;
     text-transform: uppercase;
     border-radius: 5px;
@@ -93,7 +1240,7 @@ header{
     transition: background-color 0.5s linear;
     /* position: absolute; */
 }
-#teste:hover{
+#button:hover{
     background-color: #2249f7;
 }
 #moldura-exterior div:nth-child(2) ul li a:hover{
@@ -142,6 +1289,7 @@ header{
       -webkit-box-orient: vertical;
       overflow: hidden;
       -webkit-line-clamp: 9; /* Número desejado de linhas */
+    height: 155px; 
 }
 
 .fa {
@@ -178,10 +1326,116 @@ header{
     color: white;
   }
   
+#carroussel img {
+    opacity: 0;
+    transition: opacity 1s;
+}
+.active{
+    opacity: 1 !important;
+}
+.flexJustfyCenter{
+    display: flex;
+    justify-content: center;
+}
+.flexJustfyStart{
+    display: flex;
+    justify-content: start;
+}
+.flexAlignColumCenter{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+/* Cards Catalogo Álbum do Bebê */
+
+.secao_cards{
+    box-sizing: border-box; 
+    height: fit-content; 
+  /*   display: flex;
+    flex-direction: row;
+   justify-content:space-between;
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 35px;
+    /* border: 2px solid; */
+}
+
+
+.card_moldura_externa{
+   position: relative; 
+   box-shadow: 0px 0px 8px rgb(247, 99, 99);
+   /* box-shadow: 0px 0px 8px rgb(247, 168, 181);  */
+   height: auto; 
+   border-radius: 8px; 
+   box-sizing: border-box; 
+   width: 300px;
+   /* width: 22%;  */
+   padding: 40px 30px;
+   /* border: 2px solid; */
+  
+}
+
+.card_moldura_interna{
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    /* border: 2px solid; */  
+}
+
+.card_moldura_interna > img {
+    border-radius: 8px; 
+    box-sizing: border-box; 
+    max-width: 100%; 
+    height: auto;
+    aspect-ratio: 3 / 2
+}
+.card_moldura_interna .div_texto{
+   /*  border: 2px solid; */
+    height: fit-content;  
+    padding: 0px;
+}
+.card_moldura_interna .div_texto > h3{
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+   /*  border: 2px solid; */
+}
+
+.area_button{
+    display: flex; 
+    justify-content: center; 
+    margin: 40px 0px 0px 0px;
+} 
+
+.area_button > a {
+    position: absolute; 
+    bottom: 0;
+}
+
+.area_button > a > button{
+    color: rgb(250, 249, 249);
+    padding: 10px 20px; 
+    /* background-color: rgb(247, 168, 181);  */
+    background-color: rgb(247, 99, 99); 
+    border: none; 
+    border-radius: 5px; 
+    text-transform: uppercase;
+    cursor: pointer;
+}
 
 @media screen and (max-width: 600px) {
+    body{
+        height: auto;
+       /*  border: 2px solid red; */
+        position: relative;
+        width: 688px;
+        /* background-color: blueviolet; */
+        margin: 0px;
+    }
     main{
-        min-width: 600px;
+        min-width: 683px;
+        width: 100%;
         margin: 0 auto;
     }
     header {
@@ -224,13 +1478,25 @@ header{
        /*  min-width: 316.5px; */
         width: 100%;
     }
-}
+    .secao_cards{
+        box-sizing: border-box; 
+        height: fit-content; 
+        
+        grid-template-columns: auto auto;
+        gap: 35px;
+       /*  width: 700px; */
+        /* border: 2px solid; */
+    }
 
-#carroussel img {
-    opacity: 0;
-    transition: opacity 1s;
-}
-.active{
-    opacity: 1 !important;
+    footer > div{
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid; */
+    }
+    footer > div > div{
+        width: 100% !important;
+        margin-bottom: 40px;
+        /* border: 2px solid red; */
+    }
 }
 

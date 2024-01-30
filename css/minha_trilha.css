@@ -5,7 +5,7 @@
 
 body{
     background-image: url(/img/backopacity.png);
-    //background-color:var(--main-bg-color);
+    background-color:var(--main-bg-color);
     background-size: contain;
     position: relative;  
     
@@ -20,16 +20,19 @@ main {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
 #titulo_pagina_trilha{
-    font-size: 5rem;
+    font-size: 3.5rem;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     color: white;
     background-color: var(--color-primary);
-    padding: 20px;
+    padding: 10px;
     border-radius: 20px;
+    box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    
 }
 
 #container_text{
@@ -40,7 +43,7 @@ main {
     letter-spacing: 1px;
     text-align: center;
     justify-content: center;
-    gap: 26px;
+    gap: 24px;
     width: 50%;
     background-color: #E7F0F3;
     border-radius: 30px;
@@ -49,7 +52,7 @@ main {
     -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
 }
 
-#container_text h1{ 
+#container_text h1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,25 +68,28 @@ main {
 }
 
 #container_text p{
-    background-color: #d3def3af;
+    
+    background-color: #d3def3;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     border-radius: 10px;
-    padding: 10px;
+    padding: 30px;
+    /*margin: 90px 30px 30px;*/
     font-size: 18px;
 }
 
 #container_text h2{
-    font-size: 1.8rem;
-    background-color:#9dbcfa;
+    color: white;
+    font-size: 1.9rem;
+    background-color:var(--color-primary);
     border-radius: 10px;
     padding: 10px;
     margin: 50px;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);  
-} 
+}
 
 .tarefas_semanais {
     display: flex;

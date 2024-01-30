@@ -1,0 +1,14 @@
+{
+    "usuarios": [
+        {
+            "nome": "Tânia Silva",
+            "login": "tania@email.com",
+            "senha": "12345"
+        },
+        {
+            "nome": "Ana",
+            "login": "ana@email.com",
+            "senha": "12345"
+        }
+    ]
+}

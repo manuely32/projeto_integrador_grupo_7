@@ -1,0 +1,217 @@
+body{
+    font-family: 'Tenor Sans', sans-serif;
+/*  background-color: rgb(250, 217, 107); */
+    /* background-color: rgb(253, 228, 146); */
+/*  background-color: #fff; */
+padding: 0px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+form, h1, h2{
+    color: rgb(133, 133, 133);
+    /* color: rgb(236, 182, 3); */
+    /* color: rgb(236, 182, 3); */
+    font-weight: 700;
+}
+
+form{
+    border: 2px solid yellowgreen,
+}
+
+fieldset{
+    padding: 50px 40px 50px 40px; 
+    margin: 40px 0px; 
+    border-radius: 4px;
+}
+
+legend{
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+label{
+    margin-bottom: 3px;
+
+}
+
+input{
+    outline: none;
+    margin-bottom: 30px;
+    height: 25px;
+    font-family: 'Tenor Sans', sans-serif;
+    color: rgba(133, 133, 133, 0.6);
+    border: none;
+    border-bottom: 1px solid rgb(133, 133, 133);
+}
+
+::placeholder{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 12px;
+    color: rgba(133, 133, 133, 0.6);
+}
+
+.button{
+    color: rgb(133, 133, 133);
+    width: fit-content; 
+    padding: 6px 20px; 
+    text-transform: uppercase; 
+    font-size: 12px;
+    cursor: pointer
+}
+
+.molduraExtForm{
+    width: 605px;
+    height: fit-content;
+    margin: auto; 
+}
+
+.molduraExtFildset{
+    display: flex; 
+    flex-direction: column;
+}
+
+.moldurasExtInputs{
+    display: flex; 
+    justify-content: space-between;
+}
+.moldurasIntInputs35{
+    width: 35%; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.moldurasIntInputs16{
+    width: 16%; 
+    display: flex; 
+    flex-direction: column;
+}
+
+.moldurasIntInputs35, .moldurasIntInputs16 label{
+    text-align: center;
+}
+.moldurasIntInputs100{
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+}
+
+#areaBtnCadastrar{
+    display: flex; 
+    justify-content: center;
+}
+
+.visibilidade{
+    visibility: hidden;
+}
+
+#sectionConteudoAlbum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: fit-content;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.moldExtImgAlbum{
+    height: fit-content; 
+    min-height: fit-content; 
+    position: relative; 
+    z-index: 3; 
+    overflow: hidden; 
+    border-radius: 0.3px; 
+    box-sizing: border-box; 
+    box-shadow: 0px 0px 3px rgb(19, 18, 18); 
+    max-width: fit-content;
+}
+
+.moldMedImgAlbum{
+    position: relative; 
+    z-index: 2; 
+    padding: 0.9px; 
+    box-shadow: 0px 0px 20px rgb(19, 18, 18) inset;
+}
+.cantoneiraSuperior, 
+.cantoneiraInferior{
+    rotate: -44deg; 
+    position: absolute; 
+    z-index: 1; 
+    background-color: rgb(226, 214, 43); 
+    width: 180px; 
+    height: 50px;
+}
+
+.cantoneiraSuperior{
+    top: -15px; 
+    left: -80px; 
+}
+
+.cantoneiraInferior{
+    bottom: -15px; 
+    right: -80px; 
+}
+
+.moldIntImgAlbum{
+    padding: 15px; 
+    background-color: #fff; 
+    border-radius: 1px;
+}
+
+.moldIntImgAlbum img{
+    aspect-ratio: 3/2; 
+    width: 470px; 
+    display: flex; 
+    object-fit: cover; 
+    object-position: 0px 0px;
+}
+
+.button{
+    padding: 12px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #5370f0;
+    color: #fff;
+    transition: background-color 0.5s linear;
+    border: none;
+}
+
+.moldExtConteudoAlbum{
+    padding: 30px 0px;
+    width: 500px;
+}
+
+.moldExtConteudoAlbum h3 {
+    padding: 0px 0px 20px 0px;
+    font-weight: 800; 
+    text-align: center;
+    font-size: 30px;
+    
+}
+
+.moldExtConteudoAlbum p{
+    margin-bottom: 10px;
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.moldExtButtonAlbum{
+    padding: 30px 0px; 
+    width: 100%; 
+    display: flex; 
+    justify-content: center;
+}
+
+.mainPerfil{
+    padding: 0px;
+}
+
+.button:hover{
+    background-color: #2249f7;
+}

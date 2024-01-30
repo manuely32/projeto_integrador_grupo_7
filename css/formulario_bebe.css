@@ -1,0 +1,93 @@
+h1{
+    text-align: center;
+}
+form, h1, h2{
+    color: rgb(133, 133, 133);
+    /* color: rgb(236, 182, 3); */
+    /* color: rgb(236, 182, 3); */
+    font-weight: 700;
+}
+form{
+border: 2px solid yellowgreen,
+}
+fieldset{
+    padding: 50px 40px 50px 40px; 
+    margin: 40px 0px; 
+    border-radius: 4px;
+}
+
+legend{
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+label{
+    margin-bottom: 3px;
+
+}
+
+input{
+    outline: none;
+    margin-bottom: 30px;
+    height: 25px;
+    font-family: 'Tenor Sans', sans-serif;
+    color: rgba(133, 133, 133, 0.6);
+    border: none;
+    border-bottom: 1px solid rgb(133, 133, 133);
+}
+
+::placeholder{
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 12px;
+    color: rgba(133, 133, 133, 0.6);
+}
+
+button{
+    color: rgb(133, 133, 133);
+    width: fit-content; 
+    padding: 6px 20px; 
+    text-transform: uppercase; 
+    font-size: 12px;
+}
+
+.molduraExtForm{
+    width: 605px;
+    height: fit-content;
+    margin: auto; 
+}
+
+.molduraExtFildset{
+    display: flex; 
+    flex-direction: column;
+}
+.moldurasExtInputs{
+    display: flex; 
+    justify-content: space-between;
+}
+.moldurasIntInputs35{
+    width: 35%; 
+    display: flex; 
+    flex-direction: column;
+}
+.moldurasIntInputs16{
+    width: 16%; 
+    display: flex; 
+    flex-direction: column;
+}
+.moldurasIntInputs35, .moldurasIntInputs16 label{
+    text-align: center;
+}
+.moldurasIntInputs100{
+    width: 100%; 
+    display: flex; 
+    flex-direction: column;
+}
+#areaBtnCadastrar{
+    display: flex; 
+    justify-content: center;
+}
+.visibilidade{
+    visibility: hidden;
+}

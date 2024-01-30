@@ -4,37 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Importação de fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!--script para importar o header e footer -->
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="scripts/script.js" type="text/javascript" defer></script>
+
+    <!-- Importação de arquivos css -->
+    <link rel="stylesheet" href="css/global_style.css">
+    <link rel="stylesheet" href="css/sobre.css">
+    <title>NovaVida</title>
 </head>
 
 <body>
-    <header>
-        <div id="logo_cabecalho">
-            <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-        </div>
-
-        <h1><strong>Nova Vida</strong></h1>
-
-        <div id="login_cadastro">
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-            </ul>
-        </div>
-
-        <nav>
-            <ul>
-                <li><a href="minhatrilha.html">Minha Trilha</a></li>
-                <li><a href="album.html">Álbum do Bebê</a></li>
-                <li><a href="index.html#dicas">Dicas</a></li>
-                <li><a href="index.html#curiosidade">Curiosidades</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-            </ul>
-        </nav>
-    </header>
-
+    <header></header>
     <main>
-        <section>
+        <section id="section-sobre">
             <h2>Sobre o Projeto</h2>
 
             <p>Este projeto tem o intuito de contribuir com um dos Objetivos de Desenvolvimento Sustentável da ONU no
@@ -52,71 +42,43 @@
                 de atividades físicas, vídeos e artigos sobre gestação.
             </p>
         </section>
-
-        <section>
-            <h3>Desenvolvedores</h3>
-
-            <div style="display: flex;">
-                <div>
+        <section id="section-desenvolvedores">
+            <h2>Desenvolvedores</h2>
+            <div class="container-desenvolvedores">
+                <div class="card-desenvolvedores">
                     <img src="https://avatars.githubusercontent.com/u/35576266?v=4" width="100" alt="">
                     <p><strong>Manuely Guedes</strong></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam dolorem fugit aliquam
-                        dignissimos delectus. Fuga officiis aperiam animi nisi et odit, quibusdam, voluptate autem
-                        consequuntur, beatae suscipit consectetur aliquid.</p>
+                    <p>Belém-Pa</p>
+                    <p>Bacharel em Sistema de Informação (UFPA)</p>
+                    <p>Sempre em busca de novos conhecimentos!!</p>
                 </div>
 
-                <div>
+                <div class="card-desenvolvedores">
                     <img src="https://avatars.githubusercontent.com/u/63886753?v=4" width="100" alt="">
                     <p><strong>Willian Brandão</strong></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam dolorem fugit aliquam
-                        dignissimos delectus. Fuga officiis aperiam animi nisi et odit, quibusdam, voluptate autem
-                        consequuntur, beatae suscipit consectetur aliquid.</p>
+                    <p>Nova Friburgo-RJ</p>
+                    <p>Estudante de Sistema de Informação - CEFET/RJ</p>
                 </div>
 
-                <div>
+                <div class="card-desenvolvedores">
                     <img src="https://avatars.githubusercontent.com/u/79342323?v=4" width="100" alt="">
                     <p><strong>Diego Sampaio</strong></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam dolorem fugit aliquam
-                        dignissimos delectus. Fuga officiis aperiam animi nisi et odit, quibusdam, voluptate autem
-                        consequuntur, beatae suscipit consectetur aliquid.</p>
+                    <p>Natural de Campinas - SP</p>
+                    <p>Reside atualmente em Brasília - DF</p>
+                    <p>Tecnólogo em Logística Empresarial e estudante de programação</p>
                 </div>
 
-                <div>
+                <div class="card-desenvolvedores">
                     <img src="https://avatars.githubusercontent.com/u/145476600?v=4" width="100" alt="">
                     <p><strong>Hugo Silva</strong></p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam dolorem fugit aliquam
-                        dignissimos delectus. Fuga officiis aperiam animi nisi et odit, quibusdam, voluptate autem
-                        consequuntur, beatae suscipit consectetur aliquid.</p>
+                    <p>Queimadas-PB</p>
+                    <p>Cursando Análise e Desenvolvimento de Sistemas</p>
+                    <p><a href="https://github.com/Hugodzs">GitHub</a></p>
                 </div>
             </div>
         </section>
     </main>
-
-    <footer>
-        <section class="rodape_pagina_principal" id="rodape">
-            <div id="logo_rodape" class="rodape_elemento_pagina_principal">
-                <a href="index.html"><img src="img/logosite.png" alt="logo nova vida" width="100"></a>
-            </div>
-
-            <div id="link_rede_socias_rodape" class="rodape_elemento_pagina_principal">
-                <ul>
-                    <p>SIGA NOVAVIDA</p>
-                    <li>
-                        <a href="https://www.instagram.com" target="_blank"><img src="/img/instagram.png"
-                                alt="logotipo do instagram"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.youtube.com" target="_blank"><img src="/img/youtube.png"
-                                alt="logotipo do youtube"></a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com" target="_blank"><img src="/img/facebook.png"
-                                alt="logotipo do facebook"></a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </footer>
+    <footer></footer>
 </body>
 
 </html>

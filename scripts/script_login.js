@@ -1,4 +1,4 @@
-const input_login = document.getElementById('input-login')
+    const input_login = document.getElementById('input-login')
 const senha = document.getElementById('input-senha')
 const msg_erro = document.querySelectorAll('.error-text')
 const msg_credencial = document.querySelectorAll('.credencial-text')

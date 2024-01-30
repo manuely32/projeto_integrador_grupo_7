@@ -46,7 +46,7 @@ function ativarContador() {
 const postsArticles = [
     {
         imagemPost: './img/artigo1.jpg',
-        link_post: 'https://www.medicina.ufmg.br/conheca-o-acretismo-placentario-uma-das-principais-causas-de-morte-materna/',
+        link_post: '/artigos.html',
         textoPost: '<strong>Conheça o acretismo placentário, uma das principais causas de morte materna</strong>. A ocorrência da doença aumentou nas últimas décadas, acompanhando o aumento dos partos cesáreas.'
     },
     {

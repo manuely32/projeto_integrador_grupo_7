@@ -19,8 +19,6 @@ header {
     z-index: 5; 
     display: flex;
     justify-content: space-between;
-    //align-items: center;
-    /* width:100vw; */
     background-color: var(--color-secondary);
     color: var(--color-primary);
     padding: 0.5rem 1rem; 
@@ -35,6 +33,10 @@ header {
 }
  
 #btn-sair {
+    display:none;
+}
+
+#perfil {
     display:none;
 }
 
@@ -78,12 +80,13 @@ nav ul li a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     background-color: var(--color-primary);
-    color:white;
+    color: white;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 500ms linear; 
+    width: fit-content;
 } 
 
 .btn:hover{

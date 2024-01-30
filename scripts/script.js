@@ -6,7 +6,7 @@ function sair() {
 // função que verifica se tem usuário logado e esconde algumas opções da barra de navegação
 function verificarUsuario() {
     // Páginas que só podem ser acessadas se tiver usuário logado
-    const paginasAutenticadas = ['/minhatrilha.html', '/album.html']
+    const paginasAutenticadas = ['/minhatrilha.html', '/catalogo_album.html']
     // Obtem a página atual
     const url_atual = window.location.pathname
     // Busca no storage o usuario
@@ -30,6 +30,7 @@ function verificarUsuario() {
 
     if (usuario !== null) {
         const cadastro = document.getElementById('btn-cadastro')
+        const perfil = document.getElementById('perfil')
         const nomeUsuario = document.querySelector('#nome_usuario')
 
         // adicionando nome do usuário
@@ -37,6 +38,7 @@ function verificarUsuario() {
         // escondendo opção cadastro e login
         cadastro.style.display = "none"
         login.style.display = "none"
+        perfil.style.display = "block"
         // mostrando opção de sair
         sair.style.display = "block"
 
@@ -55,4 +57,3 @@ function mostrarMenu() {
 }
 
 document.querySelector('.menu').addEventListener('click', mostrarMenu)
-

@@ -24,32 +24,19 @@
 
 <body>
     <header></header>
-    <main>
-        <section class="section-carrousel">
+    <main class="mainPerfil">
+        <section class="sectionCarrousel">
             <div id="carroussel">
                 <img class="active" onmouseover="pararContador()" onmouseout="ativarContador()"
                     style="width:100%; position:absolute; z-index: -1;" src="./img/bem vinda.gif" alt="">
                 <img class="" onmouseover="pararContador()" onmouseout="ativarContador()"
-                    style="width:100%; position: absolute; z-index: -2;" src="./img/fotocarrossel2.png" alt="">
+                    style="width:100%; position: absolute; z-index: -2;" src="./img/vida (1920 x 1000 px).png" alt="">
                 <img class="" onmouseover="pararContador()" onmouseout="ativarContador()"
-                    style="width:100%; position: absolute; z-index: -3;" src="./img/fotocarrossel3.png" alt="">
+                    style="width:100%; position: absolute; z-index: -3;" src="./img/vida (1920 x 1000 px) final.png"
+                    alt="">
             </div>
-            <button
-                style="position: absolute; z-index: 1;  top: 0px; left: 0px; height: 100%; border:none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
-                id="anteriorImagem" onclick="alterarImagem(-1)">&#10094</button>
-            <button
-                style="position: absolute; z-index: 1;  top: 0px; right: 0px; height: 100%; border:none; background-color: rgba(0,0,0, 0.2); padding: 15px; color: #fff; font-size: larger;"
-                id="proximaImagem" onclick="alterarImagem(1)">&#10095</button>
-        </section>
-
-        <section id="banner_pagina_principal">
-            <h2> Acompanhe o desenvolvimento do seu bebê</h2>
-            <img src="/img/imagem_bebe_da_sessao_corpo_principal.jpg" alt="foto de um bebê no utero">
-        </section>
-
-        <section id="banner_pagina_principal_cadastro">
-            <p>Cadastre-se e tenha uma trilha <b>EXCLUSIVA</b> feita especialmente para você e seu bebê.</p>
-            <a class="btn" href="/cadastro.html">Cadastrar</a>
+            <div id="anteriorImagem" onclick="alterarImagem(-1)">&#10094</div>
+            <div id="proximaImagem" onclick="alterarImagem(1)">&#10095</div>
         </section>
 
         <section id="sectionCards" style="padding: 40px 0px 40px 0px;">
@@ -68,8 +55,38 @@
                 </div>
             </div>
         </section>
-    </main>
 
+        <section class="banner">
+            <div class="banner-div">
+                <div class="banner-text ">
+                    <p>Faça seu cadastro e ganhe benefícios</p>
+                    <a id="button" href="cadastro.html">
+                        Cadastre-se
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="sectionAlbum">
+            <div id="molduraImagem">
+            </div>
+            <div
+                style="display: flex; flex-direction: column; justify-content: center ;height: 200px; align-items: center ; width: 100%; ">
+                <p style="margin: 0px auto; color: #000; font-size: 40px;">Guarde momentos especiais em um álbum para
+                    toda família</p>
+                <p style="text-align: center; font-size: 20px;">Faça upload de fotos, crie textos e compartilhe com quem
+                    está perto ou longe.</p>
+                <div class="flexJustfyCenter">
+                    <a href="./cadastro.html">
+                        <button id="button"
+                            style="cursor: pointer; width: fit-content; margin: 30px auto; border: 1px solid #fff;">
+                            Cadastre-se
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 

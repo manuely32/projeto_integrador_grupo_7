@@ -20,8 +20,9 @@ main {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 #titulo_pagina_trilha{
-    font-size: 3.5rem;
+    font-size: 3.0rem;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
@@ -68,14 +69,12 @@ main {
 }
 
 #container_text p{
-    
     background-color: #d3def3;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     border-radius: 10px;
     padding: 30px;
-    /*margin: 90px 30px 30px;*/
     font-size: 18px;
 }
 
@@ -243,7 +242,13 @@ main {
 @media screen and (max-width: 500px){
     #titulo_pagina_trilha {
         font-size: 30px;
+        display:flex;
+        align-items: center;
         margin-bottom: 25px;
+    }
+
+    #titulo_pagina_trilha img {
+        width: 46px;
     }
 
     #container_text p{
@@ -271,7 +276,6 @@ main {
 @media screen and (max-width: 400px) {
     #titulo_pagina_trilha {
         font-size: 20px;
-        margin-bottom: 25px;
     }
 
     #container_text p{

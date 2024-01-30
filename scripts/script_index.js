@@ -1,47 +1,47 @@
-let conjuntoCarrousel = document.querySelector('#carroussel');
-let elementos = Array.from(conjuntoCarrousel.children);
-let indiceElementoAtivo = 0;
-let myInterval;
+// let conjuntoCarrousel = document.querySelector('#carroussel');
+// let elementos = Array.from(conjuntoCarrousel.children);
+// let indiceElementoAtivo = 0;
+// let myInterval;
 
-function alterarImagem(fator) {
-    let elementoAtivo = conjuntoCarrousel.querySelector('.active');
-    // Remover a classe "active" do elemento atual
-    elementoAtivo.classList.remove("active");
+// function alterarImagem(fator) {
+//     let elementoAtivo = conjuntoCarrousel.querySelector('.active');
+//     // Remover a classe "active" do elemento atual
+//     elementoAtivo.classList.remove("active");
 
-    // Avançar para o próximo elemento
-    indiceElementoAtivo += fator;
+//     // Avançar para o próximo elemento
+//     indiceElementoAtivo += fator;
 
-    // Verificar se atingiu o final da matriz
-    if (indiceElementoAtivo < 0) {
-        // Se atingiu o final, voltar ao primeiro elemento
-        indiceElementoAtivo = elementos.length - 1;
-    }
-    if (indiceElementoAtivo >= elementos.length) {
-        // Se atingiu o final, voltar ao primeiro elemento
-        indiceElementoAtivo = 0;
-    }
+//     // Verificar se atingiu o final da matriz
+//     if (indiceElementoAtivo < 0) {
+//         // Se atingiu o final, voltar ao primeiro elemento
+//         indiceElementoAtivo = elementos.length - 1;
+//     }
+//     if (indiceElementoAtivo >= elementos.length) {
+//         // Se atingiu o final, voltar ao primeiro elemento
+//         indiceElementoAtivo = 0;
+//     }
 
-    // Adicionar a classe "active" ao próximo elemento
-    elementos[indiceElementoAtivo].classList.add("active");
-    pararContador()
-    ativarContador()
-}
+//     // Adicionar a classe "active" ao próximo elemento
+//     elementos[indiceElementoAtivo].classList.add("active");
+//     pararContador()
+//     ativarContador()
+// }
 
-// Usar setInterval para chamar a função a cada 2 segundos
-myInterval = setInterval(function () {
-    alterarImagem(1);
-}, 4500);
+// // Usar setInterval para chamar a função a cada 2 segundos
+// myInterval = setInterval(function () {
+//     alterarImagem(1);
+// }, 4500);
 
-function pararContador() {
-    clearInterval(myInterval);
-}
+// function pararContador() {
+//     clearInterval(myInterval);
+// }
 
-function ativarContador() {
-    // Reiniciar o intervalo
-    myInterval = setInterval(function () {
-        alterarImagem(1);
-    }, 4500);
-}
+// function ativarContador() {
+//     // Reiniciar o intervalo
+//     myInterval = setInterval(function () {
+//         alterarImagem(1);
+//     }, 4500);
+// }
 
 const postsArticles = [
     {

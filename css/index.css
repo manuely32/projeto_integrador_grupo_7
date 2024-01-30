@@ -11,9 +11,6 @@ main {
 }
 
 #carroussel{
-    //border: 1px solid red;
-    /* margin: 0px auto;
-    width: 1200px; */
     position: relative; 
     z-index: 0; 
     width: 100%; 
@@ -34,7 +31,6 @@ main {
     z-index: 1;
     margin-top: 65px;
     height: 500px; 
-    /* border: 2px solid red;  */
     background-color: rgba(0,0,0, 0.0); 
     padding: 15px; 
     color: #fff; 
@@ -43,7 +39,6 @@ main {
     display: flex;
     align-items: center;
     cursor: pointer;
-    /* box-shadow: 0px 0px 8px rgba(0,0,0, 0.5); */
     text-shadow: 0px 0px 7px rgba(0,0,0, 0.9);
 }
 
@@ -221,7 +216,17 @@ main {
     #anteriorImagem,
     #proximaImagem{
         margin-top: 0px;
-        height: 400px; 
+    }
+}
+
+@media screen and (max-width: 500px){
+    #carroussel{
+        height: 280px; 
+    }
+
+    #anteriorImagem,
+    #proximaImagem{
+        height: 280px; 
     }
 }
 
@@ -240,64 +245,12 @@ main {
         aspect-ratio: 3 / 2;
     }
 
-    #sectionAlbum #molduraImagem{
-        top: 0px;
-        left: 0px;
-    }
-
-    #sectionAlbum{
-        padding: 40px 20px; 
-        height: 450px;
-        //overflow: hidden;
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-
     #anteriorImagem,
     #proximaImagem{
         height: 250px; 
     }
 }
 
-/* @media screen and (max-width: 800px) {
-    #banner_pagina_principal {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        padding-top: 40px;
-    }
 
-    #banner_pagina_principal h2 {
-        font-size: 20px;
-    }
 
-    #banner_pagina_principal img{
-        width: 200px;
-    }
-
-    .containerCards{
-        width: 100%;
-    }
-    .cardArtigo{
-      
-        width: 100%;
-    }   
-} */
-
-/* @media screen and (max-width: 400px) {
-    #banner_pagina_principal {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    #carroussel{
-        height: 31vh;
-    }
-
-    .section-carrousel{
-        height: 31vh;
-    }
-} */ 
 

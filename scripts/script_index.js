@@ -1,47 +1,3 @@
-// let conjuntoCarrousel = document.querySelector('#carroussel');
-// let elementos = Array.from(conjuntoCarrousel.children);
-// let indiceElementoAtivo = 0;
-// let myInterval;
-// let temporizador;
-
-// function alterarImagem(fator) {
-//     let elementoAtivo = conjuntoCarrousel.querySelector('.active');
-
-//     // Remover a classe "active" do elemento atual
-//     elementoAtivo.classList.remove("active");
-
-//     // Avançar para o próximo elemento
-//     indiceElementoAtivo += fator;
-
-//     // Verificar se atingiu o final da matriz
-//     if (indiceElementoAtivo < 0) {
-//         // Se atingiu o final, voltar ao primeiro elemento
-//         indiceElementoAtivo = elementos.length - 1;
-//     }
-//     if (indiceElementoAtivo >= elementos.length) {
-//         // Se atingiu o final, voltar ao primeiro elemento
-//         indiceElementoAtivo = 0;
-//     }
-
-//     // Adicionar a classe "active" ao próximo elemento
-//     elementos[indiceElementoAtivo].classList.add("active");
-//     console.log(indiceElementoAtivo);
-//     pararContador()
-//     ativarContador()
-// }
-
-// //Usar setInterval para chamar a função a cada 6000 milissegundos (6 segundos)
-// myInterval = setInterval(proximaImagem, 6000);
-
-// function pararContador() {
-//     clearInterval(myInterval);
-// }
-
-// function ativarContador() {
-//     // Usar setInterval novamente para reiniciar o intervalo
-//     myInterval = setInterval(proximaImagem, 6000);
-// }
-
 let conjuntoCarrousel = document.querySelector('#carroussel');
 let elementos = Array.from(conjuntoCarrousel.children);
 let indiceElementoAtivo = 0;
@@ -90,7 +46,7 @@ function ativarContador() {
 const postsArticles = [
     {
         imagemPost: './img/artigo1.jpg',
-        link_post: 'https://www.medicina.ufmg.br/conheca-o-acretismo-placentario-uma-das-principais-causas-de-morte-materna/',
+        link_post: '/artigos.html',
         textoPost: '<strong>Conheça o acretismo placentário, uma das principais causas de morte materna</strong>. A ocorrência da doença aumentou nas últimas décadas, acompanhando o aumento dos partos cesáreas.'
     },
     {
@@ -117,7 +73,7 @@ for (let i = 0; i < postsArticles.length; i++) {
     const cards = document.createElement('div');
     cards.classList.add('cardArtigo');
     cards.innerHTML = `
-    <a href="${postsArticles[i].link_post}" target='blank' style="text-decoration: none;">
+    <a href="${postsArticles[i].link_post}" style="text-decoration: none;">
         <p class="paragrafoCardArtigo" style="">
             <img style="margin: 0px 10px 0px 0px ;aspect-ratio: 3/2; width: 140px; box-shadow: 0px 0px 5px rgba(0,0,0, 0.2);float:left;" src="${postsArticles[i].imagemPost}" alt="">
                 ${postsArticles[i].textoPost}

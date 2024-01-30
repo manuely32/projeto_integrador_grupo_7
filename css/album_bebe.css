@@ -10,7 +10,6 @@ main {
     height: fit-content;
 }
 .moldExtImgAlbum{
-    /* border: 2px solid blue;  */
     height: fit-content; 
     min-height: fit-content; 
     position: relative; 
@@ -22,7 +21,6 @@ main {
     max-width: fit-content;
 }
 .moldMedImgAlbum{
-    /* border: 2px solid yellow;  */
     position: relative; 
     z-index: 2; 
     padding: 0.9px; 

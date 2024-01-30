@@ -182,13 +182,6 @@ main {
     display: flex;
 }
 
-/*.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-} */
-
 @media screen and (max-width: 1200px){
     #container_text{
         width: 70%;
@@ -262,6 +255,10 @@ main {
 
     .tarefas_semanais label{
         font-size: 11px;
+    }
+
+    [data-tooltip]:after {
+        left: 30px;
     }
 }
 

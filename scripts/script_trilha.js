@@ -4,7 +4,7 @@ document.querySelectorAll("input[type=checkbox]").forEach(input => input.addEven
     const tarefa = id[1]
 
     //const [semana, tarefa] = input.id.split('__')
-    const imagens = document.querySelectorAll(`#semana_${semana.split('_')[1]} img`)
+    const imagens = document.querySelectorAll(`#${semana} img`)
 
     if (input.checked) {
         imagens[Number(tarefa.split('_')[1] - 1)].src = '/img/coracao_vermelho.png'

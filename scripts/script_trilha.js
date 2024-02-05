@@ -8,7 +8,9 @@ document.querySelectorAll("input[type=checkbox]").forEach(input => input.addEven
 
     if (input.checked) {
         imagens[Number(tarefa.split('_')[1] - 1)].src = '/img/coracao_vermelho.png'
+        // input.setAttribute("disabled", "")
     } else {
         imagens[Number(tarefa.split('_')[1] - 1)].src = '/img/coracao_vazado.png'
     }
+
 }))

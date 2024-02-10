@@ -32,17 +32,19 @@
             <div class="second-column">
                 <p class="title">Faça seu login!</p>
                 <form class="form-content">
-                    <div>
-                        <input id="input-login" type="text" placeholder="E-mail" value="tania@email.com" required>
-                        <p class="error-text">*Usuário inválido</p>
-                        <p class="credencial-text">*Campo Obrigatório</p>
+                    <div class="input-form">
+                        <label for="input-login">*E-mail</label>
+                        <input id="input-login" name="input-login" type="text"
+                            placeholder="Informe o e-mail cadastrado." required>
+                        <p class="error-text" id="helper-login">*Usuário inválido</p>
                     </div>
-                    <div>
-                        <input id="input-senha" type="password" placeholder="Digite a senha" value="12345" required>
-                        <p class="error-text">*Senha incorreta</p>
-                        <p class="credencial-text">*Campo Obrigatório</p>
+                    <div class="input-form">
+                        <label for="input-senha">*Senha</label>
+                        <input id="input-senha" name="input-senha" type="password" placeholder="Informe sua senha."
+                            required>
+                        <p class="error-text" id="helper-login-senha">*Campo Obrigatório</p>
                     </div>
-                    <button type="button" onclick="login()" class="btn">Entrar</button>
+                    <button type="button" onclick="login()" id="button-login" class="btn" disabled>Entrar</button>
 
                     <a href="cadastro.html">Cadastre-se</a>
                 </form>

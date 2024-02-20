@@ -28,3 +28,45 @@ aside a{
 #fotoPerfil{
     aspect-ratio: 3 / 3;
 }
+.btnExibicao{
+    background-color: red;
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .containerPerfil{
+        position: relative;
+    }
+    .asidePerfis {
+        position: absolute;
+        z-index: 1;
+        left: -250px;
+       /*  background-color: orange;  */
+        background-color: var(--color-primary); 
+        height: 100%; 
+        width: 250px;
+        transition: left 0.6s;
+    }
+    .btnExibicao{
+        background-color: var(--color-primary); 
+        display: flex;
+        position: absolute;
+        z-index: 1;
+        top: 5px;
+        right: -20px;
+        width: 30px;
+        height: 60px;
+        border-radius: 5px;
+       /*  border: 2px solid black; */
+        color: #fff;
+    }
+    .btnExibicao::before{
+        content: attr(data-icon);
+        font-family: 'Material Icons';
+        font-size: 30px;
+        padding: 14px 4px;
+    }
+    .mostrar{
+        left: 0px;
+    }
+}

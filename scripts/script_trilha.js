@@ -8,9 +8,24 @@ document.querySelectorAll("input[type=checkbox]").forEach(input => input.addEven
 
     if (input.checked) {
         imagens[Number(tarefa.split('_')[1] - 1)].src = '/img/coracao_vermelho.png'
-        // input.setAttribute("disabled", "")
+        
     } else {
         imagens[Number(tarefa.split('_')[1] - 1)].src = '/img/coracao_vazado.png'
     }
 
 }))
+
+const btnTarefas = document.getElementById("button_tarefas")
+const section1 = document.getElementById("semana1")
+const popUp = document.querySelector("dialog")
+const botaoFechar = document.querySelector("dialog button")
+
+btnTarefas.onclick = function(){
+    popUp.showModal()
+}
+botaoFechar.onclick = function(){
+    popUp.close()
+}
+btnTarefas.addEventListener('click',() => {
+    section1.classList.add("semana_on") 
+})

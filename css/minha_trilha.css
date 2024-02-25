@@ -1,7 +1,9 @@
 :root {
     --bg_tarefas_semanais:#fce4ec;
     --bg_terefas_semanais2:#FFB4EE;
+    
 }
+
 
 body{
     background-image: url(/img/backopacity.png);
@@ -37,7 +39,7 @@ main {
 }
 
 #container_text{
-    border: 2px solid lightblue;
+    border: 2px solid rgb(144, 215, 240);
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -98,11 +100,17 @@ main {
     width: 50vw;
     gap: 5px;
     padding: 30px 0px 30px 0px; 
-    background-color: rgba(255,250,240,.7);
+    background-color: rgba(240, 255, 240, 0.7);
     border-radius: 30px;
     box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -webkit-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
     -moz-box-shadow: -2px 12px 5px -10px rgba(0,0,0,0.75);
+    
+}   
+.semana_on{
+    background-color: rgba(5, 249, 5, 0.227);
+    text-decoration: line-through;
+    border: 2px solid rgba(0, 128, 0, 0.595);
 }
 
 .titulo_semana{
@@ -119,7 +127,6 @@ main {
 }
 
 .tarefas_semanais label{
-    display: flex;
     gap: 5px;
     align-items: center;
     padding: 15px;
@@ -128,7 +135,49 @@ main {
     border-radius: 100px;
     color:rgba(33, 33, 33, 0.79);
     font-size: 15px;
-    box-shadow: inset -1px 2px 5px rgba(0, 0, 0, .7)
+    box-shadow: inset -1px 2px 5px rgba(0, 0, 0, .7);
+    
+}
+
+dialog{
+    border: 3px solid #9dbcfa;
+    text-align: center;
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #d3def3;
+    margin:auto;
+}
+
+input[type="checkbox"]{
+    position: relative;
+    top: 3px;
+    width: 1.5em;
+    height: 1.5em;
+    border: 1px solid gray;
+    border-radius: 4px;
+    appearance: none;
+    &::before{
+        position: absolute;
+        content: "";
+        display: block;
+        left: 5px;
+        width: 8px;
+        height: 14px;
+        border-style: solid;
+        border-color: white;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    &:checked{  
+        color: white;
+        border-color: var(--color-primary);
+        background: var(--color-primary);
+
+        &::before{
+            opacity: 1;
+        }
+    }
 }
 
 #button_album{
@@ -145,6 +194,20 @@ main {
 #button_album:hover{
     opacity: 0.5;  
 }
+#button_tarefas{
+    text-decoration: none;
+    width: 150px;
+    background-color:var(--color-primary);
+    padding: 8px;
+    color: white;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+#button_tarefas:hover{
+    opacity: 0.5;  
+}
 
 .content_coracoes {
     display: flex;
@@ -153,7 +216,7 @@ main {
     border: 18px solid #FFB4EE;
     gap: 30px;
     margin-bottom: 10px;
-    margim-top: 10px;
+    margin-top: 10px;
     border-radius: 50px;
 }
 

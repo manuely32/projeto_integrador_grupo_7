@@ -1,8 +1,14 @@
 * {
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    &::before, &::after {
+        box-sizing: border-box;
+    }
+
+    
+
 }
 
 :root {

@@ -39,8 +39,19 @@
 
             <h2>Complete as Tarefas e Ganhe Corações</h2>
         </div>
+        <dialog>
+            <h2>
+                PARABÉNS! SEMANA CONCLUÍDA!
+            </h2>
+            <p>
+                Continue cumprindo as tarefas para seu bebê ficar cada dia mais forte e com saúde!
+            </p>
+            <button id="button_album" style="margin-top: 40px;">
+                Fechar
+            </button>
+        </dialog>
 
-        <section class="tarefas_semanais">
+        <section id="semana1" class="tarefas_semanais">
             <h1 class="titulo_semana">SEMANA 1</h1>
             <div class="content_coracoes" id="semana_1">
                 <img src="/img/coracao_vazado.png" alt="barra da trilha de tarefas">
@@ -50,9 +61,9 @@
                 <img src="/img/coracao_vazado.png" alt="barra da trilha de tarefas">
             </div>
 
-            <label data-tooltip="A ultrassonografia de primeiro trimestre é voltada para a confirmação da viabilidade da
+            <label for="tarefa_1" data-content="TAREFA 1 - PRIMEIRA ULTRASOM" data-tooltip="A ultrassonografia de primeiro trimestre é voltada para a confirmação da viabilidade da
             gestação, o estabelecimento com precisão da idade gestacional e determinação do número de fetos.">
-                <input type="checkbox" name="tarefa_1" id="semana_1__tarefa_1">
+                <input type="checkbox" name="tarefa_1" id="semana_1__tarefa_1" id="tarefa_1">
                 <strong>TAREFA 1 - PRIMEIRA ULTRASOM</strong>
             </label> <br>
             <label
@@ -75,9 +86,12 @@
                 <input type="checkbox" name="tarefa_5" id="semana_1__tarefa_5">
                 <strong>TAREFA 5 - COMA UMA FRUTA DE SUA PREFERÊNCIA</strong>
             </label> <br>
+
+            <button id="button_tarefas" onclick="finalizarSemana('semana1')">Concluir Semana</button>
         </section>
 
-        <section class="tarefas_semanais">
+
+        <section id="semana2" class="tarefas_semanais">
             <h1 class="titulo_semana">SEMANA 2</h1>
             <div class="content_coracoes" id="semana_2">
                 <img src="/img/coracao_vazado.png" alt="barra da trilha de tarefas">
@@ -107,9 +121,11 @@
                 <input type="checkbox" name="tarefa_10" id="semana_2__tarefa_5">
                 <strong>TAREFA 10 - VACINA INFLUENZA(GRIPE)</strong>
             </label> <br>
+
+            <button id="button_tarefas" onclick="finalizarSemana('semana2')">Concluir Semana</button>
         </section>
 
-        <section class="tarefas_semanais">
+        <section id="semana3" class="tarefas_semanais">
             <h1 class="titulo_semana">SEMANA 3</h1>
             <div class="content_coracoes" id="semana_3">
                 <img src="/img/coracao_vazado.png" alt="barra da trilha de tarefas">
@@ -138,6 +154,8 @@
                 <input type="checkbox" name="tarefa_15" id="semana_3__tarefa_5">
                 <strong>TAREFA 15 - LIMPEZA NO DENTISTA</strong>
             </label> <br>
+
+            <button id="button_tarefas" onclick="finalizarSemana('semana3')">Concluir Semana</button>
         </section>
     </main>
     <footer></footer>

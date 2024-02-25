@@ -24,13 +24,13 @@ function verificarUsuario() {
         return
     }
 
-    if (url_atual === '/index.html' && usuario) {
+    if ((url_atual === '/index.html' || url_atual === '/') && usuario) {
+        console.log('entrou')
         const banner_trilha = document.querySelector('.banner')
         const link = document.querySelector('.banner-text a')
         const button = document.querySelector('.banner-text a button')
         const texto = document.querySelector('.banner-text p')
         const div_trilha = document.querySelector('.banner-div')
-
 
         link.href = '/minhatrilha.html'
         button.textContent = "Minha Trilha"

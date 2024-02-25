@@ -3,11 +3,16 @@
 }
 
 body{
-    min-width: 381px;
+    font-family: 'Tenor Sans', sans-serif;
+    padding: 0px;
+    min-width: 510px;
 }
+
 main{
     padding: 40px 40px;
     background-color: var(--main-bg-color);
+    max-width: 1300px;
+    margin: 0px auto;
 }
 
 .h1TituloCatalogo{

@@ -1,5 +1,23 @@
+body{
+    font-family: 'Tenor Sans', sans-serif;
+    padding: 0px;
+    min-width: 510px;
+}
+
+main{
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+
 .mainPerfil{
     padding: 0px;
+}
+
+#formEditorAlbum{
+    /* width: 800px; */
+    max-width: 70%;
+    margin: 0px auto;
 }
 
 .moldExtButtonEditor{
@@ -125,4 +143,33 @@ background-color: #2249f7;
 .sectionEditorAlbum{
     padding: 40px 20px;
     height: 100%;
+}
+#inputImagem{
+    display: flex; 
+    flex-direction: column; 
+    padding: 0px 0px 20px 0px;
+}
+
+#inputImagem input{
+    background-color: #fff; 
+    border: 2px solid rgba(200, 200, 200, 0.4); 
+    border-radius: 5px;
+}
+
+label{
+    font-size: 20px; 
+    margin-bottom: 20px;
+}
+
+#areaEditorAlbum{
+    display: flex; 
+    flex-direction: column;
+    padding: 0px 0px 30px 0px;
+}
+
+@media only screen and (max-width: 1000px) {
+    #formEditorAlbum{
+        max-width: 90%;
+        margin: 0px auto;
+    } 
 }

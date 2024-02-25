@@ -4,9 +4,12 @@
 body{
     font-family: 'Tenor Sans', sans-serif;
     padding: 0px;
-    min-width: 381px;
+    min-width: 510px;
 }
-
+main{
+    max-width: 1300px;
+    margin: 0px auto;
+}
 h1{
     text-align: center;
     margin-bottom: 60px;

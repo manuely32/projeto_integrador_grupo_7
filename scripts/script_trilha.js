@@ -19,6 +19,7 @@ document.querySelectorAll("input[type=checkbox]").forEach(input => input.addEven
 function finalizarSemana(semana) {
     const section = document.getElementById(semana)
     const checkbox_semana = document.querySelectorAll(`#${semana} label input[type=checkbox]`)
+    const button_finalizar = document.querySelector(`#${semana} button`)
 
     let marcados = 0
     // Percorre o array de checkboxs para contabiliza quantos estão marcados
@@ -32,6 +33,8 @@ function finalizarSemana(semana) {
         popUp.showModal()
         section.classList.add("semana_on")
         checkbox_semana.forEach(checkbox => checkbox.disabled = true)
+        button_finalizar.disabled = true
+        button_finalizar.style.opacity = '0.5'
     } else {
         alert("Você ainda não cumpriu todas as tarefas, não pode finalizar a semana!")
     }

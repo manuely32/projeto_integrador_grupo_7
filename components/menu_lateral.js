@@ -1,5 +1,6 @@
 let asidePerfis = document.querySelector('.asidePerfis');
 asidePerfis.innerHTML = `
+        <span class="btnExibicao" data-icon="chevron_right"></span>
         <div class="flexAlignColumCenter" style="padding: 20px; border: 0px solid">
             <div style=" width: 100px; margin-bottom: 10px;">
                 <img id="fotoPerfil" style="border: 3px solid #fff; border-radius: 50%; object-fit:cover; width: 100%" src="" alt="">
@@ -30,3 +31,15 @@ const fotoPerfil = document.querySelector('#fotoPerfil');
 fotoPerfil.src = './img/images_1.jpg';
 const nomeUsuario = document.querySelector('#nomeUsuario');
 nomeUsuario.innerText = "Tânia de Souza da Silva";
+
+const btnExibicao = document.querySelector('.btnExibicao');
+//const asidePerfis = document.querySelector('.asidePerfis');
+
+btnExibicao.addEventListener('click', () => {
+    asidePerfis.classList.toggle('mostrar');
+    if (btnExibicao.getAttribute('data-icon') === 'chevron_left') {
+        btnExibicao.setAttribute('data-icon', 'chevron_right');
+    } else {
+        btnExibicao.setAttribute('data-icon', 'chevron_left');
+    }
+});

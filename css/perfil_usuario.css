@@ -1,8 +1,15 @@
+*{
+    box-sizing: border-box;
+}
 body{
     font-family: 'Tenor Sans', sans-serif;
     padding: 0px;
+    min-width: 510px;
 }
-
+main{
+    max-width: 1300px;
+    margin: 0px auto;
+}
 h1{
     text-align: center;
     margin-bottom: 60px;
@@ -14,7 +21,7 @@ form, h1, h2{
 
 form{
     border: 2px solid yellowgreen,
-    }
+}
 
 fieldset{
     padding: 50px 40px 50px 40px; 
@@ -23,7 +30,7 @@ fieldset{
 }
 
 legend{
-    font-size: 23px;
+    font-size: 25px;
     font-weight: bold;
     border-radius: 4px;
     padding: 8px;
@@ -31,7 +38,8 @@ legend{
 
 label{
     margin-bottom: 3px;
-
+    font-size: 19px;
+    text-wrap: nowrap;
 }
 
 input{
@@ -42,10 +50,12 @@ input{
     color: rgba(133, 133, 133, 0.6);
     border: none;
     border-bottom: 1px solid rgb(133, 133, 133);
+    font-size: 19px;
 }
+
 ::placeholder{
     font-family: 'Tenor Sans', sans-serif;
-    font-size: 12px;
+    font-size: 12px !important;
     color: rgba(133, 133, 133, 0.6);
 }
 
@@ -58,7 +68,9 @@ button{
 }
 
 .molduraExtForm{
-    width: 605px;
+    /* width: 605px; */
+    min-width: 381px;
+    width: 60%;
     height: fit-content;
     margin: auto; 
 }
@@ -66,20 +78,27 @@ button{
 .molduraExtFildset{
     display: flex; 
     flex-direction: column;
+    width: 100%;
+   /*  border: 2px solid; */
 }
 .moldurasExtInputs{
-    display: flex; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    /* border: 2px solid red */
 }
 .moldurasIntInputs35{
     width: 35%; 
-    display: flex; 
+    display: flex;
+   /*  flex-wrap: wrap; */
     flex-direction: column;
 }
 .moldurasIntInputs16{
     width: 16%; 
-    display: flex; 
+    display: flex;
+   /*  flex-wrap: wrap; */
     flex-direction: column;
+  /*   border: 2px solid; */
 }
 .moldurasIntInputs35, .moldurasIntInputs16 label{
     text-align: center;
@@ -199,4 +218,75 @@ button{
 
 .mainPerfil{
     padding: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .moldurasExtInputs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* flex-direction: column; */
+    }
+    .moldurasIntInputs35, 
+    .moldurasIntInputs16{
+        width: 45%;
+    }
+}
+@media only screen and (max-width: 996px) {
+    .moldurasExtInputs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* flex-direction: column; */
+    }
+    .moldurasIntInputs35{
+        width: 100%;
+       
+    }
+    .moldurasIntInputs16{
+        width: 30%;
+       
+    }
+    .moldurasIntInputs35 input, 
+    .moldurasIntInputs16 input{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    label[for="nomeDoBebe"]{
+        text-align: center;
+    }
+    .moldurasExtInputs{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+        flex-direction: column;
+    }
+    .moldurasIntInputs35{
+        max-width: 100%;
+        width: 100%;
+    }
+    .moldurasIntInputs16{
+        max-width: 100%;
+        width: 100%;
+    }
+    input, label{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 381px) {
+    .moldurasExtInputs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* flex-direction: column; */
+    }
+    .moldurasIntInputs35{
+        max-width: 100%;
+        width: 100%;
+    }
+    .moldurasIntInputs16{
+        max-width: 100%;
+        width: 100%;
+    }
 }

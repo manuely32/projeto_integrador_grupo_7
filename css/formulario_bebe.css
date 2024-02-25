@@ -1,3 +1,14 @@
+body{
+    font-family: 'Tenor Sans', sans-serif;
+    padding: 0px;
+    min-width: 510px;
+}
+
+main{
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
 h1{
     text-align: center;
 }
@@ -8,7 +19,7 @@ form, h1, h2{
     font-weight: 700;
 }
 form{
-border: 2px solid yellowgreen,
+    border: 2px solid yellowgreen,
 }
 fieldset{
     padding: 50px 40px 50px 40px; 

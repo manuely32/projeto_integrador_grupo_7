@@ -148,8 +148,8 @@ dialog{
     background-color: #d3def3;
     margin:auto;
 }
-input[type="checkbox"]{
 
+input[type="checkbox"]{
     position: relative;
     top: 3px;
     width: 1.5em;
@@ -177,11 +177,9 @@ input[type="checkbox"]{
 
         &::before{
             opacity: 1;
-
         }
     }
 }
-
 
 #button_album{
     text-decoration: none;

@@ -24,6 +24,22 @@ function verificarUsuario() {
         return
     }
 
+    if (url_atual === '/index.html' && usuario) {
+        const banner = document.querySelector('.banner')
+        const link = document.querySelector('.banner-text a')
+        const button = document.querySelector('.banner-text a button')
+
+        link.href = '/minhatrilha.html'
+        button.textContent = "IR PARA MINHA TRILHA"
+        banner.style.backgroundImage = "url(/img/artigo1.jpg)"
+
+        const link_album = document.querySelector('.flexJustfyCenter a')
+        const button_album = document.querySelector('.flexJustfyCenter a button')
+
+        link_album.href = '/catalago_album.html'
+        button_album.textContent = "VER MEU ÁLBUM"
+    }
+
     // Se o usuário existe, esconde opções da barra de navegação e adiciona o nome do usuário
     const login = document.getElementById('btn-login')
     const sair = document.getElementById('btn-sair')
@@ -57,3 +73,8 @@ function mostrarMenu() {
 }
 
 document.querySelector('.menu').addEventListener('click', mostrarMenu)
+
+function artigoVisualizado(id) {
+    localStorage.setItem("artigo", id)
+    window.location.href = 'artigos.html';
+}

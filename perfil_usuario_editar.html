@@ -139,7 +139,7 @@
         let dadosUsuarios = [
             {
                 nomeDoBebe: "Daniel de Souza Mendes",
-                dataNascimento: "21/12/2023",
+                dataNascimento: "2023-12-01",
                 pesoNascimento: 3,
                 tamanhoNascimento: 30,
                 horaNascimento: "01:45",
@@ -153,10 +153,10 @@
                 nomeDaAvoPaterna: "Júlia de Souza da Silva",
             }
         ];
-        
+
         for (let chave in dadosUsuarios[0]) {
-       
-            if(chave != "irmao"){
+
+            if (chave != "irmao") {
                 let geral = document.querySelector(`#${chave}`);
                 geral.value = dadosUsuarios[0][chave];
                 console.log(chave);
@@ -172,11 +172,11 @@
                     `;
                     areaIrmao.appendChild(novoIrmao)
                 }
-            } 
-            
+            }
+
         }
 
-        btnIrmao.addEventListener("click",()=>{
+        btnIrmao.addEventListener("click", () => {
             const areaIrmao = document.querySelector('#areaIrmao');
             let qtdIrmaos = document.querySelector('#areaIrmao').childElementCount;
             const novoIrmao = document.createElement('div');

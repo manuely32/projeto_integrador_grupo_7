@@ -39,5 +39,4 @@ for (let chave in dadosUsuarios[0]) {
 const btnSalvarPerfilEditar = document.querySelector('#btnSalvarPerfilEditar');
 btnSalvarPerfilEditar.addEventListener('click', () => {
     window.location.href = "./perfil_usuario.html";
-
 });

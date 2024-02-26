@@ -150,7 +150,7 @@ const postsCuriosities = [
         textoPost: '<strong> Março e maio são os meses com mais nascimentos no Brasil</strong>. Segundo um levantamento feito pela BBC News Brasil, com dados das últimas duas décadas, os meses de março e maio realmente têm mais nascimentos. <br> De acordo com a pesquisa, os números são 17% mais altos que o de nascimentos nos últimos três meses do ano.'
     },
     {
-        imagemPost: './img/fotoCuriosidades2.png',
+        imagemPost: './img/fotoCuriosidades2.jpeg',
         textoPost: '<strong>Dormir do lado esquerdo é melhor para a grávida</strong> <br> Deitar do lado direito pode provocar a compressão da veia cava, o que pode aumentar a pressão arterial da mulher. Portanto, se deitar do lado esquerdo é sempre mais confortável e seguro.'
     },
     {
@@ -158,7 +158,7 @@ const postsCuriosities = [
         textoPost: '<strong>Os bebês abrem os olhos dentro do útero e podem ver a luz do lado de fora</strong>. <br> Embora os olhos de um bebê possam “ver” a luz a partir mais ou menos da semana 16, seus olhos não estão totalmente formados até cerca da semana 20. Os olhos abrem primeiro entre as semanas 26 e 28.'
     },
     {
-        imagemPost: './img/fotoCuriosidades4.png',
+        imagemPost: './img/fotoCuriosidades4.jpeg',
         textoPost: '<strong>A dieta da mãe afeta as preferências alimentares futuras de um bebê</strong>. <br> Uma vez que as moléculas de sabor viajam tão facilmente, muitos estudos mostraram que preferências alimentares e aversões a determinados alimentos começam no útero desta maneira. Se a mãe evita certos alimentos, o bebê provavelmente rejeitará esses sabores fora do útero.'
     }
 ];

@@ -49,56 +49,8 @@ const postsArticles = [
         imagemPost: './img/artigo1.jpg',
         titulo: 'Acretismo Placentário, Conheça uma das principais causas da morte materna',
         subtitulo: 'A ocorrência da doença aumentou nas últimas décadas, acompanhando o aumento dos partos cesáreas.',
-        paragrafos: [
-            {
-                texto: 'O <strong>Acretismo Placentário</strong> é uma importante causa de mortalidade materna no mundo. Tais mortes podem ser evitadas com o pré-natal de qualidade e profissionais atentos à placenta das gestantes com histórico de cesarianas, como explica especialista da Faculdade de Medicina da UFMG.',
-                style: 'texto_artigos'
-            },
-            {
-                texto: 'Também conhecida como espectro da placenta acreta, a doença ocorre quando a placenta fica mais aderida ao útero que o normal durante a gestação, causando uma grande hemorragia na hora do parto. Segundo o International Journal of Ginecology and Obstetrics, a incidência do acretismo na década de 1950 era de 1 para cada 30.000 partos. Atualmente, as ocorrências são de aproximadamente 1 para cada 500, a depender do local.',
-                style: 'texto_artigos'
-            },
-            {
-                texto: 'O sangramento do acretismo ameaça a vida da paciente, visto que a hemorragia é volumosa e nem sempre os hospitais estão preparados para uma cirurgia de alta complexidade ou para a necessidade de um grande volume de reposição de sangue, como pode ocorrer nesses casos. “O que faz com que aconteça o acretismo placentário ainda não está totalmente esclarecido, mas sabemos que o principal fator de risco é uma cirurgia uterina prévia. E a cirurgia uterina mais comumente realizada é a cesariana. Pela sua alta frequência, não só no Brasil como no mundo, os casos de acretismo são cada vez mais comuns”, aponta o chefe do Departamento de Ginecologia e Obstetrícia (GOB) da UFMG, Gabriel Osanan.',
-                style: 'texto_artigos'
-            },
-            {
-                texto: 'Geralmente, a placenta se solta depois do parto e a mulher a expulsa espontaneamente ou com ajuda médica. No caso do acretismo, ela fica fortemente ligada ao útero e faz com que a expulsão não seja possível. Por isso, é preciso que uma equipe multidisciplinar esteja preparada para realizar o parto e fazer com que a paciente perca o mínimo de sangue possível. “Um dos piores cenários que eu posso ter com acretismo placentário é a paciente começar a ter contrações fora da hora, ter parto de urgência e fora de um hospital especializado, sem capacidade de oferecer o cuidado necessário. Ela fica totalmente à mercê da sorte, visto que é uma cirurgia de alta complexidade”, aponta.',
-                style: 'texto_artigos'
-            },
-            {
-                texto: 'Nas ocorrências de acretismo, a placenta pode aparecer de três formas diferentes,classificadas a partir da profundidade que ela atinge o útero: acreta, quando está aderida de forma mais superficial; increta, quando afeta a musculatura do útero; ou percreta, quando penetra toda a musculatura e atinge outros órgãos, como a bexiga.',
-                style: 'italic'
-            },
-            {
-                texto: 'Além de um parto cesárea anterior, a doença também pode ser causada por outras cirurgias que causam cicatrizes uterinas, como a retirada de um mioma, curetagens de repetição, e até mesmo fertilização in vitro. “Quando a paciente já tem uma cesariana e a placenta está se formando na gravidez seguinte, ela pode aderir exatamente nessa cicatriz de forma mais profunda, gerando o quadro de acretismo”, explica o professor sobre a relação entre as cesáreas e o acretismo.',
-                style: 'texto_artigos'
-            }
-        ],
-        subsessões: [
-            {
-                titulo_sessão: 'Pré Natal é essencial',
-                style: 'titulo_artigos',
-                imagem_sessão: '/img/fotoArtigo2.png',
-                paragrafos_sessao: [
-                    {
-                        texto: 'Por isso, o pré-natal é essencial: além de identificar um possível acretismo, o profissional poderá encaminhar a paciente a um centro de tratamento especializado e fazer os demais procedimentos para evitar complicações no parto. “Um dos maiores problemas com os casos dessa doença, e que pode contribuir para a morte materna, é quando o pré-natal não se atentou aos sinais de acretismo ou não foi feito pré-natal. Nesses casos, os partos ocorrem na urgência. É o pior cenário. Você vai ter um hospital despreparado e muito mais dificuldades”, afirma.',
-                        style: 'texto_artigos'
-                    },
-                    {
-                        texto: 'Para lidar com a doença, é necessário uma equipe multidisciplinar e especializada no seu tratamento, para que grandes complicações sejam evitadas. As gestantes com suspeita de acretismo devem ser encaminhadas a um centro de referência ainda durante o pré-natal para que tratamentos adequados sejam feitos e, então, o parto ocorra em ambiente mais seguro possível. Além disso, o pré-natal deve ter cuidado redobrado com possíveis complicações de uma gravidez. “Se eu sei que essa paciente tem um alto risco de ter uma hemorragia e a ela tem anemia, eu vou tratar essa condição primeiro. Pois se ela tem anemia e tiver um sangramento muito grande no parto, vai ficar ainda mais vulnerável”, explica.',
-                        style: 'texto_artigos'
-                    },
-                    {
-                        texto: 'Sendo assim, um importante ponto de partida é o entendimento de que o pré-natal é crucial não só para o diagnóstico de acretismo, mas também para outras doenças. Além disso, um ultrassom com atenção à placenta, em pacientes com fatores de risco para acretismo também é fundamental. “Nós estamos na fase de incentivar as pessoas a entenderem os riscos que elas têm. E só de olhar para a placenta com mais cautela já seria um grande avanço”, finaliza.',
-                        style: 'texto_artigos'
-                    }
-                ]
-            }
-        ],
         link_post: '/artigos.html',
         textoPost: '<strong>Conheça o acretismo placentário, uma das principais causas de morte materna</strong>. A ocorrência da doença aumentou nas últimas décadas, acompanhando o aumento dos partos cesáreas.',
-        fonte: 'site/fonte:https://www.medicina.ufmg.br/conheca-o-acretismo-placentario-uma-das-principais-causas-de-morte-materna/',
     },
     {
         id: 2,
@@ -122,11 +74,11 @@ const postsArticles = [
     }
 ];
 
-// function artigoVisualizado(id) {
-//     localStorage.setItem("artigo", id)
-//     window.location.href = 'artigos.html';
-// }
-
+// Função que salva no local storage o id do artigo clicado.
+function artigoVisualizado(id) {
+    localStorage.setItem("artigo", id)
+    window.location.href = 'artigos.html';
+}
 
 for (let i = 0; i < postsArticles.length; i++) {
 

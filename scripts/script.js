@@ -3,7 +3,7 @@ function sair() {
     localStorage.removeItem("usuario")
 }
 
-// função que verifica se tem usuário logado e esconde algumas opções da barra de navegação
+//função que verifica se tem usuário logado e esconde algumas opções da barra de navegação
 function verificarUsuario() {
     // Páginas que só podem ser acessadas se tiver usuário logado
     const paginasAutenticadas = ['/minhatrilha.html', '/catalogo_album.html']
@@ -90,8 +90,3 @@ function mostrarMenu() {
 }
 
 document.querySelector('.menu').addEventListener('click', mostrarMenu)
-
-function artigoVisualizado(id) {
-    localStorage.setItem("artigo", id)
-    window.location.href = 'artigos.html';
-}

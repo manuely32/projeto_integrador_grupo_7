@@ -1,41 +1,55 @@
 
+//Busca no localStorage o id do artigo clicado.
 const artigo_id = localStorage.getItem("artigo")
 
+//Tratamento para caso não exista id de artigo salvo no LocalStorage
 if (!artigo_id) {
     window.location.href = 'index.html';
 }
 
+// Usando fetch para buscar o arquivo dados.json onde estão os dados completos do artigo
 fetch("/scripts/dados.json").then((response) => {
     response.json().then((dados) => {
+        //Busca o artigo no array de artigos através do id que foi capturado do localStorage
         const artigo = dados.postsArticles.find(artigo => artigo.id === Number(artigo_id))
 
+        //Montagem dos dados na tela
+        //Monta o Título da página
         const titulo = document.querySelector('#titulo_pagina')
         titulo.textContent = artigo.titulo
 
+        //Monta o subtitulo da página
         const subtitulo = document.querySelector('.titulo_artigos i')
         subtitulo.textContent = artigo.subtitulo
 
-        const div_artigos = document.querySelector('.post_artigos')
-
+        //Cria o elemento img inserindo class e o link da imagem
         const imagem = document.createElement('img')
         imagem.className = '.imgPost'
         imagem.style.width = '100%'
         imagem.src = artigo.imagemPost
 
+        //Cria o elemento small que contém os dados de fonte da imagem
         const fontImage = document.createElement('small')
         fontImage.style.fontStyle = 'italic'
         fontImage.textContent = artigo.fontImg
 
+        //Captura a div onde será inserido o conteúdo
+        const div_artigos = document.querySelector('.post_artigos')
+
+        //inseri imagem e fonte da imagem
         div_artigos.appendChild(imagem)
         div_artigos.appendChild(fontImage)
 
+        // Percorre o array com os textos do artigo e cria o elemento paragrafo, para cada bloco de texto do artigo 
         for (let i = 0; i < artigo.paragrafos.length; i++) {
             const elemento_p = document.createElement('p')
             elemento_p.className = artigo.paragrafos[i].style
             elemento_p.textContent = artigo.paragrafos[i].texto
+            //Inseri o paragráfo na div
             div_artigos.appendChild(elemento_p)
         }
 
+        // Percorre as subsessoes do artigo e cria seus elementos como tiulo, imagem e paragrafos
         for (let i = 0; i < artigo.subsessoes.length; i++) {
             const elemento_titulo = document.createElement('h1')
             elemento_titulo.className = artigo.subsessoes[i].style
@@ -43,6 +57,7 @@ fetch("/scripts/dados.json").then((response) => {
 
             div_artigos.appendChild(elemento_titulo)
 
+            // Verifica se há imagem, se houver cria o elemento img
             if (artigo.subsessoes[i].imagem_sessão !== '') {
                 const img = document.createElement('img')
                 img.src = artigo.subsessoes[i].imagem_sessão
@@ -53,10 +68,12 @@ fetch("/scripts/dados.json").then((response) => {
                 fontImg.style.fontStyle = 'italic'
                 fontImg.textContent = artigo.subsessoes[i].fontImg
 
+                //inserindo imagem e font
                 div_artigos.appendChild(img)
                 div_artigos.appendChild(fontImg)
             }
 
+            // Percorre o array com os textos da sessão e cria o elemento paragrafo, para cada bloco de texto
             for (let l = 0; l < artigo.subsessoes[i].paragrafos_sessao.length; l++) {
                 const paragrafo_sessao = document.createElement('p')
                 paragrafo_sessao.className = artigo.subsessoes[i].paragrafos_sessao[l].style
@@ -65,6 +82,7 @@ fetch("/scripts/dados.json").then((response) => {
             }
         }
 
+        // Cria paragrafo com a fonte do artigo
         const font = document.createElement('p')
         font.style.marginTop = '50px'
         font.style.fontStyle = 'italic'
@@ -72,6 +90,7 @@ fetch("/scripts/dados.json").then((response) => {
 
         div_artigos.appendChild(font)
 
+        // Cria paragráfo com link para página de Curiosidades.
         const link_curiosidades = document.createElement('p')
         link_curiosidades.style.marginTop = '50px'
         link_curiosidades.style.fontSize = '1rem'

@@ -4,9 +4,6 @@ const senha = document.getElementById('input-senha')
 const helperLoginSenha = document.getElementById('helper-login-senha')
 const buttonLogin = document.getElementById('button-login')
 
-let counter = 0,
-    timer = null; // variavel para armazenar nosso timer
-
 function habilitarDesabilitarBotao() {
     let inputError = document.getElementsByClassName('error')
 
@@ -28,6 +25,9 @@ function removerEstilizacaoInputIncorreto(input, helper) {
     input.classList.remove("error")
 }
 
+let timer = null; // variavel para armazenar nosso timer
+
+// Validação de login
 inputLogin.addEventListener('input', (e) => {
     let valor = e.target.value
 

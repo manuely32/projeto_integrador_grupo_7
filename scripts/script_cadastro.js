@@ -10,8 +10,6 @@ const confirmaSenha = document.getElementById('confirma-senha')
 const helperConfirmaSenha = document.getElementById('helper-confirma-senha')
 const button = document.getElementById('button-cadastro')
 const checkbox = document.querySelector('input[type="checkbox"]')
-let counter = 0,
-    timer = null; // variavel para armazenar nosso timer
 
 function habilitarDesabilitarBotao() {
     let inputError = document.getElementsByClassName('error')
@@ -35,6 +33,8 @@ function removerEstilizacaoInputIncorreto(input, helper) {
 }
 
 checkbox.addEventListener('change', habilitarDesabilitarBotao)
+
+timer = null; // variavel para armazenar nosso timer
 
 // Validação do Nome do usuário
 nome.addEventListener('input', (e) => {

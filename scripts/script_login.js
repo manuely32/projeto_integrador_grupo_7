@@ -1,46 +1,82 @@
-const input_login = document.getElementById('input-login')
+const inputLogin = document.getElementById('input-login')
+const helperLogin = document.getElementById('helper-login')
 const senha = document.getElementById('input-senha')
-const msg_erro = document.querySelectorAll('.error-text')
-const msg_credencial = document.querySelectorAll('.credencial-text')
+const helperLoginSenha = document.getElementById('helper-login-senha')
+const buttonLogin = document.getElementById('button-login')
 
-input_login.addEventListener('input', () => {
-    input_login.classList.remove('error')
-    msg_erro[0].classList.remove('visible')
-    msg_credencial[0].classList.remove('visible')
+function habilitarDesabilitarBotao() {
+    let inputError = document.getElementsByClassName('error')
+
+    if (inputLogin.value !== "" && senha.value !== "" && inputError.length === 0) {
+        buttonLogin.disabled = false
+    } else {
+        buttonLogin.disabled = true
+    }
+}
+
+function estilizarInputIncorreto(input, helper) {
+    helper.classList.add("visible")
+    input.classList.add("error")
+    buttonLogin.disabled = true
+}
+
+function removerEstilizacaoInputIncorreto(input, helper) {
+    helper.classList.remove("visible")
+    input.classList.remove("error")
+}
+
+let timer = null; // variavel para armazenar nosso timer
+
+// Validação de login
+inputLogin.addEventListener('input', (e) => {
+    let valor = e.target.value
+
+    clearTimeout(timer);
+
+    timer = setTimeout(function () {
+        if (!valor.includes("@") || !valor.includes(".com")) {
+            helperLogin.textContent = "Precisa inserir um e-mail válido!"
+            estilizarInputIncorreto(inputLogin, helperLogin)
+        } else {
+            removerEstilizacaoInputIncorreto(inputLogin, helperLogin)
+            habilitarDesabilitarBotao()
+        }
+    }, 800);
 })
 
-senha.addEventListener('input', () => {
-    senha.classList.remove('error')
-    msg_erro[1].classList.remove('visible')
-    msg_credencial[1].classList.remove('visible')
+// Validação de senha
+senha.addEventListener('input', (e) => {
+    let valor = e.target.value
+
+    clearTimeout(timer);
+
+    timer = setTimeout(function () {
+        if (valor === "") {
+            helperLoginSenha.textContent = "O campo senha não pode ser vazio!"
+            estilizarInputIncorreto(senha, helperLoginSenha)
+        } else {
+            removerEstilizacaoInputIncorreto(senha, helperLoginSenha)
+            habilitarDesabilitarBotao()
+        }
+    }, 600);
+
 })
 
 function login() {
-    //Verifica se os dados de login foram informados
-    if (!input_login.value || !senha.value) {
-        input_login.classList.add('error')
-        senha.classList.add('error')
-        msg_credencial.forEach(msg => msg.classList.add('visible'))
-        return
-    }
-
     //Busca arquivo json com dados dos usuários
     fetch("/scripts/dados.json").then((response) => {
         response.json().then((dados) => {
-            // busca o usuário na lista através do login
-            const usuario = dados.usuarios.find(usuario => usuario.login === input_login.value)
+            const usuario = dados.usuarios.find(usuario => usuario.login === inputLogin.value)
 
-            // Verifica se o usuario existe e se a senha é a mesma
             if (usuario && usuario.senha === senha.value) {
-                //Salva o nome do usuário no localStorage e direciona o usuario para página index.html
                 localStorage.setItem("usuario", usuario.nome)
                 window.location.href = 'index.html';
             } else if (!usuario) {
-                input_login.classList.add('error')
-                msg_erro[0].classList.add('visible')
+                helperLogin.textContent = "Usuário não encontrado!"
+                estilizarInputIncorreto(inputLogin, helperLogin)
             } else if (usuario.senha !== senha.value) {
-                senha.classList.add('error')
-                msg_erro[1].classList.add('visible')
+                helperLoginSenha.textContent = "Senha incorreta!"
+                estilizarInputIncorreto(senha, helperLoginSenha)
             }
         })
     })

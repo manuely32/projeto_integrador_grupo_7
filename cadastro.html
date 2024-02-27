@@ -33,30 +33,36 @@
             <div class="second-column">
                 <p class="title">Cadastre-se</p>
                 <form class="form-content">
-                    <div>
-                        <input id="nome" type="text" placeholder="Nome completo" required>
-                        <p class="error-text">*Campo obrigatório</p>
+                    <div class="input-form">
+                        <label for="nome">*Nome completo</label>
+                        <input id="nome" name="nome" type="text" placeholder="Digite o nome completo" required>
+                        <p class="error-text" id="helper-nome">*Campo obrigatório</p>
                     </div>
-                    <div>
-                        <input id="email" type="email" placeholder="E-mail" required>
-                        <p class="error-text">*Campo obrigatório</p>
+                    <div class="input-form">
+                        <label for="email">*E-mail</label>
+                        <input id="email" name="email" type="email" placeholder="Digite seu e-mail" required>
+                        <p class="error-text" id="helper-email">*Campo obrigatório</p>
                     </div>
-                    <div>
-                        <input id="senha" type="password" placeholder="Digite a senha" required>
-                        <p class="error-text">*Campo obrigatório</p>
+                    <div class="input-form">
+                        <label for="senha">*Senha</label>
+                        <input id="senha" name="senha" type="password" placeholder="Digite a senha" required>
+                        <p class="error-text" id="helper-senha">*Campo obrigatório</p>
                     </div>
-                    <div>
-                        <input id="confirma_senha" type="password" placeholder="Confirme a senha" required>
-                        <p class="error-text">*Campo obrigatório</p>
+                    <div class="input-form">
+                        <label for="confirma-senha">*Confirmar senha</label>
+                        <input id="confirma-senha" name="confirma-senha" type="password" placeholder="Confirme a senha"
+                            required>
+                        <p class="error-text" id="helper-confirma-senha">*Campo obrigatório</p>
                     </div>
                     <div class="termo_aceite">
                         <p>Leia o termo de <a href="termoAceite.html">Termo de Aceite</a></p>
                         <div>
-                            <input checked type="checkbox" id="chkTermoAceite">
+                            <input type="checkbox" id="chkTermoAceite">
                             <label for="termoAceite">Aceito os termos propostos.</label>
                         </div>
                     </div>
-                    <button type="button" onclick="cadastro()" class="btn">Cadastrar</button>
+                    <button type="button" onclick="cadastro()" id="button-cadastro" class="btn"
+                        disabled>Cadastrar</button>
                 </form>
             </div>
         </div>

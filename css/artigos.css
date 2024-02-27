@@ -43,7 +43,19 @@ h3{
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
-    margin-top: 50px;
+    margin-top: 25px;
+}
+
+.texto_lista {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.texto_italic {
+    background-color:#fce4ec;
+    font-style: italic
 }
 
 @media screen and (max-width: 700px){
@@ -107,5 +119,4 @@ h3{
         font-size: 12px;
         width:80%;
     }
-
 }

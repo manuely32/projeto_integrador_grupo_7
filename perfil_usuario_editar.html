@@ -15,10 +15,10 @@
         rel="stylesheet">
 
     <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Icons -->
     <!--script para importar o header e footer -->
     <script src="components/header.js" type="text/javascript" defer></script>
     <script src="components/footer.js" type="text/javascript" defer></script>
@@ -36,16 +36,16 @@
 <body>
     <header></header>
     <main class="mainPerfil" style="height: fit-content; border: 0px solid orange">
-        <div class="flexJustfyStart" style="border: 0px solid red; height: 100%">
+        <div class="flexJustfyStart containerPerfil" style="border: 0px solid red; height: 100%">
+
             <aside class="asidePerfis">
 
             </aside>
-            </aside>
             <section style="border: 0px solid red; width: 100%;">
-                <h1 style="margin-top: 40px;">Edição de Cadastro</h1>
+                <h1 style="margin-top: 40px;">Editar Cadastro</h1>
                 <div class="molduraExtForm" style="border: 0px solid">
                     <h2>Dados da Família</h2>
-                    <form action="./perfilUsuario.html" method="get">
+                    <form action="" method="post">
                         <fieldset>
                             <legend>Bebê</legend>
                             <div class="molduraExtFildset">
@@ -56,6 +56,7 @@
                                         <label for="dataNascimento">Data de Nascimento</label>
                                         <input type="date" name="dataNascimento" id="dataNascimento">
                                     </div>
+
                                     <div class="moldurasIntInputs16">
                                         <label for="pesoNascimento">Peso</label>
                                         <input type="number" name="pesoNascimento" id="pesoNascimento">
@@ -83,15 +84,22 @@
                                 <label for="nomeDaMae">Nome da Mãe</label>
                                 <input type="text" id="nomeDaMae" name="nomeDaMae"
                                     placeholder="Insira o nome da mãe ou aquela pessoa que a criou com todo carinho que é uma verdadeira mãe.">
+                                <label for="emailMae">E-mail da Mãe</label>
+                                <input type="email" name="emailMae" id="emailMae">
                                 <label for="nomeDoPai">Nome do Pai</label>
                                 <input type="text" id="nomeDoPai" name="nomeDoPai"
                                     placeholder="Insira o nome da mãe ou aquela pessoa que a criou com todo carinho que é um verdadeiro pai.">
+                                <label for="emailPai">E-mail do Pai</label>
+                                <input type="email" name="emailPai" id="emailPai">
                             </div>
                         </fieldset>
                         <fieldset id="fieldsetIrmaos">
                             <legend>Irmãos</legend>
                             <div id="areaIrmao">
 
+                            </div>
+                            <div class="" style="display: flex; justify-content: center;">
+                                <button id="btnIrmao" class="btn" type="button">Adicionar</button>
                             </div>
                         </fieldset>
                         <fieldset>
@@ -116,8 +124,10 @@
                                     placeholder="Insira o nome do avó.">
                             </div>
                         </fieldset>
-                        <div id="areaBtnCadastrar" class="" style="margin-bottom: 40px;">
-                            <button id="btnSalvarPerfilEditar" class="btn" type="submit">Salvar</button>
+                        <div class="moldExtButtonAlbum">
+                            <a href="./perfil_usuario.html">
+                                <button class="btn" type="button">Salvar</button>
+                            </a>
                         </div>
                     </form>
                 </div>
@@ -125,6 +135,59 @@
         </div>
     </main>
     <footer></footer>
+    <script>
+        let dadosUsuarios = [
+            {
+                nomeDoBebe: "Daniel de Souza Mendes",
+                dataNascimento: "2023-12-01",
+                pesoNascimento: 3,
+                tamanhoNascimento: 30,
+                horaNascimento: "01:45",
+                localidade: "Brasília",
+                nomeDaMae: "Tânia de Souza da Silva",
+                nomeDoPai: "Ricardo Mendes",
+                irmao: ["Mário Souza Mendes", "Elisandra Souza Mendes", "Alexandre Souza Mendes"],
+                nomeDoAvoMaterno: "José Monteiro Mendes",
+                nomeDaAvoMaterna: "Nair Gomes Mendes",
+                nomeDoAvoPaterno: "Antônio da Silva",
+                nomeDaAvoPaterna: "Júlia de Souza da Silva",
+            }
+        ];
+
+        for (let chave in dadosUsuarios[0]) {
+
+            if (chave != "irmao") {
+                let geral = document.querySelector(`#${chave}`);
+                geral.value = dadosUsuarios[0][chave];
+                console.log(chave);
+            } else {
+                for (let chave1 in dadosUsuarios[0][chave]) {
+                    const areaIrmao = document.querySelector('#areaIrmao');
+                    let qtdIrmaos = document.querySelector('#areaIrmao').childElementCount;
+                    const novoIrmao = document.createElement('div');
+                    novoIrmao.classList.add('molduraExtFildset');
+                    novoIrmao.innerHTML = `
+                        <label for="irmao${qtdIrmaos}">Irmão</label>
+                        <input type="text" id="irmao${qtdIrmaos}" value="${dadosUsuarios[0][chave][qtdIrmaos]}" name="irmao${qtdIrmaos}" placeholder="Insira o nome do(s) imão(s).">
+                    `;
+                    areaIrmao.appendChild(novoIrmao)
+                }
+            }
+
+        }
+
+        btnIrmao.addEventListener("click", () => {
+            const areaIrmao = document.querySelector('#areaIrmao');
+            let qtdIrmaos = document.querySelector('#areaIrmao').childElementCount;
+            const novoIrmao = document.createElement('div');
+            novoIrmao.classList.add('molduraExtFildset');
+            novoIrmao.innerHTML = `
+                <label for="irmao${qtdIrmaos}">Irmão</label>
+                <input type="text" id="irmao${qtdIrmaos}" name="irmao${qtdIrmaos}" placeholder="Insira o nome do(s) imão(s).">
+            `;
+            areaIrmao.appendChild(novoIrmao)
+        })
+    </script>
 </body>
 
 </html>

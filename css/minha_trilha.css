@@ -109,7 +109,6 @@ main {
 }   
 .semana_on{
     background-color: rgba(5, 249, 5, 0.227);
-    text-decoration: line-through;
     border: 2px solid rgba(0, 128, 0, 0.595);
 }
 

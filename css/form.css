@@ -91,16 +91,12 @@ input:focus {
     color: var(--text-msg-erro);
 }
 
+
 input.error {
     border: solid 2px var(--text-msg-erro);
     background-color: #CCBBBB;
     color: var(--text-msg-erro);
   }
-  
-input.correct {
-    background-color: #BBCCBB;
-    color: #206620;
-}
 
 .credencial-text{
     display: none;
@@ -125,6 +121,11 @@ input.correct {
     flex-direction:column;
     font-size: 10px;
     gap:2px;
+}
+
+input.correct {
+    background-color: #BBCCBB;
+    color: #206620;
 }
 
 @media screen and (max-width: 600px) {

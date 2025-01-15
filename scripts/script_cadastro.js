@@ -1,5 +1,3 @@
-const msg_erro = document.querySelectorAll('.form-content div p')
-const inputs = document.querySelectorAll('.form-content div input:not(input[type="checkbox"])')
 const nome = document.getElementById('nome')
 const helperName = document.getElementById('helper-nome')
 const email = document.getElementById('email')

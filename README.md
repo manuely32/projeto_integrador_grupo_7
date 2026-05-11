@@ -1,4 +1,4 @@
-# projeto_integrador_grupo_7
+# Projeto integrador Talent Cloud - Site "Nova Vida"
 Projeto desenvolvido durante o curso de Introdução a programação da PROZ Talent Cloud.
 
 # Sobre o Projeto
